@@ -33,19 +33,9 @@ position: static;
 /** end hack */
 }
 
-/* Hide from IE5mac \*//*/
-div#shim {
-display: none;
-}
-html, body {
-height: auto;
-}
-/* end hack */
-/* ]]> */
-
 h1.logo{
 width: 715px;
-padding-left: 240px;
+text-align: center;
 margin: 0 auto;
 height: 110px;
 margin-bottom: 20px;
@@ -55,7 +45,7 @@ background: url(../images/divider.png) bottom left no-repeat;
 h1.logo span.two{
 font-size: 72px;
 color: #4e4d4d;
-float: left;
+display: inline-block;
 }
 
 h1.logo span.one{
@@ -63,12 +53,12 @@ font-size: 36px;
 background: #4e4d4d;
 padding: 8px 10px 8px 10px;
 margin: 8px 10px 0 0;
-float: left;
 color: #fff;
 line-height: normal;
 -moz-border-radius: 15px;
 -webkit-border-radius: 15px;
 border-radius: 15px;
+display: inline-block;
 }
 
 p.info{
