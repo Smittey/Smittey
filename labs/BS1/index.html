@@ -2,6 +2,21 @@
 layout: default
 ---
 
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/{{ site.img }}/home-bg4.png')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading">
+					<h1>Blog</h1>
+					<hr class="small">
+					<span class="subheading">Andy Smith [Smittey]'s </br>Blog</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
@@ -17,10 +32,11 @@ layout: default
                             {{ post.sub-title }}
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                    <p class="post-meta">Posted by Smittey on February 4th, 2014</p>
                 </div>
-                <hr>
-			 
+                <!--<hr>-->
+				<img src="/{{ site.img }}/divider.png"/>
+				
 			{% endfor %}
 		</div>
 	</div>

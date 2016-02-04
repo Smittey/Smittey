@@ -1,3 +1,5 @@
 # Site settings
-#baseurl: "./"
+#baseurl: "/"
+img: "img/"
+css: "css/"
 #url: "#"
