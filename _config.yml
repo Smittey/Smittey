@@ -1,0 +1,6 @@
+# Site settings
+#baseurl: "/"
+img: "img/"
+css: "css/"
+#url: "#"
+source: labs/BS1/
