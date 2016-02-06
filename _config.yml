@@ -3,4 +3,4 @@
 img: "img/"
 css: "css/"
 #url: "#"
-source: labs/BS1/
+permalink: /posts/:title
