@@ -429,7 +429,105 @@ background: url(/img/contact-sprite.gif) -695px bottom no-repeat;
 color: #33ccff;
 }*/
 
+ul#links li { 
+  position: relative; 
+  display: inline-block; 
+  text-align: center;  
+  /*padding: 0 5px 0 5px;*/
+}
 
+ul#links { 
+  text-align:center; 
+  margin-left:-40px;
+  margin-top:50px;
+}
+
+
+a.li 
+{
+	width: 85px;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	text-decoration: none;
+	background: url(/img/social.png) left top no-repeat;
+	float: left;
+	padding: 0 0 0 25px;
+}
+
+a.li:hover 
+{
+	background: url(/img/social.png) left bottom no-repeat;
+	color: #4875b4;
+}
+
+a.tw 
+{
+	width: 79px;
+	color: #ffffff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	text-decoration: none;
+	background: url(/img/social.png) -85px top no-repeat;
+	float: left;
+	padding: 0 0 0 25px;
+}
+
+a.tw:hover 
+{
+	background: url(/img/social.png) -85px bottom no-repeat;
+	color: #33ccff;
+}
+
+a.so 
+{
+	width: 128px;
+	color: #ffffff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	text-decoration: none;
+	background: url(/img/social.png) -164px top no-repeat;
+	float: left;
+	padding: 0 0 0 25px;
+}
+
+a.so:hover 
+{
+	background: url(/img/social.png) -164px bottom no-repeat;
+	color: #3b5998;
+}
+
+a.gh 
+{
+	width: 80px;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	text-decoration: none;
+	background: url(/img/social.png) -292px top no-repeat;
+	float: left;
+	padding: 0 0 0 25px;
+}
+
+a.gh:hover 
+{
+	background: url(/img/social.png) -292px bottom no-repeat;
+	color: #3b5998;
+}
+
+/*
 p.links{
 display: table;
 margin: 0 auto;
@@ -517,5 +615,5 @@ background: url(/img/social.png) -292px bottom no-repeat;
 color: #3b5998;
 }
 
-
+*/
 
