@@ -3,4 +3,4 @@
 img: "img/"
 css: "css/"
 #url: "#"
-permalink: /posts/:title
+permalink: "/:title"
