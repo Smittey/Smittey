@@ -10,7 +10,7 @@
     <meta name="author" content="Andy Smith">
 	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
 
-	<title>  This is the first test post |  Blog </title>
+	<title>  Contact |  Blog </title>
 	
     <link href="/css//bootstrap.min.css" rel="stylesheet">
 
@@ -66,56 +66,61 @@
 
  
     <!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('/img//post-bg.jpg')">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="post-heading">
-					<h1>This is the first test post</h1>
-					<h2 class="subheading">This is what the sub-titles will look like</h2>
-					<span class="meta">Posted on February 4th, 2016</span>
-				</div>
-			</div>
-		</div>
-	</div>
+<header class="intro-header" style="background-image: url('/img/contact-img.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Contact</h1>
+                    <hr class="small">
+                    <span class="subheading">Get in touch.</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
-	
+
+<!-- Main Content -->
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<p>Test post, please ignore</p>
+			<p>Have a question or just something you want to tell me? Get in touch using the form below! I'll get back to you as soon as possible</p>
 
-			
-			<div id="disqus_thread"></div>
+<form action="//formspree.io/hello@andysmith.me" method="POST">
+
+	<div class="form-group col-xs-12 floating-label-form-group controls" style="background-color:#fff">
+		<label>Name</label>
+		<input type="text" class="form-control" name="name" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name">
+		<p class="help-block text-danger"></p>
+	</div>
+
+	<div class="form-group col-xs-12 floating-label-form-group controls" style="background-color:#fff">
+		<label>Email Address</label>
+		<input type="email" class="form-control" name="_replyto" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address">
+		<p class="help-block text-danger"></p>
+	</div>
+
+	<div class="form-group col-xs-12 floating-label-form-group controls" style="background-color:#fff">
+		<label>Message</label>
+		<textarea type="text" class="form-control" name="message" placeholder="Message" id="message" required="" data-validation-required-message="Write to me" rows="4"></textarea>
+		<p class="help-block text-danger"></p>
+	</div>
+		
+	<input type="text" name="_gotcha" style="display:none" />
+	
+	<div class="row">
+        <div class="form-group col-xs-12" style="text-align:right">
+		<br>
+            <button type="submit" value="Send" class="btn btn-default">Send</button>
+        </div>
+    </div>
+	
+</form>
 		</div>
 	</div>
 </div>
 
-<script>
-	/**
-	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-	*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-
-	s.src = '//smittey.disqus.com/embed.js';
-
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-<script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>
-
+<hr>
  
 	<ul id="links">
 		<li><a href="https://www.linkedin.com/in/smittey" class="li">Linked In</a></li>

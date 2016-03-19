@@ -617,3 +617,24 @@ color: #3b5998;
 
 */
 
+.page a {
+  text-decoration: none;
+  color: #0085a1;
+    font-style: italic;
+
+}
+
+.page a:hover,
+.page a:focus {
+  color: #0085a1;
+  text-decoration: underline;
+}
+
+/*Stop the autofill setting the background to yellow*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
