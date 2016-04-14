@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keeping Fit as a Programmer
-sub-title: How exercising as affected my comfort at work
+sub-title: How exercising has affected my comfort at work
 posted-on: Posted on April 14th, 2016
 post-img: post3-img.jpg
 ---
