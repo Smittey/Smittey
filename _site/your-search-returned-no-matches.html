@@ -65,7 +65,23 @@
 
 
  
-    <!-- Page Header -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=294370397283238";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 <header class="intro-header" style="background-image: url('/img//post2-img.jpg')">
 	<div class="container">
@@ -74,7 +90,7 @@
 				<div class="post-heading">
 					<h1>Your search returned no matches.</h1>
 					<h2 class="subheading">My first experience of developing blindly with next to no code examples and confusingly written docs</h2>
-					<span class="meta">Posted on April 5th, 2016</span>
+					<span class="meta">April 5th, 2016</span>
 				</div>
 			</div>
 		</div>
@@ -107,7 +123,31 @@
 <p>No doubt myself or other software developers of my generation will ironically be angrily blogging in 20 years time about the next generation of software developers because of “how easy they have it compared to back in my day where we only had Stack Overflow”. Let’s hope so.</p>
 
 
-			<div class="PageNavigation">
+			<div class="post-signature">
+				<div class="author-image">
+					<img class="img-circle" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+				</div>
+				<div class="text">
+				    <p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on April 5th, 2016</p>
+					<br/>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey">Tweet</a>
+					
+					<div class="fb-share-button" data-href="http://127.0.0.1//your-search-returned-no-matches" data-layout="button" data-mobile-iframe="true"></div>
+					
+					<div class="g-plus" data-action="share" data-annotation="none"></div>
+					
+				</div>
+				<div class="share">
+
+				</div>
+
+				<div style="clear: both;"></div>
+			</div>	
+
+			<div class="divider"></div>
+
+							
+			<div class="page-navigation">
 				
 					<a class="prev" href="/learning-to-be-creative">&laquo; Learning to be Creative</a>
 				
@@ -115,7 +155,9 @@
 					<a class="next" href="/keeping-fit-as-a-programmer">Keeping Fit as a Programmer &raquo;</a>
 				
 				<div style="clear: both;"></div>
-			</div>
+			</div>	
+
+			
 			
 			<div id="disqus_thread"></div>
 		</div>

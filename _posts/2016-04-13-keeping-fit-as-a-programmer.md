@@ -2,7 +2,7 @@
 layout: post
 title: Keeping Fit as a Programmer
 sub-title: How exercising has affected my comfort at work
-posted-on: Posted on April 14th, 2016
+posted-on: April 14th, 2016
 post-img: post3-img.jpg
 ---
 Three years ago I was the fittest and strongest I have ever been. I was on my placement year during University, lived five minutes from where I worked, and was going to the gym four-five times per week. My diet was incredibly strict and aside from the fact that I drank more alcohol than during this working year than the University years combined, my lifestyle couldn't have been better. 

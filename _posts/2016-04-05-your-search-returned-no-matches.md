@@ -2,7 +2,7 @@
 layout: post
 title: Your search returned no matches.
 sub-title: My first experience of developing blindly with next to no code examples and confusingly written docs
-posted-on: Posted on April 5th, 2016
+posted-on: April 5th, 2016
 post-img: post2-img.jpg
 ---
 I'm lucky enough to work with a lot of talented developers with a wealth of experience and many years under their belts. Most of these guys have been programming since long before I was even born and joke about Visual Basic and Fortran 90 being cutting edge when I was just learning how to talk. 

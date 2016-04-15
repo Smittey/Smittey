@@ -2,7 +2,7 @@
 layout: post
 title: Learning to be Creative
 sub-title: I wasn't born creative; I had to learn to be. 
-posted-on: Posted on March 20th, 2016
+posted-on: March 20th, 2016
 post-img: post1-img.jpg
 ---
 I've been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I'm not a very creative person. That was slightly contradictory, I'll rephrase... I'm not a naturally creative person; I just want to be creative.

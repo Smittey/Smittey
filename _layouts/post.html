@@ -2,6 +2,21 @@
 layout: default
 ---
  
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=294370397283238";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
@@ -24,7 +39,31 @@ layout: default
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
 			{{ content }}
 
-			<div class="PageNavigation">
+			<div class="post-signature">
+				<div class="author-image">
+					<img class="img-circle" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+				</div>
+				<div class="text">
+				    <p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on {{ page.posted-on }}</p>
+					<br/>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey">Tweet</a>
+					
+					<div class="fb-share-button" data-href="http://{{ site.host }}/{{ page.url }}" data-layout="button" data-mobile-iframe="true"></div>
+					
+					<div class="g-plus" data-action="share" data-annotation="none"></div>
+					
+				</div>
+				<div class="share">
+
+				</div>
+
+				<div style="clear: both;"></div>
+			</div>	
+
+			<div class="divider"></div>
+
+							
+			<div class="page-navigation">
 				{% if page.previous.url %}
 					<a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
 				{% endif %}
@@ -32,7 +71,9 @@ layout: default
 					<a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
 				{% endif %}
 				<div style="clear: both;"></div>
-			</div>
+			</div>	
+
+			
 			
 			<div id="disqus_thread"></div>
 		</div>

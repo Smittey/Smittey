@@ -642,14 +642,62 @@ input:-webkit-autofill:active {
     -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
 }
 
-.PageNavigation {
+.page-navigation {
 	padding:50px 0 50px 0;
 }
 
-.PageNavigation .prev {
+.page-navigation .prev {
 	float:left;
 }
 
-.PageNavigation .next {
+.page-navigation .next {
 	float:right;
 }
+
+
+
+.post-signature {
+
+	padding:50px 0 50px 0 ;
+}
+
+
+.post-signature .author-image {
+  float:left;
+  /*background-color: #00ff00;*/
+  width:auto;
+  height:100px;
+}
+
+.post-signature .text {
+  float:left;
+  /*background-color: #ff00ff;*/
+  width:auto;
+  height:100px;
+  padding-left:20px;
+  padding-top:10px;
+
+}
+
+.post-signature .share {
+  float:right;
+  /*background-color: #ff00ff;*/
+  width:auto;
+  height:100px;
+  padding-left:20px;
+  padding-top:10px;
+
+}
+
+.post-signature .text p{
+	display: table-cell;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+        .fb_iframe_widget span 
+        {
+            vertical-align: baseline !important;
+        }
+
+		

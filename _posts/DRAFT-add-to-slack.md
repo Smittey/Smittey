@@ -2,7 +2,7 @@
 layout: post
 title: Add to Slack
 sub-title: My latest side-project for Slack messaging
-posted-on: Posted on April 6th, 2016
+posted-on: April 6th, 2016
 post-img: post4-img.jpg
 ---
 My friends at work have recently joined the thousands of others worldwide by addopting [Slack](http://slack.com/) into our lives. It started as just a central place for us all to chat outside of our usual lunchtime congregation with little to no aim or goals. It has since grown organically and with a certain degree of granularity with 'channels' ranging from `#Music` and `#tv-film`, to `#Politics` and `#Books`, with `#Coding` thrown in there so that we can feel at least semi-justified and productive. We love it. It stops us from going insane during the day and also allows us to develop our relationships further outside of our 1 hour lunch-time breather as we all work in different areas of the company.
