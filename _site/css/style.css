@@ -657,26 +657,29 @@ input:-webkit-autofill:active {
 
 
 .post-signature {
-
+	height:auto;
 	padding:50px 0 50px 0 ;
 }
 
 
 .post-signature .author-image {
   float:left;
-  /*background-color: #00ff00;*/
-  width:auto;
-  height:100px;
+  background-color: #00ff00;
+
 }
 
 .post-signature .text {
   float:left;
   /*background-color: #ff00ff;*/
   width:auto;
-  height:100px;
-  padding-left:20px;
+  height:auto;
   padding-top:10px;
 
+}
+
+.post-signature .text img {
+	float:left;
+	margin-right:20px;
 }
 
 .post-signature .share {
@@ -695,9 +698,9 @@ input:-webkit-autofill:active {
 	font-size: 16px;
 }
 
-        .fb_iframe_widget span 
-        {
-            vertical-align: baseline !important;
-        }
+.fb_iframe_widget span 
+{
+	vertical-align: baseline !important;
+}
 
 		
