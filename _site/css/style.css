@@ -658,20 +658,31 @@ input:-webkit-autofill:active {
 
 .post-signature {
 	height:auto;
-	padding:50px 0 50px 0 ;
+	padding:50px 0 50px 0;
 }
 
 
-.post-signature .author-image {
+/*.post-signature .author-image {
   float:left;
   background-color: #00ff00;
 
 }
 
+.post-signature .share {
+  float:right;
+  width:auto;
+  height:100px;
+  padding-left:20px;
+  padding-top:10px;
+
+}
+
+*/
+
 .post-signature .text {
   float:left;
   /*background-color: #ff00ff;*/
-  width:auto;
+  width:100%;
   height:auto;
   padding-top:10px;
 
@@ -682,15 +693,7 @@ input:-webkit-autofill:active {
 	margin-right:20px;
 }
 
-.post-signature .share {
-  float:right;
-  /*background-color: #ff00ff;*/
-  width:auto;
-  height:100px;
-  padding-left:20px;
-  padding-top:10px;
 
-}
 
 .post-signature .text p{
 	display: table-cell;
