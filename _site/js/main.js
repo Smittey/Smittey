@@ -1,5 +1,10 @@
  $(document).ready(function() {
 	
+	//Tooltips for posts
+	$('[data-toggle="popover"]').popover();   
+
+		
+		
 	//Get top artists from lastfm account
 	$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=smitteyyyy&period=1month&api_key=9ddaab7dc99dbcfb3f2ed8204ef965ce&limit=5&format=json&callback=?", function(json) {
         var html = '';
