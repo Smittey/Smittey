@@ -706,4 +706,36 @@ input:-webkit-autofill:active {
 	vertical-align: baseline !important;
 }
 
-		
+
+#box1 {  }
+#box2 { float:left; }
+#box3 { display:block;overflow:hidden; }
+
+/* Styling */
+#box1 { 
+	background: #ddd; 
+
+	width: 100%;
+}
+#box2 { 
+	background: #999;
+	height:100%;
+ }
+#box3 { background: #bbb; }
+
+#box3 .text {
+  float:left;
+  /*background-color: #ff00ff;*/
+  width:100%;
+  height:auto;
+
+}
+
+
+
+
+#box3 .text p{
+	display: table-cell;
+	vertical-align: top;
+	font-size: 16px;
+}
