@@ -707,34 +707,35 @@ input:-webkit-autofill:active {
 }
 
 
-#box1 {  }
-#box2 { float:left; }
-#box3 { display:block;overflow:hidden; }
-
-/* Styling */
-#box1 { 
-	background: #ddd; 
-
+#signature-container { 
 	width: 100%;
+	margin-bottom:50px;
+	margin-top:50px;
 }
-#box2 { 
-	background: #999;
-	height:100%;
+#signature-avatar { 
+	float:left;
  }
-#box3 { background: #bbb; }
-
-#box3 .text {
-  float:left;
-  /*background-color: #ff00ff;*/
-  width:100%;
-  height:auto;
-
+ 
+#signature-avatar img {
+	width:100%;
+	height:inherit;
+	margin-right:20px;
+}
+ 
+#signature-text { 
+	display:block;overflow:hidden; 
 }
 
+#signature-text .text {
+	float:left;
+	width:100%;
+	height:auto;
+=}
 
 
 
-#box3 .text p{
+
+#signature-text .text p{
 	display: table-cell;
 	vertical-align: top;
 	font-size: 16px;

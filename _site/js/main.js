@@ -76,3 +76,10 @@ function getNowPlaying()
         });
     });
 }
+
+$(window).load(function() {
+    var height = $("#signature-text").height();
+	
+	$('.avatar').attr('src', 'http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=' + height);
+
+});
