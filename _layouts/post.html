@@ -2,17 +2,13 @@
 layout: default
 ---
  
+<script>
+    $(window).bind("load", function() {
+       $.getScript('/js/social.js', function() {});
+    });
+</script>
+
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=1748027778767786";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -38,8 +34,6 @@ layout: default
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
 			{{ content }}
-
-			
 			
 			<div id="signature-container">
 				<span id="signature-avatar">				
@@ -52,20 +46,15 @@ layout: default
 						<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 0 5px 0' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
 						<br />
 						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
-						
 						<div class="fb-share-button" data-href="http://smittey.co.uk/{{ page.url }}/" data-layout="button" data-mobile-iframe="true"></div>
-							
 						<div class="g-plus" data-action="share" data-annotation="none"></div>
 					</div>
 				</span>
 			</div>
 		
-						<div style="clear: both;"></div>
+			<div style="clear: both;"></div>
 
-		
-			
 			<div class="divider"></div>
-
 							
 			<div class="page-navigation">
 				{% if page.previous.url %}
@@ -77,7 +66,6 @@ layout: default
 				<div style="clear: both;"></div>
 			</div>	
 
-			
 			<div id="disqus_thread"></div>
 		</div>
 	</div>
@@ -85,26 +73,6 @@ layout: default
 
 
 
-<script>
-	/**
-	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-	*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-
-	s.src = '//smittey.disqus.com/embed.js';
-
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 <script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>

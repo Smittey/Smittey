@@ -23,6 +23,18 @@
     <link href="/css//bootstrap.min.css" rel="stylesheet">
 
     <link href="/css//style.css" rel="stylesheet">
+	
+	    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+	
+	<!-- Custom JavaScript -->
+	<script type="text/javascript" src="/js/main.js"></script>
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -73,17 +85,13 @@
 
 
  
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=1748027778767786";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+    $(window).bind("load", function() {
+       $.getScript('/js/social.js', function() {});
+    });
+</script>
 
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div id="fb-root"></div>
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -116,8 +124,6 @@
 
 <p>I hope to turn this space into somewhere where I can practise being creative, organise my thoughts, and improve my writing; so please bear with me.</p>
 
-
-			
 			
 			<div id="signature-container">
 				<span id="signature-avatar">				
@@ -130,20 +136,15 @@
 						<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 0 5px 0' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
 						<br />
 						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
-						
 						<div class="fb-share-button" data-href="http://smittey.co.uk//learning-to-be-creative//" data-layout="button" data-mobile-iframe="true"></div>
-							
 						<div class="g-plus" data-action="share" data-annotation="none"></div>
 					</div>
 				</span>
 			</div>
 		
-						<div style="clear: both;"></div>
+			<div style="clear: both;"></div>
 
-		
-			
 			<div class="divider"></div>
-
 							
 			<div class="page-navigation">
 				
@@ -153,7 +154,6 @@
 				<div style="clear: both;"></div>
 			</div>	
 
-			
 			<div id="disqus_thread"></div>
 		</div>
 	</div>
@@ -161,26 +161,6 @@
 
 
 
-<script>
-	/**
-	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-	*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-
-	s.src = '//smittey.disqus.com/embed.js';
-
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 <script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>
@@ -193,17 +173,7 @@
 		<li><a href="http://github.com/Smittey" class="gh">Github</a></li>
 	</ul>
 	
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/clean-blog.min.js"></script>
-	
-	<!-- Custom JavaScript -->
-	<script type="text/javascript" src="/js/main.js"></script>
 
 	
 	<script>
