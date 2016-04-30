@@ -83,3 +83,8 @@ $(window).load(function() {
 	$('.avatar').attr('src', 'http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=' + height);
 
 });
+
+
+function goToByScroll(id){
+    $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+}
