@@ -55,7 +55,7 @@ function getNowPlaying()
 					//Does the return result match the same name as the previously changed song name? If not, we want to change the html to reflect the new song
 					if(songName != currentSongName)
 					{			
-						var html = 'Listening to right now: <img src="img/sound-balance.gif"> ';
+						var html = 'Listening to right now: <img src="/img/sound-balance.gif"> ';
 
 						var artist = item.artist['#text'];
 						var url = item.url;

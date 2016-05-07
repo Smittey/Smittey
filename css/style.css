@@ -411,6 +411,10 @@ body {
 
 }
 
+img {
+	max-width:100%;
+}
+
 
 /*a.tw{
 width: 690px;
