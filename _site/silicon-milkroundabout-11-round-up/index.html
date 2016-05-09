@@ -10,15 +10,15 @@
     <meta name="author" content="Andy Smith">
 	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
 	
-	<meta property="og:url"                content="http://smittey.co.uk//anybody-on//">              
+	<meta property="og:url"                content="http://smittey.co.uk//silicon-milkroundabout-11-round-up//">              
 	<meta property="og:type"               content="article">
-	<meta property="og:title"              content="Anybody On?">
-	<meta property="og:description"        content="A Raspberry Pi project to let you know if your media is currently being viewed">
-	<meta property="og:image"              content="http://smittey.co.uk/img/post-raspberrypi.jpg">
+	<meta property="og:title"              content="Silicon Milkroundabout 11 Round-up">
+	<meta property="og:description"        content="My experience at my second Silicon Milkroundabout tech fair">
+	<meta property="og:image"              content="http://smittey.co.uk/img/post-smr.jpg">
 	<meta property="fb:app_id"             content="1748027778767786">
 
 
-	<title>  Anybody On? |  Blog </title>
+	<title>  Silicon Milkroundabout 11 Round-up |  Blog </title>
 	
     <link href="/css//bootstrap.min.css" rel="stylesheet">
 
@@ -120,14 +120,14 @@
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('/img//post-raspberrypi.jpg')">
+<header class="intro-header" style="background-image: url('/img//post-smr.jpg')">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="post-heading">
-					<h1>Anybody On?</h1>
-					<h2 class="subheading">A Raspberry Pi project to let you know if your media is currently being viewed</h2>
-					<span class="meta">May 7th, 2016</span>
+					<h1>Silicon Milkroundabout 11 Round-up</h1>
+					<h2 class="subheading">My experience at my second Silicon Milkroundabout tech fair</h2>
+					<span class="meta">May 8th, 2016</span>
 				</div>
 			</div>
 		</div>
@@ -137,87 +137,23 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
-			<p>Ever been curious if anybody is currently looking at your website, watching your YouTube video, or on using your mobile app RIGHT NOW, but can’t be bothered to open up and sign into Google Analytics?</p>
+			<p>Tech moves fast. No duh, right?</p>
 
-<p>I’ve recently launched this blog, my <a href="http://www.andysmith.me" target="_blank">portfolio website</a> and <a href="https://github.com/Smittey?tab=repositories" target="_blank">a few other projects</a>, and like most that start up they are still gaining traction. I created this project because something about real-time data fascinates me. I love knowing that “somebody is reading this page <strong>right now</strong>. Somebody is looking at something that I’ve made <strong>right now</strong>”.</p>
+<p>This is not new information, and I was fully aware of the momentum of the industry that I’m in. This is also not my first time at Silicon Milkaroundabout. Silicon Milkroundabout (which I’ll shorthand to SMR) is a tech job fair which boasts to be like none other, with around 200 companies ranging from big names like Facebook, StackOvervlow and the BBC, to smaller start-ups going through their first round of funding to more established start-ups who are becoming well known and already making their mark.</p>
 
-<video width="99%" height="540" autoplay="" loop="" muted="">
-        <source src="http://i.imgur.com/AEuK9TF.webm" type="video/webm" />
-    </video>
+<p><img src="http://i.imgur.com/DiHvv6a.jpg" alt="SMR entrance" title="SMR entrance" /></p>
 
-<p>This post will go into how I accomplished this with a Raspberry Pi, a breadboard and an LED. You can find the code necessary in <a href="https://github.com/Smittey/RaspberryPi-Projects/tree/master/Analytics" target="_blank">my Github repository</a>.</p>
+<p>Upon arrival you’re greeted at the door with a tote bag containing a map of the building and location of the companies, and a lanyard with space to write your name and place stickers representing the skills you have. This lanyard was used as an indicator by companies to grab you if you have skills that they like and would like to talk more about! If I’ve learned anything from today, it’s that I finally know what women must feel like, catching dozens of people staring at your chest. It’s rather unnerving…</p>
 
-<h4 id="hardware-used">Hardware used</h4>
-<ul>
-  <li>Raspberry Pi</li>
-  <li>Adafruit Cobbler and female-female jumper cable</li>
-  <li>Breadboard</li>
-  <li>(1) 100 ohm</li>
-  <li>(1) LED</li>
-  <li>(1) Male-male jumper wire</li>
-  <li>Network connection from the Pi</li>
-</ul>
+<p>I noticed something interesting about the skills stickers today. They’re based on the popularity and demand of technologies among the companies attending and between today’s and last Novembers SMR they vary so much! I first attended in November 2015 and in only 6 months there has been a notable shift to using the new ‘language of the month’. It’s little surprise, really. A lot of the companies making up SMR are start-ups who from the get-go want to use the latest and greatest, and obviously don’t want to be using prehistoric technologies. For example <em>‘React.js’</em>, and <em>Docker</em>, which made its sticker debut after gaining unbelievable traction over the last year. I honestly found myself struggling to chose skills stickers that I wouldn’t just be blagging. Regardless, I chose the few skills that I felt competent in and went to get my first free bottle of liquid courage from the bar with <a href="http://stackoverflow.com/users/1392312/rossiar">@Rossiar</a>. SMR really is an incredible experience. You are surrounded by people in your domain who are so enthusiastic about technology and improving an aspect of the world through their software that it really rubs off on you. After leaving my first fair back in November I went home and immediately started designing <a href="http://www.andysmith.me">my portfolio website</a> and this blog; two things that I’d been putting off doing for a while by that point. SMR reignited my productivity and drive to get back on track and continue improving through self-teaching and research. It felt refreshing!</p>
 
-<h4 id="software-and-services-used">Software and Services used</h4>
-<ul>
-  <li>Rasbian</li>
-  <li>IDLE Python 2.7 IDE</li>
-  <li>Google Analytics account</li>
-  <li>A project implementing Google Analytics</li>
-</ul>
+<p><img src="http://i.imgur.com/xSqUiy8.jpg" alt="SMR pass" title="SMR pass" /></p>
 
-<hr />
+<p>Although it was a great day meeting and talking to a variety of people in the industry, it is exhausting talking about yourself in a passionate way for hours on end. Especially when temperatures in London today reached 26.6°C, making it <a href="http://www.independent.co.uk/news/uk/home-news/uk-weather-its-the-hottest-day-of-the-year-so-far-and-british-people-cant-cope-a7019211.html">the hottest day of the year so far</a>. My short-shorts made their 2016 premiere which helped, at the risk of looking like an unprofessional idiot in front of prospective employers. Heck, most of them are start-ups. I’m surprised they weren’t wearing flip flops… which I say out of jealously rather than disdain, working for a corporate company employing a ‘<em>business-ready attire’</em> .</p>
 
-<h3 id="steps">Steps</h3>
+<p><img src="http://i.imgur.com/eSrBj0x.jpg" alt="SMR bar" title="SMR bar" /></p>
 
-<p>Note: These instructions assume that you have a Google Developer account and a Google Analytics account already integrated with your website or other media</p>
-
-<h4 id="software">Software</h4>
-
-<ol>
-  <li>
-    <p>Create a <a href="https://console.developers.google.com/iam-admin/projects" target="_blank">new Google Developer API project</a></p>
-
-    <ol>
-      <li>
-        <p>Create a Service Account under the new project that you’ve just created making sure to tick <em>‘Furnish a new private key’</em>. I chose <em>‘P12’</em> for backwards compatibility purposes</p>
-      </li>
-      <li>
-        <p>The P12 certificate should have downloaded</p>
-      </li>
-    </ol>
-  </li>
-  <li>
-    <p>Place the P12 certificate and scripts in this repository into a folder on your Pi</p>
-  </li>
-  <li>
-    <p>Change the details in the trianglular-brackets in the config file to match our own</p>
-  </li>
-  <li>
-    <p><strong>Run the script</strong>. If all has went to plan, at this point it should continuously print out the real-time visitor count/how many people are currently interacting with your media</p>
-
-    <p><img src="http://i.imgur.com/MQZ5dwL.png" alt="sample printout" title="sample printout" /></p>
-  </li>
-</ol>
-
-<h4 id="hardware">Hardware</h4>
-
-<ol>
-  <li>Use the diagram below as a reference to set up the hardware aspect of this project.
-    <ol>
-      <li>Connect your 100 ohm resistor from cobbler row #18 to a row outside the scope of the cobbler, e.g. (16, I) on the breadboard</li>
-      <li>Take the LED and connect the positive (longer) leg to the same row of the resistor, e.g. (16, J) on the breadboard. Take the negative (shorter) leg and connect it to the outer negative rail</li>
-      <li>
-        <p>Finally, take the male-male jumper wire and connect the same outer negative rail to a cobbler row, e.g. (3, J)</p>
-
-        <p><img src="http://i.imgur.com/cxjInqe.png" alt="wire diagram" title="wire diagram" /></p>
-      </li>
-    </ol>
-  </li>
-  <li>Re-run <code class="highlighter-rouge">AnybodyOn.py</code> and visit your website/YouTube video/app after a few seconds of the program producing <em>‘Current active users = 0’</em>. If all has gone to plan, the light should turn green a few seconds after visiting your media.</li>
-</ol>
-
-<p><a href="https://github.com/Smittey/RaspberryPi-Projects/issues" target="_blank">Any issues, please report them here!</a></p>
+<p>I returned home with my tote bag full to the brim of business cards, leaflets and branded pens exhausted yet buzzing, still experiencing some adrenaline from the days event. I’ll sort through the leaflets tomorrow.</p>
 
 			
 			<div id="signature-container">
@@ -226,12 +162,12 @@
 				</span>
 				<span id="signature-text">
 					<div class="text">
-						<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on May 7th, 2016</p>
+						<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on May 8th, 2016</p>
 						<br/>
 						<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 0 5px 0' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
 						<br />
 						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
-						<div class="fb-share-button" data-href="http://smittey.co.uk//anybody-on//" data-layout="button" data-mobile-iframe="true"></div>
+						<div class="fb-share-button" data-href="http://smittey.co.uk//silicon-milkroundabout-11-round-up//" data-layout="button" data-mobile-iframe="true"></div>
 						<div class="g-plus" data-action="share" data-annotation="none"></div>
 					</div>
 				</span>
@@ -243,10 +179,8 @@
 							
 			<div class="page-navigation">
 				
-					<a class="prev" href="/datarize-my-life/">&laquo; Datarize My Life</a>
+					<a class="prev" href="/anybody-on/">&laquo; Anybody On?</a>
 				
-				
-					<a class="next" href="/silicon-milkroundabout-11-round-up/">Silicon Milkroundabout 11 Round-up &raquo;</a>
 				
 				<div style="clear: both;"></div>
 			</div>	
