@@ -5,3 +5,7 @@ css: "css/"
 #url: "#"
 permalink: "/:title/"
 parse_block_html: true
+
+author: "Andy Smith"
+url: "http://Smittey.co.uk"
+email: "andy@andysmith.me"

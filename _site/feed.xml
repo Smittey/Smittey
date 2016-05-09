@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    
+     <title></title>
+     <link href="http://Smittey.co.uk/atom.xml" rel="self"/>
+     <id>http://Smittey.co.uk</id>
+     <updated>2016-05-09T22:17:34+01:00</updated>
+     
+     <author>
+       <name>Andy Smith</name>
+       <uri>http://Smittey.co.uk</uri>
+       <email>andy@andysmith.me</email>
+     </author>
+
+ 
+ <entry>
+   <title>Silicon Milkroundabout 11 Round-up</title>
+   <link href="http://Smittey.co.uk/silicon-milkroundabout-11-round-up/"/>
+   <id>http://Smittey.co.uk/silicon-milkroundabout-11-round-up</id>
+   <updated>2016-05-08T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;Tech moves fast. No duh, right?&lt;/p&gt; &lt;p&gt;This is not new information, and I was fully aware of the momentum of the industry that I’m in. This is also not my first time at Silicon Milkaroundabout. Silicon Milkroundabout (which I’ll shorthand to SMR) is a tech job fair which boasts to...</content>
+ </entry>
+ 
+ <entry>
+   <title>Anybody On?</title>
+   <link href="http://Smittey.co.uk/anybody-on/"/>
+   <id>http://Smittey.co.uk/anybody-on</id>
+   <updated>2016-05-07T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;Ever been curious if anybody is currently looking at your website, watching your YouTube video, or on using your mobile app RIGHT NOW, but can’t be bothered to open up and sign into Google Analytics?&lt;/p&gt; &lt;p&gt;I’ve recently launched this blog, my &lt;a href=&quot;http://www.andysmith.me&quot; target=&quot;_blank&quot;&gt;portfolio website&lt;/a&gt; and &lt;a href=&quot;https://github.com/Smittey?tab=repositories&quot; target=&quot;_blank&quot;&gt;a few...</content>
+ </entry>
+ 
+ <entry>
+   <title>Datarize My Life</title>
+   <link href="http://Smittey.co.uk/datarize-my-life/"/>
+   <id>http://Smittey.co.uk/datarize-my-life</id>
+   <updated>2016-05-01T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt; &lt;p&gt;It occurred to me that I may use too many apps. For some reason, I feel the need to obsessively monitor, track and quantify every recordable aspect of my life. I use Swarm/Foursquare to record my locations, Untappd for beer, MyFitnessPal for...</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspberry Pi and the Impulse Buy</title>
+   <link href="http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/"/>
+   <id>http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy</id>
+   <updated>2016-04-29T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;When I moved out of my family home I wasn’t quite aware of the challenge at hand. I owned a lot of stuff. Like, more than I thought I did. Arguably more than a lot of my friends did. I’m not saying this in a pissing-contest kind of way, no....</content>
+ </entry>
+ 
+ <entry>
+   <title>If you know me, don't read this</title>
+   <link href="http://Smittey.co.uk/if-you-know-me-dont-read-this/"/>
+   <id>http://Smittey.co.uk/if-you-know-me-dont-read-this</id>
+   <updated>2016-04-23T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too...</content>
+ </entry>
+ 
+ <entry>
+   <title>Keeping Fit as a Programmer</title>
+   <link href="http://Smittey.co.uk/keeping-fit-as-a-programmer/"/>
+   <id>http://Smittey.co.uk/keeping-fit-as-a-programmer</id>
+   <updated>2016-04-13T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;Three years ago I was the fittest and strongest I have ever been. I was on my placement year during University, lived five minutes from where I worked, and was going to the gym four-five times per week. My diet was incredibly strict and aside from the fact that I...</content>
+ </entry>
+ 
+ <entry>
+   <title>Your search returned no matches.</title>
+   <link href="http://Smittey.co.uk/your-search-returned-no-matches/"/>
+   <id>http://Smittey.co.uk/your-search-returned-no-matches</id>
+   <updated>2016-04-05T00:00:00+01:00</updated>
+   <content type="html">&lt;p&gt;I’m lucky enough to work with a lot of talented developers with a wealth of experience and many years under their belts. Most of these guys have been programming since long before I was even born and joke about Visual Basic and Fortran 90 being cutting edge when I was...</content>
+ </entry>
+ 
+ <entry>
+   <title>Learning to be Creative</title>
+   <link href="http://Smittey.co.uk/learning-to-be-creative/"/>
+   <id>http://Smittey.co.uk/learning-to-be-creative</id>
+   <updated>2016-03-20T00:00:00+00:00</updated>
+   <content type="html">&lt;p&gt;I’ve been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I’m not a very creative person....</content>
+ </entry>
+ 
+
+</feed>
