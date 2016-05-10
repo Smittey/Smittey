@@ -748,3 +748,64 @@ input:-webkit-autofill:active {
 a img {
     cursor: pointer !important;
 }
+
+
+
+
+
+
+.search {
+    width: 230px;
+    height: 40px;
+    position: relative;
+    float: left;
+	display:inline;
+	margin-left:5px;
+ }
+
+.search input[type=text] {
+  position: relative;
+  width: 0px;
+  float: Left;
+  left:10px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  height: 30px;
+  line-height: 18px;
+  padding: 0 2px 0 2px;
+  border-radius:50px;
+  border-color: #51A3A3;
+  border-width: 3px;
+  text-indent: 50px;
+
+
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+::-webkit-input-placeholder {text-indent:50px!important;}
+:-moz-placeholder { text-indent:50px!important;}
+::-moz-placeholder {text-indent:50px!important;}
+:-ms-input-placeholder {text-indent:50px!important;}
+
+.search:hover input[type=text], .search input[type=text]:focus {
+  width: 300px;
+  margin-right: 0px;
+}
+
+.button {
+    height: 40px;
+    position: absolute;
+    left: 0;
+}
+
+form {
+margin:0;
+padding:0;
+display:inline;
+}
