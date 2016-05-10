@@ -22,6 +22,7 @@ layout: null
    <link href="{{ site.url }}{{ post.url }}"/>
    <id>{{ site.url }}{{ post.id }}</id>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <author>{{ site.author }}</author>
    <content type="html">{{ post.content | xml_escape | truncatewords:50 }}</content>
  </entry>
  {% endfor %}

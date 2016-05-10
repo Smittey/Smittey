@@ -6,6 +6,7 @@ css: "css/"
 permalink: "/:title/"
 parse_block_html: true
 
+title: "Return Rambling;"
 author: "Andy Smith"
 url: "http://Smittey.co.uk"
 email: "andy@andysmith.me"
