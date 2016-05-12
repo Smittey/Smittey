@@ -808,3 +808,8 @@ form {
 	padding:0;
 	display:inline;
 }
+
+
+caption {
+	font-size:12px;
+}
