@@ -8,8 +8,8 @@ post-img: post-obsession.jpg
 Hi, my name's Andy and I'm a dataholic. 
 
 <table class="image">
-	<caption align="bottom">Last.fm music progression - Rendered by http://savas.ca/lastwave/</caption>
-	<tr><td><img src="/{{ site.img }}/lastfm-data.png" alt="Last.fm music progression - Rendered by http://savas.ca/lastwave/"/></td></tr>
+	<caption align="bottom">Last.fm music progression</caption>
+	<tr><td><img src="/{{ site.img }}/lastfm-data.png" alt="Last.fm music progression"/></td></tr>
 </table>
 
 It occurred to me that I may use too many apps. For some reason, I feel the need to obsessively monitor, track and quantify every recordable aspect of my life. I use Swarm/Foursquare to record my locations, Untappd for beer, MyFitnessPal for diet, Places I've Pooped for... well, it explains itself, Last.fm for music plays, Fitbit for activity, HabitRPG for my daily tasks, YNAB for my financials and Sleep Cycle for my sleep habits. To name the bigger ones. I even took to creating [my own Android app](https://play.google.com/store/apps/details?id=my.gym.journal&hl=en){:target="_blank"} to record gym progress because I was so unsatisfied with existing solutions. I also utilized my obsession during University by centering my dissertation around tracking the moods of sufferers of depression and anxiety, and feeding this data back to their doctor. This worked for me and I finished it with 80%, but that's besides the point.
@@ -17,8 +17,8 @@ It occurred to me that I may use too many apps. For some reason, I feel the need
 I am obsessed. 
 
 <table class="image">
-	<caption align="bottom">Untappd Beer consumption - Rendered by http://d3-beer.jonost.me/</caption>
-	<tr><td><img src="/{{ site.img }}/untappd-data.png" alt="Untappd Beer consumption - Rendered by http://d3-beer.jonost.me/"/></td></tr>
+	<caption align="bottom">Untappd Beer consumption</caption>
+	<tr><td><img src="/{{ site.img }}/untappd-data.png" alt="Untappd Beer consumption"/></td></tr>
 </table>
 
 I get a kick out of producing reports, graphs, data visualizations and maps because I can say "This is what I look like in numbers. This is what my music tastes look like. This is what my financial report looks like. This is a map of everywhere that I've been". **My life as a JSON object**.
@@ -28,8 +28,8 @@ The nice thing about modern day software is that there's almost an API for every
 It's becoming less of a hobby and more of an unhealthy obsession. 
 
 <table class="image">
-	<caption align="bottom">Foursquare checkins heat map - Rendered by http://www.wheredoyougo.net/</caption>
-	<tr><td><img src="/{{ site.img }}/foursquare-data.png" alt="Foursquare checkins heat map - Rendered by http://www.wheredoyougo.net/"/></td></tr>
+	<caption align="bottom">Foursquare checkins heat map</caption>
+	<tr><td><img src="/{{ site.img }}/foursquare-data.png" alt="Foursquare checkins heat map"/></td></tr>
 </table>
 
 There is no AA group for this. Technology moves a lot faster than physical communities and the support network isn't there. I'm not saying that if it was a thing I would attend regularly, but I'd be lying if I wasn't curious about others in a similar position. It's not something that I want to stop doing completely, I just hope that I can get to the stage where if I miss a Foursquare check-in, I won't think anything of it.

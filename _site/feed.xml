@@ -4,7 +4,7 @@
      <title>Return Rambling;</title>
      <link href="http://Smittey.co.uk/atom.xml" rel="self"/>
      <id>http://Smittey.co.uk</id>
-     <updated>2016-05-13T00:13:37+01:00</updated>
+     <updated>2016-06-12T22:58:26+01:00</updated>
      
      <author>
        <name>Andy Smith</name>
@@ -12,6 +12,15 @@
        <email>andy@andysmith.me</email>
      </author>
 
+ 
+ <entry>
+   <title>Backend vs Frontend Learning Curves</title>
+   <link href="http://Smittey.co.uk/backend-vs-frontend-learning-curves/"/>
+   <id>http://Smittey.co.uk/backend-vs-frontend-learning-curves</id>
+   <updated>2016-06-12T00:00:00+01:00</updated>
+   <author>Andy Smith</author>
+   <content type="html">&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and...</content>
+ </entry>
  
  <entry>
    <title>Silicon Milkroundabout 11 Round-up</title>
@@ -37,7 +46,7 @@
    <id>http://Smittey.co.uk/datarize-my-life</id>
    <updated>2016-05-01T00:00:00+01:00</updated>
    <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt; &lt;table class=&quot;image&quot;&gt; &lt;caption align=&quot;bottom&quot;&gt;Last.fm music progression - Rendered by http://savas.ca/lastwave/&lt;/caption&gt; &lt;tr&gt;&lt;td&gt;&lt;img src=&quot;/img//lastfm-data.png&quot; alt=&quot;Last.fm music progression - Rendered by http://savas.ca/lastwave/&quot; /&gt;&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; &lt;p&gt;It occurred to me that I may use too many apps. For some reason, I feel the need to obsessively monitor,...</content>
+   <content type="html">&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt; &lt;table class=&quot;image&quot;&gt; &lt;caption align=&quot;bottom&quot;&gt;Last.fm music progression&lt;/caption&gt; &lt;tr&gt;&lt;td&gt;&lt;img src=&quot;/img//lastfm-data.png&quot; alt=&quot;Last.fm music progression&quot; /&gt;&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; &lt;p&gt;It occurred to me that I may use too many apps. For some reason, I feel the need to obsessively monitor, track and quantify every recordable aspect of my...</content>
  </entry>
  
  <entry>

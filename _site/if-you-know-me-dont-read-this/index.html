@@ -109,7 +109,7 @@
     </nav>
 
 
- 
+	
     <script>
     $(window).bind("load", function() {
        $.getScript('/js/social.js', function() {});
@@ -141,7 +141,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
-			<p>I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too much to not recognise when <a href="javascript:void(0);" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Good lord, stop clicking these links!"><em>“21 unusual uses of cheese - you wouldn’t believe #20”</em></a> will be a pile of garbage. I’m looking at you, Buzzfeed.</p>
+			<div class="content">
+				<p>I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too much to not recognise when <a href="javascript:void(0);" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Good lord, stop clicking these links!"><em>“21 unusual uses of cheese - you wouldn’t believe #20”</em></a> will be a pile of garbage. I’m looking at you, Buzzfeed.</p>
 
 <p>So anyway, on with the show. A few days ago I was trying to get Facebook sharing working with my blog. Turns out it’s harder than I thought it would be to get the Facebook SDK working with Jekyll. Maybe I’ll impart my wisdom and do a separate blog post about it at some point. It’s pretty specific and definitely won’t apply to most of my readers, but the <a href="https://www.google.co.uk/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#safe=off&amp;q=facebook+sharing+not+working+with+jekyll">demand is definitely there</a>. Getting Facebook sharing to work 100% was pretty difficult to do, and as a result I was doing lots of tests by attempting to share <a href="http://smittey.co.uk/your-search-returned-no-matches/">a blog post</a> to my own Facebook timeline, making sure to change the privacy to share with ‘only me’. I should add, it was easy to get Facebook sharing to work, but it was refusing to add those nice little preview images along with it, so pedantic me was trying for two days to get this to work. At the end of day two it FINALLY worked. I saved my progress, closed my laptop, tried to ignore the fact that it was now 2am, and I went to bed.</p>
 
@@ -156,37 +157,38 @@ Mostly because that’s just my project in a nutshell (No stack overflow etc)”
 
 <p>I don’t write for my friends. As previously implied. So despite the fact that a few people that I know got something out of reading it, the thought of sharing my own stuff in an act of shameless self-promotion still made me cringe. It probably shouldn’t, but it did. Perhaps this accident is positive. The quick band aid rip which will make me feel more comfortable with people I know having a deeper insight into what makes me tick as a person and a programmer.</p>
 
-			
-			<div id="signature-container">
-				<span id="signature-avatar">				
-					<img class="avatar img-circle" style="width:100%; width:auto;" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
-				</span>
-				<span id="signature-text">
-					<div class="text">
-						<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on April 23rd, 2016</p>
-						<br/>
-											
-						<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
-						
-						<div class="search">
-							<form action="//smittey.us13.list-manage.com/subscribe/post?u=9aae1cacdc35a4c57db2d27ca&amp;id=e199dadb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div class="search">
-									<input type="text" name="EMAIL" id="mce-EMAIL" class="form-control input-sm" maxlength="64" placeholder="Type your email to subscribe!">
-									<input type="image" class="button" name="subscribe" id="mc-embedded-subscribe" src="http://i.imgur.com/57uJR8n.gif"/>
-								</div>
-								<div style="position: absolute; left: -5000px;" aria-hidden="true">
-									<input type="text" name="b_9aae1cacdc35a4c57db2d27ca_e199dadb52" tabindex="-1" value="">
-								</div>
+				
+				<div id="signature-container">
+					<span id="signature-avatar">				
+						<img class="avatar img-circle" style="width:100%; width:auto;" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+					</span>
+					<span id="signature-text">
+						<div class="text">
+							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on April 23rd, 2016</p>
+							<br/>
+												
+							<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
+							
+							<div class="search">
+								<form action="//smittey.us13.list-manage.com/subscribe/post?u=9aae1cacdc35a4c57db2d27ca&amp;id=e199dadb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div class="search">
+										<input type="text" name="EMAIL" id="mce-EMAIL" class="form-control input-sm" maxlength="64" placeholder="Type your email to subscribe!">
+										<input type="image" class="button" name="subscribe" id="mc-embedded-subscribe" src="http://i.imgur.com/57uJR8n.gif"/>
+									</div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_9aae1cacdc35a4c57db2d27ca_e199dadb52" tabindex="-1" value="">
+									</div>
 
-							</form>
+								</form>
+							</div>
+							
+							<div style="clear: both;"></div>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
+							<div class="fb-share-button" data-href="http://smittey.co.uk//if-you-know-me-dont-read-this//" data-layout="button" data-mobile-iframe="true"></div>
+							<div class="g-plus" data-action="share" data-annotation="none"></div>
 						</div>
-						
-						<div style="clear: both;"></div>
-						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
-						<div class="fb-share-button" data-href="http://smittey.co.uk//if-you-know-me-dont-read-this//" data-layout="button" data-mobile-iframe="true"></div>
-						<div class="g-plus" data-action="share" data-annotation="none"></div>
-					</div>
-				</span>
+					</span>
+				</div>
 			</div>
 			<div style="clear: both;"></div>
 

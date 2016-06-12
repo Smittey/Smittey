@@ -139,15 +139,25 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+.content {
+	padding-top: 50px;
+}
+
 .intro-header {
   background-color: #808080;
-  background: no-repeat center center;
-  background-attachment: scroll;
+  /*background-attachment: scroll;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  
+  	background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment:fixed;
+	
+	
+
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
