@@ -4,7 +4,7 @@
      <title>Return Rambling;</title>
      <link href="http://Smittey.co.uk/atom.xml" rel="self"/>
      <id>http://Smittey.co.uk</id>
-     <updated>2016-06-12T23:02:24+01:00</updated>
+     <updated>2016-06-16T20:17:17+01:00</updated>
      
      <author>
        <name>Andy Smith</name>
@@ -14,9 +14,19 @@
 
  
  <entry>
+   <title>Test Post, Please Ignore</title>
+   <link href="http://Smittey.co.uk/test-post-please-ignore/"/>
+   <id>http://Smittey.co.uk/test-post-please-ignore</id>
+   <updated>2016-06-16T00:00:00+01:00</updated>
+   <author>Andy Smith</author>
+   <content type="html">&lt;p&gt;Test post please ignore&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Backend vs Frontend Learning Curves</title>
-   <link href="http://Smittey.co.uk/backend-vs-frontend-learning-curves/"/>
-   <id>http://Smittey.co.uk/backend-vs-frontend-learning-curves</id>
+   <link href="http://Smittey.co.uk/backend-vs-frontend-learning-curves-Copy/"/>
+   <id>http://Smittey.co.uk/backend-vs-frontend-learning-curves - Copy</id>
    <updated>2016-06-12T00:00:00+01:00</updated>
    <author>Andy Smith</author>
    <content type="html">&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and...</content>

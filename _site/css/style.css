@@ -40,6 +40,12 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+
+hr {
+	line-height:10px;
+	color:#ff00ff;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
