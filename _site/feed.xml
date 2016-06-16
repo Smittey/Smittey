@@ -7,19 +7,19 @@
     <atom:link href="http://Smittey.co.uk/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Test Post, Please Ignore</title>
+        <title>Even Newer Test Post, Please Ignore</title>
         <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
 </description>
-        <pubDate>Thu, 16 Jun 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/test-post-please-ignore/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/test-post-please-ignore/</guid>
+        <pubDate>Thu, 16 Jun 2016 13:35:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/even-newer-test-post-please-ignore/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/even-newer-test-post-please-ignore/</guid>
       </item>
     
       <item>
         <title>Newer Test Post, Please Ignore</title>
         <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
 </description>
-        <pubDate>Thu, 16 Jun 2016 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 16 Jun 2016 13:00:00 +0100</pubDate>
         <link>http://Smittey.co.uk/newer-test-post-please-ignore/</link>
         <guid isPermaLink="true">http://Smittey.co.uk/newer-test-post-please-ignore/</guid>
       </item>
@@ -28,9 +28,18 @@
         <title>New Test Post, Please Ignore</title>
         <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
 </description>
-        <pubDate>Thu, 16 Jun 2016 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 16 Jun 2016 12:00:00 +0100</pubDate>
         <link>http://Smittey.co.uk/new-test-post-please-ignore/</link>
         <guid isPermaLink="true">http://Smittey.co.uk/new-test-post-please-ignore/</guid>
+      </item>
+    
+      <item>
+        <title>Test Post, Please Ignore</title>
+        <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Jun 2016 11:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/test-post-please-ignore/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/test-post-please-ignore/</guid>
       </item>
     
       <item>
