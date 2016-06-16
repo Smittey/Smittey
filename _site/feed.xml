@@ -1,108 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Return Rambling;</title>
+    <description></description>
+    <link>http://Smittey.co.uk</link>
+    <atom:link href="http://Smittey.co.uk/feed.xml" rel="self" type="application/rss+xml" />
     
-     <title>Return Rambling;</title>
-     <link href="http://Smittey.co.uk/atom.xml" rel="self"/>
-     <id>http://Smittey.co.uk</id>
-     <updated>2016-06-16T20:17:17+01:00</updated>
-     
-     <author>
-       <name>Andy Smith</name>
-       <uri>http://Smittey.co.uk</uri>
-       <email>andy@andysmith.me</email>
-     </author>
+      <item>
+        <title>Test Post, Please Ignore</title>
+        <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Jun 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/test-post-please-ignore/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/test-post-please-ignore/</guid>
+      </item>
+    
+      <item>
+        <title>New Test Post, Please Ignore</title>
+        <description>&lt;p&gt;Test post please ignore&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Jun 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/new-test-post-please-ignore/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/new-test-post-please-ignore/</guid>
+      </item>
+    
+      <item>
+        <title>Backend vs Frontend Learning Curves</title>
+        <description>&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and C technologies.&lt;/p&gt;
 
- 
- <entry>
-   <title>Test Post, Please Ignore</title>
-   <link href="http://Smittey.co.uk/test-post-please-ignore/"/>
-   <id>http://Smittey.co.uk/test-post-please-ignore</id>
-   <updated>2016-06-16T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Test post please ignore&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Backend vs Frontend Learning Curves</title>
-   <link href="http://Smittey.co.uk/backend-vs-frontend-learning-curves-Copy/"/>
-   <id>http://Smittey.co.uk/backend-vs-frontend-learning-curves - Copy</id>
-   <updated>2016-06-12T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and...</content>
- </entry>
- 
- <entry>
-   <title>Silicon Milkroundabout 11 Round-up</title>
-   <link href="http://Smittey.co.uk/silicon-milkroundabout-11-round-up/"/>
-   <id>http://Smittey.co.uk/silicon-milkroundabout-11-round-up</id>
-   <updated>2016-05-08T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Tech moves fast. No duh, right?&lt;/p&gt; &lt;p&gt;This is not new information, and I was fully aware of the momentum of the industry that I’m in. This is also not my first time at Silicon Milkaroundabout. Silicon Milkroundabout (which I’ll shorthand to SMR) is a tech job fair which boasts to...</content>
- </entry>
- 
- <entry>
-   <title>Anybody On?</title>
-   <link href="http://Smittey.co.uk/anybody-on/"/>
-   <id>http://Smittey.co.uk/anybody-on</id>
-   <updated>2016-05-07T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Ever been curious if anybody is currently looking at your website, watching your YouTube video, or on using your mobile app RIGHT NOW, but can’t be bothered to open up and sign into Google Analytics?&lt;/p&gt; &lt;p&gt;I’ve recently launched this blog, my &lt;a href=&quot;http://www.andysmith.me&quot; target=&quot;_blank&quot;&gt;portfolio website&lt;/a&gt; and &lt;a href=&quot;https://github.com/Smittey?tab=repositories&quot; target=&quot;_blank&quot;&gt;a few...</content>
- </entry>
- 
- <entry>
-   <title>Datarize My Life</title>
-   <link href="http://Smittey.co.uk/datarize-my-life/"/>
-   <id>http://Smittey.co.uk/datarize-my-life</id>
-   <updated>2016-05-01T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt; &lt;table class=&quot;image&quot;&gt; &lt;caption align=&quot;bottom&quot;&gt;Last.fm music progression&lt;/caption&gt; &lt;tr&gt;&lt;td&gt;&lt;img src=&quot;/img//lastfm-data.png&quot; alt=&quot;Last.fm music progression&quot; /&gt;&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; &lt;p&gt;It occurred to me that I may use too many apps. For some reason, I feel the need to obsessively monitor, track and quantify every recordable aspect of my...</content>
- </entry>
- 
- <entry>
-   <title>Raspberry Pi and the Impulse Buy</title>
-   <link href="http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/"/>
-   <id>http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy</id>
-   <updated>2016-04-29T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;When I moved out of my family home I wasn’t quite aware of the challenge at hand. I owned a lot of stuff. Like, more than I thought I did. Arguably more than a lot of my friends did. I’m not saying this in a pissing-contest kind of way, no....</content>
- </entry>
- 
- <entry>
-   <title>If you know me, don't read this</title>
-   <link href="http://Smittey.co.uk/if-you-know-me-dont-read-this/"/>
-   <id>http://Smittey.co.uk/if-you-know-me-dont-read-this</id>
-   <updated>2016-04-23T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too...</content>
- </entry>
- 
- <entry>
-   <title>Keeping Fit as a Programmer</title>
-   <link href="http://Smittey.co.uk/keeping-fit-as-a-programmer/"/>
-   <id>http://Smittey.co.uk/keeping-fit-as-a-programmer</id>
-   <updated>2016-04-13T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;Three years ago I was the fittest and strongest I have ever been. I was on my placement year during University, lived five minutes from where I worked, and was going to the gym four-five times per week. My diet was incredibly strict and aside from the fact that I...</content>
- </entry>
- 
- <entry>
-   <title>Your search returned no matches.</title>
-   <link href="http://Smittey.co.uk/your-search-returned-no-matches/"/>
-   <id>http://Smittey.co.uk/your-search-returned-no-matches</id>
-   <updated>2016-04-05T00:00:00+01:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;I’m lucky enough to work with a lot of talented developers with a wealth of experience and many years under their belts. Most of these guys have been programming since long before I was even born and joke about Visual Basic and Fortran 90 being cutting edge when I was...</content>
- </entry>
- 
- <entry>
-   <title>Learning to be Creative</title>
-   <link href="http://Smittey.co.uk/learning-to-be-creative/"/>
-   <id>http://Smittey.co.uk/learning-to-be-creative</id>
-   <updated>2016-03-20T00:00:00+00:00</updated>
-   <author>Andy Smith</author>
-   <content type="html">&lt;p&gt;I’ve been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I’m not a very creative person....</content>
- </entry>
- 
+</description>
+        <pubDate>Sun, 12 Jun 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/backend-vs-frontend-learning-curves-Copy/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/backend-vs-frontend-learning-curves-Copy/</guid>
+      </item>
+    
+      <item>
+        <title>Silicon Milkroundabout 11 Round-up</title>
+        <description>&lt;p&gt;Tech moves fast. No duh, right?&lt;/p&gt;
 
-</feed>
+</description>
+        <pubDate>Sun, 08 May 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/silicon-milkroundabout-11-round-up/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/silicon-milkroundabout-11-round-up/</guid>
+      </item>
+    
+      <item>
+        <title>Anybody On?</title>
+        <description>&lt;p&gt;Ever been curious if anybody is currently looking at your website, watching your YouTube video, or on using your mobile app RIGHT NOW, but can’t be bothered to open up and sign into Google Analytics?&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 May 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/anybody-on/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/anybody-on/</guid>
+      </item>
+    
+      <item>
+        <title>Datarize My Life</title>
+        <description>&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 May 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/datarize-my-life/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/datarize-my-life/</guid>
+      </item>
+    
+      <item>
+        <title>Raspberry Pi and the Impulse Buy</title>
+        <description>&lt;p&gt;When I moved out of my family home I wasn’t quite aware of the challenge at hand. I owned a lot of stuff. Like, more than I thought I did. Arguably more than a lot of my friends did. I’m not saying this in a pissing-contest kind of way, no. More of a “with this kind of behaviour I’m going to end up on a channel 4 documentary”, sort of way.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/</guid>
+      </item>
+    
+      <item>
+        <title>If you know me, don&#39;t read this</title>
+        <description>&lt;p&gt;I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too much to not recognise when &lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;focus&quot; data-content=&quot;Good lord, stop clicking these links!&quot;&gt;&lt;em&gt;“21 unusual uses of cheese - you wouldn’t believe #20”&lt;/em&gt;&lt;/a&gt; will be a pile of garbage. I’m looking at you, Buzzfeed.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/if-you-know-me-dont-read-this/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/if-you-know-me-dont-read-this/</guid>
+      </item>
+    
+      <item>
+        <title>Keeping Fit as a Programmer</title>
+        <description>&lt;p&gt;Three years ago I was the fittest and strongest I have ever been. I was on my placement year during University, lived five minutes from where I worked, and was going to the gym four-five times per week. My diet was incredibly strict and aside from the fact that I drank more alcohol than during this working year than the University years combined, my lifestyle couldn’t have been better.&lt;/p&gt;
+
+&lt;p&gt;Once the year was finished, I returned to University to complete my degree in Computer Science and continued to frequent the gym, albeit not as much, and drink far less. Which to me seemed a bit backwards, but on with the story. Despite spending on the up of 10 hours per day sitting at a computer of some description I wasn’t suffering from any discomfort such as back pain; something that course-mates and old workmates regularly complained about. I always put this down to the fact that I had a very strong core as a result of doing (by this point) two solid years of weight training at the gym. Since then I’ve returned to the same company as a full Graduate and onto a different project situated in a different office more than an hours drive away. This has meant that the time I’ve been able to dedicate to personal fitness tanked spectacularly and caused me to massively fall out of routine. Within the last six months the amount of discomfort I’ve suffered (particularly in my back) has went from exactly zero to at least a once per week affair.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 13 Apr 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/keeping-fit-as-a-programmer/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/keeping-fit-as-a-programmer/</guid>
+      </item>
+    
+      <item>
+        <title>Your search returned no matches.</title>
+        <description>&lt;p&gt;I’m lucky enough to work with a lot of talented developers with a wealth of experience and many years under their belts. Most of these guys have been programming since long before I was even born and joke about Visual Basic and Fortran 90 being cutting edge when I was just learning how to talk.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 05 Apr 2016 00:00:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/your-search-returned-no-matches/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/your-search-returned-no-matches/</guid>
+      </item>
+    
+      <item>
+        <title>Learning to be Creative</title>
+        <description>&lt;p&gt;I’ve been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I’m not a very creative person. That was slightly contradictory, I’ll rephrase… I’m not a naturally creative person; I just want to be creative.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+        <link>http://Smittey.co.uk/learning-to-be-creative/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/learning-to-be-creative/</guid>
+      </item>
+    
+  </channel>
+</rss>
