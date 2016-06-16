@@ -2,7 +2,9 @@
 layout: post
 title: Using Meteor Offline	
 sub-title: Tips and tricks to workaround package management offline
-posted-on: June 12th, 2016
+posted-on: June 17th, 2016
+date: 2016-06-17 00:30:00 +1000
+
 post-img: post-using-meteor-offline.jpg
 ---
 

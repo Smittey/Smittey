@@ -3,6 +3,8 @@ layout: post
 title: Backend vs Frontend Learning Curves	
 sub-title: Noted differences between learning frontend and backend technologies
 posted-on: June 12th, 2016
+date: 2016-06-12 22:10:00 +1000
+
 post-img: post-backend-vs-frontend.jpg
 ---
 
