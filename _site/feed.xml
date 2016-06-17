@@ -7,16 +7,6 @@
     <atom:link href="http://Smittey.co.uk/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Using Meteor Offline</title>
-        <description>&lt;p&gt;Most modern web frameworks use package managers. It’s almost unavoidable when building larger projects or projects that use modern concepts or components. They allow for easier development where dependency trees are managed along with versions and updates. Unless of course you’re working offline. Then they’re a pain in the arse.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 16 Jun 2016 15:30:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/using-meteor-offline/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/using-meteor-offline/</guid>
-      </item>
-    
-      <item>
         <title>Backend vs Frontend Learning Curves</title>
         <description>&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and C technologies.&lt;/p&gt;
 
