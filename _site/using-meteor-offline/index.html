@@ -10,15 +10,15 @@
     <meta name="author" content="Andy Smith">
 	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
 	
-	<meta property="og:url"                content="http://smittey.co.uk//backend-vs-frontend-learning-curves-Copy//">              
+	<meta property="og:url"                content="http://smittey.co.uk//using-meteor-offline//">              
 	<meta property="og:type"               content="article">
-	<meta property="og:title"              content="Backend vs Frontend Learning Curves">
-	<meta property="og:description"        content="Noted differences between learning frontend and backend technologies">
-	<meta property="og:image"              content="http://smittey.co.uk/img/post-backend-vs-frontend.jpg">
+	<meta property="og:title"              content="Using Meteor Offline">
+	<meta property="og:description"        content="Tips and tricks to workaround package management offline">
+	<meta property="og:image"              content="http://smittey.co.uk/img/post-using-meteor-offline.jpg">
 	<meta property="fb:app_id"             content="1748027778767786">
 
 
-	<title>  Backend vs Frontend Learning Curves |  Blog </title>
+	<title>  Using Meteor Offline |  Blog </title>
 	
     <link href="/css//bootstrap.min.css" rel="stylesheet">
 
@@ -124,14 +124,14 @@
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('/img//post-backend-vs-frontend.jpg')">
+<header class="intro-header" style="background-image: url('/img//post-using-meteor-offline.jpg')">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="post-heading">
-					<h1>Backend vs Frontend Learning Curves</h1>
-					<h2 class="subheading">Noted differences between learning frontend and backend technologies</h2>
-					<span class="meta">June 12th, 2016</span>
+					<h1>Using Meteor Offline</h1>
+					<h2 class="subheading">Tips and tricks to workaround package management offline</h2>
+					<span class="meta">June 17th, 2016</span>
 				</div>
 			</div>
 		</div>
@@ -142,38 +142,52 @@
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
 			<div class="content">
-				<p>I’m a backend software developer by education and trade. Sure, I <a href="http://andysmith.me/#experience" target="_blank">dabble in full-stack</a> and have cobbled together a few <a href="http://andysmith.me/#projects" target="_blank">frontend projects</a> in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and C technologies.</p>
+				<p>Most modern web frameworks use package managers. It’s almost unavoidable when building larger projects or projects that use modern concepts or components. They allow for easier development where dependency trees are managed along with versions and updates. Unless of course you’re working offline. Then they’re a pain in the arse.</p>
 
-<p>One of my nerdier hobbies is data visualisation. If you’ve read my <a href="http://smittey.co.uk/datarize-my-life/" target="_blank">blog post</a> on this rather obsessive side of my personality, you’ll have realised that I get a kick out of visualising large data-sets. Especially if it’s data about myself. <em>Quiet, it’s my hobby. I’m allowed to be egotistical</em>. Through this, I’ve dabbled with some JavaScript graphing libraries such as <a href="https://d3js.org/" target="_blank">d3.js</a> and word got out at work that I have <em>some</em> frontend knowledge. I was contacted by greenfield proof-of-concept project, and, well, I’m now UI lead focusing on data visualisation. Funny how things work out. I was, and honestly still am very excited about this opportunity and have a fairly large amount of responsibility. I also love learning new and/or innovative technologies to add to my tool belt. Part of my responsibility in this position is having influence over what specific technologies to use in various situations.</p>
+<p>A lot of package managers allow you to download a mirror of the central repository for offline dependency management, such as <a href="https://www.npmjs.com/">npm</a>. And despite npm being encompassed within Meteor, the Meteor framework doesn’t allow for an offline mirror. At least not cleanly. I’ve recently been required to use Meteor in an offline environment with no access to the Internet, so my Meteor journey stopped and started at <code class="highlighter-rouge">meteor add &lt;package&gt;</code>. Errors. Errors everywhere. <em>“Are you behind a proxy?”</em>,  <em>“Are you offline?”</em>,  <em>“Cannot connect”</em>. It took a little while to figure out but here is how I install packages and their dependencies to a Meteor project that has no access to the Internet.</p>
 
-<p>The chosen frontend framework for development is MeteorJS. At times, the question has been asked if Meteor really is best suited for what we need it for. This prompted a lot of research into alternatives and the amount of alternatives is overwhelmingly great. Of the top 10 frontend technologies collected from the <a href="http://stackoverflow.com/research/developer-survey-2016" target="_blank">StackOverflow 2016 developer survey</a>, four of them alone are different flavours of JavaScript.</p>
+<h3 id="what-you-need">What you need</h3>
 
-<h3 id="the-problem">The problem</h3>
+<ul>
+  <li>An online machine with the Meteor framework installed</li>
+  <li>A removable storage device</li>
+</ul>
 
-<p>The development of the web as we know it now has only recently taken off in the last 10 years, whereas backend technologies such as Java have been maturing over a longer 20+ year span. I get backend job listing emails weekly and with the exception of a few, they almost exclusively ask for experience in Java or similar. This is without a filter. I have not specified that these are the types of jobs that I’m interested in. Of course there are other parts to their stacks, but the job would mean hitting the ground running without the steep learning curve of learning the codebase AND new languages. I’m generalising, and I’m aware that’s not always the case; merely an observation and from my own experience. New backend technologies aren’t released as regularly and don’t come with the same momentum as frontend. New frontend technologies are mainly offshoots of existing languages such as JavaScript that have allowed developers to experiment in a language that is almost guaranteed to be compatible with most modern browsers. This creates a problem. Frontend technologies are still finding their feet and the community is yet to settle on a favourite.</p>
-
-<p>Looking at job listings for frontend positions however definitely gives you a feeling of having <a href="https://en.wikipedia.org/wiki/Impostor_syndrome" target="_blank">Imposter Syndrome</a>. With frontend development moving as fast as it is, companies tech stacks are constantly chanaging. With my backend knowledge, I could zone in on my favourite company and the chances of them using something I already know such as Java is fairly high. Going for a frontend position however I wouldn’t be able to be as picky unless I wanted to take a gamble in frameworks or languages that I have no experience in. I have a somewhat firm grasp of a handful of frontend technologies but felt completely out of my depth when confronted with some listings. To name some of the JavaScript technologies alone, companies asked for strong experience in mixtures of the following:</p>
+<h3 id="what-to-do">What to do</h3>
 
 <ol>
-  <li>Backbone</li>
-  <li>Handlebars</li>
-  <li>Require</li>
-  <li>Knockout</li>
-  <li>Ember</li>
-  <li>React</li>
-  <li>Node.js</li>
-  <li>Angular</li>
+  <li>
+    <p>On your machine with online access and the Meteor framework installed, take an existing project or create a new meteor project:</p>
+
+    <p><code class="highlighter-rouge">meteor create sample-app</code></p>
+  </li>
+  <li>
+    <p>Add the package (and implicit dependencies) that you want to add to your offline project. For example d3.js</p>
+
+    <p><code class="highlighter-rouge">meteor add d3js:d3</code></p>
+  </li>
+  <li>
+    <p>At this point you need to head over to your Meteor installation directory e.g. <code class="highlighter-rouge">C:/Users/smittey/AppData/Local/.meteor/packages</code> and select the newly added packages (hint: sort by date descending to see most recently added). Take these packages and copy them to your removable storage device.</p>
+  </li>
+  <li>
+    <p>Make a note of the dependency additions to <code class="highlighter-rouge">&lt;project&gt;/.meteor/packages</code> e.g. <code class="highlighter-rouge">d3js:d3</code>.</p>
+  </li>
+  <li>
+    <p>Move the removable storage device to your offline machine and copy the packages into your local <code class="highlighter-rouge">C:/Users/.../AppData/Local/.meteor/packages</code> directory.</p>
+  </li>
+  <li>
+    <p>Create an <code class="highlighter-rouge">imports</code> folder in root of your project i.e. <code class="highlighter-rouge">&lt;project&gt;/imports</code> and copy in those same dependencies.</p>
+  </li>
+  <li>
+    <p>Take your packages file at <code class="highlighter-rouge">&lt;project&gt;/.meteor/packages</code> and add in the dependencies noted from <em>step 4</em>.</p>
+  </li>
+  <li>
+    <p>Run <code class="highlighter-rouge">meteor</code> and you should be good to go. The dependencies should be installed and final ties to the project should be created correctly.</p>
+  </li>
 </ol>
 
-<p>I know you could argue that these are built on the some underlying language, and JavaScript is JavaScript is JavaScript. But they all have their nuances. Their differences. Different purposes and it’s difficult to know what to ‘specialise’ in when next year a lot of these will be old news. Cast aside for something more modern and sexy (if I could describe it with such a word). The community almost definitely won’t settle on a favourite for years to come.</p>
+<p>Happy dependency managing!</p>
 
-<blockquote>
-  <p>In this world nothing can be said to be certain, except death, taxes, and more JavaScript frameworks.</p>
-</blockquote>
-
-<h3 id="reflections">Reflections</h3>
-
-<p>The best you can hope for is to keep up with trends and have an overall idea about what’s going on. Learn about ideas and best practises that might catch on and carry throughout multiple technologies and don’t expect to have experience in everything (or anything in my case) that your next frontend job asks of you.</p>
 
 				
 				<div id="signature-container">
@@ -182,7 +196,7 @@
 					</span>
 					<span id="signature-text">
 						<div class="text">
-							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on June 12th, 2016</p>
+							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on June 17th, 2016</p>
 							<br/>
 												
 							<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
@@ -202,7 +216,7 @@
 							
 							<div style="clear: both;"></div>
 							<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
-							<div class="fb-share-button" data-href="http://smittey.co.uk//backend-vs-frontend-learning-curves-Copy//" data-layout="button" data-mobile-iframe="true"></div>
+							<div class="fb-share-button" data-href="http://smittey.co.uk//using-meteor-offline//" data-layout="button" data-mobile-iframe="true"></div>
 							<div class="g-plus" data-action="share" data-annotation="none"></div>
 						</div>
 					</span>
@@ -214,10 +228,8 @@
 							
 			<div class="page-navigation">
 				
-					<a class="prev" href="/silicon-milkroundabout-11-round-up/">&laquo; Silicon Milkroundabout 11 Round-up</a>
+					<a class="prev" href="/backend-vs-frontend-learning-curves-Copy/">&laquo; Backend vs Frontend Learning Curves</a>
 				
-				
-					<a class="next" href="/using-meteor-offline/">Using Meteor Offline &raquo;</a>
 				
 				<div style="clear: both;"></div>
 			</div>	
