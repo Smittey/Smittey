@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Return Rambling;</title>
+    <title>Return Rambling</title>
     <description></description>
     <link>http://Smittey.co.uk</link>
     <atom:link href="http://Smittey.co.uk/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+		<author>Andy Smith</author>
         <title>Using Meteor Offline</title>
         <description>&lt;p&gt;Most modern web frameworks use package managers. It’s almost unavoidable when building larger projects or projects that use modern concepts or components. They allow for easier development where dependency trees are managed along with versions and updates. Unless of course you’re working offline. Then they’re a pain in the arse.&lt;/p&gt;
 
@@ -17,6 +18,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Backend vs Frontend Learning Curves</title>
         <description>&lt;p&gt;I’m a backend software developer by education and trade. Sure, I &lt;a href=&quot;http://andysmith.me/#experience&quot; target=&quot;_blank&quot;&gt;dabble in full-stack&lt;/a&gt; and have cobbled together a few &lt;a href=&quot;http://andysmith.me/#projects&quot; target=&quot;_blank&quot;&gt;frontend projects&lt;/a&gt; in a hobbyist sort of way, but the main chunk of my knowledge and experience lies in (but is not limited to) Java and C technologies.&lt;/p&gt;
 
@@ -27,6 +29,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Silicon Milkroundabout 11 Round-up</title>
         <description>&lt;p&gt;Tech moves fast. No duh, right?&lt;/p&gt;
 
@@ -37,6 +40,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Anybody On?</title>
         <description>&lt;p&gt;Ever been curious if anybody is currently looking at your website, watching your YouTube video, or on using your mobile app RIGHT NOW, but can’t be bothered to open up and sign into Google Analytics?&lt;/p&gt;
 
@@ -47,6 +51,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Datarize My Life</title>
         <description>&lt;p&gt;Hi, my name’s Andy and I’m a dataholic.&lt;/p&gt;
 
@@ -57,6 +62,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Raspberry Pi and the Impulse Buy</title>
         <description>&lt;p&gt;When I moved out of my family home I wasn’t quite aware of the challenge at hand. I owned a lot of stuff. Like, more than I thought I did. Arguably more than a lot of my friends did. I’m not saying this in a pissing-contest kind of way, no. More of a “with this kind of behaviour I’m going to end up on a channel 4 documentary”, sort of way.&lt;/p&gt;
 
@@ -67,6 +73,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>If you know me, don&#39;t read this</title>
         <description>&lt;p&gt;I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too much to not recognise when &lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;focus&quot; data-content=&quot;Good lord, stop clicking these links!&quot;&gt;&lt;em&gt;“21 unusual uses of cheese - you wouldn’t believe #20”&lt;/em&gt;&lt;/a&gt; will be a pile of garbage. I’m looking at you, Buzzfeed.&lt;/p&gt;
 
@@ -77,6 +84,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Keeping Fit as a Programmer</title>
         <description>&lt;p&gt;Three years ago I was the fittest and strongest I have ever been. I was on my placement year during University, lived five minutes from where I worked, and was going to the gym four-five times per week. My diet was incredibly strict and aside from the fact that I drank more alcohol than during this working year than the University years combined, my lifestyle couldn’t have been better.&lt;/p&gt;
 
@@ -89,6 +97,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Your search returned no matches.</title>
         <description>&lt;p&gt;I’m lucky enough to work with a lot of talented developers with a wealth of experience and many years under their belts. Most of these guys have been programming since long before I was even born and joke about Visual Basic and Fortran 90 being cutting edge when I was just learning how to talk.&lt;/p&gt;
 
@@ -99,6 +108,7 @@
       </item>
     
       <item>
+		<author>Andy Smith</author>
         <title>Learning to be Creative</title>
         <description>&lt;p&gt;I’ve been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I’m not a very creative person. That was slightly contradictory, I’ll rephrase… I’m not a naturally creative person; I just want to be creative.&lt;/p&gt;
 
