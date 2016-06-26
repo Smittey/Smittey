@@ -8,6 +8,17 @@
     
       <item>
 		<author>Andy Smith</author>
+        <title>Do you need a new job?</title>
+        <description>&lt;p&gt;Nobody should get too comfortable in their job, especially in the tech industry. Getting too comfortable normally means a decrease in learning. The learning curve has started to level off and you’ve become content. This may suit your situation, but it shouldn’t.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 26 Jun 2016 15:10:00 +0100</pubDate>
+        <link>http://Smittey.co.uk/do-you-need-a-new-job/</link>
+        <guid isPermaLink="true">http://Smittey.co.uk/do-you-need-a-new-job/</guid>
+      </item>
+    
+      <item>
+		<author>Andy Smith</author>
         <title>Using Meteor Offline</title>
         <description>&lt;p&gt;Most modern web frameworks use package managers. It’s almost unavoidable when building larger projects or projects that use modern concepts or components. They allow for easier development where dependency trees are managed along with versions and updates. Unless of course you’re working offline. Then they’re a pain in the arse.&lt;/p&gt;
 
