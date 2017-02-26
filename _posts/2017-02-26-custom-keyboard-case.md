@@ -41,7 +41,7 @@ _____________________
 1. I started by taking the keyboard to a hardware shop to ensure that I was buying wood of adequate size. Warning: This will attract strange looks from other shoppers.
 ![Measuring the keyboard against wood in the hardware shop](/{{ site.img }}post-{{ page.url | remove:'/' }}/01.jpg "Measuring the keyboard against wood in the hardware shop")
 
-2. I removed all of the keys from the board and pencilled an outline on the wood. This is the pilot line for when I do the routing. I made sure to indent this somewhat in case of a drastic error.
+2. I removed all of the keys from the board and penciled an outline on the wood. This is the pilot line for when I do the routing. I made sure to indent this somewhat in case of a drastic error.
 ![About to start measuring](/{{ site.img }}post-{{ page.url | remove:'/' }}/02.jpg "About to start measuring")
 
 3. I prepared the router and adjusted the height of the bit in order to get the desired depth in the wood.
@@ -95,10 +95,10 @@ _____________________
 19. This desperately needed sorting out. The cable hole is now a bit tidier!
 ![Cleaning up the cable hole](/{{ site.img }}post-{{ page.url | remove:'/' }}/19.jpg "Cleaning up the cable hole")
 
-20. Wiping the board down after the sanding. This remvoves all of the sawdust and general dirt from the wood in preparation for varnishing.
+20. Wiping the board down after the sanding. This removes all of the sawdust and general dirt from the wood in preparation for varnishing.
 ![Wiping the board](/{{ site.img }}post-{{ page.url | remove:'/' }}/20.jpg "Wiping the board")
 
-21. About to start the varnishing! I chose a coloured varnish because I couldn't justify spending money on wood stainer as well as varnish. This two in one seemed more sensible.
+21. About to start the varnishing! I chose a coloured varnish because I couldn't justify spending money on wood stain as well as varnish. This two in one seemed more sensible.
 ![About to start the varnishing](/{{ site.img }}post-{{ page.url | remove:'/' }}/21.jpg "About to start the varnishing")
 
 22. This turned out awful. I have to admit, I was pretty worried after I did this. I put it on wayyyyyy too thick, and thought it was too dark. It was just a good job that I did it in a place that would be hidden!
