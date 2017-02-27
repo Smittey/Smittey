@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Keyboard Case
-sub-title: My build log of making a custom oak keyboard case
+title: Building a Custom Keyboard Case
+sub-title: My build log of a custom oak keyboard case
 posted-on: January 26th, 2017
 date: 2017-01-10 00:00:00 -0000
 
