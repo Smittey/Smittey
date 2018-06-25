@@ -156,7 +156,7 @@
 
 <p><img src="/img//posts-git-privacy-img-binoculars.jpg" alt="git help" title="git help" /></p>
 
-<p>I bee lined straight for the companies website and started reading it. It occured to me that perhaps this was part of their plan all along; get their naturally curious demographic to spend their precious time reading about them. I for one barely even give LinkedIn recruiters the time of day unless they really stand out. I digress, this blog post isn’t about recruitment; it’s about privacy. I navigated to their F&amp;Q page, and funny enough I read “<em>How did we find you?</em>”. This is the answer that they gave:</p>
+<p>I beelined straight for the companies website and started reading it. It occured to me that perhaps this was part of their plan all along; get their naturally curious demographic to spend their precious time reading about them. I for one barely even give LinkedIn recruiters the time of day unless they really stand out. I digress, this blog post isn’t about recruitment; it’s about privacy. I navigated to their F&amp;Q page, and funny enough I read “<em>How did we find you?</em>”. This is the answer that they gave:</p>
 
 <blockquote>
   <p>We thought you might be wondering this! We saw your well written code on your Github repository. We cloned the repository and viewed the metadata for the commit.</p>
@@ -164,15 +164,14 @@
 
 <p>I immediately cloned one of the repos that I pushed to from work. This one in particular is code for an Outlook plugin that I wrote to help me and my peers with our jobs (I sometimes find some free/dead time to work on things). Sure enough…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git show --quiet HEAD
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git show --quiet HEAD
 commit 18ec67741a486090b16d50aeaeb13a667a03dcbf
 Author: Smith &lt;my@work-email.com&gt;
 Date:   Fri Sep 16 17:12:52 2016 +0100
 
     Initial commit. Working
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Let the record show that I’m not angry. This is a feature of git whereby the authors information (which was provided during git configuration) is placed in the commit object’s metadata. I’m more annoyed at myself for not considering it, and also irritated that this was shamelessly exploited by recruiting to cause unscolicited emails.</p>
 

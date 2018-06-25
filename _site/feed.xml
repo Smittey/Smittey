@@ -3,8 +3,8 @@
   <channel>
     <title>Return Rambling</title>
     <description></description>
-    <link>http://Smittey.co.uk</link>
-    <atom:link href="http://Smittey.co.uk/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
 		<author>Andy Smith</author>
@@ -12,9 +12,9 @@
         <description>&lt;p&gt;I’ve talked before about my weird hobbies and interests. I have a collection of random impulse buys that would probably baffle future archiologists if the earths population and records were almost completely erased. One of these interests is the wonderful land of mechanical keyboards.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://Smittey.co.uk/building-a-custom-keyboard-case/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/building-a-custom-keyboard-case/</guid>
+        <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/building-a-custom-keyboard-case/</link>
+        <guid isPermaLink="true">http://localhost:4000/building-a-custom-keyboard-case/</guid>
       </item>
     
       <item>
@@ -24,8 +24,8 @@
 
 </description>
         <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://Smittey.co.uk/git-privacy/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/git-privacy/</guid>
+        <link>http://localhost:4000/git-privacy/</link>
+        <guid isPermaLink="true">http://localhost:4000/git-privacy/</guid>
       </item>
     
       <item>
@@ -35,8 +35,8 @@
 
 </description>
         <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://Smittey.co.uk/top-10-developer-podcasts/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/top-10-developer-podcasts/</guid>
+        <link>http://localhost:4000/top-10-developer-podcasts/</link>
+        <guid isPermaLink="true">http://localhost:4000/top-10-developer-podcasts/</guid>
       </item>
     
       <item>
@@ -46,8 +46,8 @@
 
 </description>
         <pubDate>Mon, 01 Aug 2016 01:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/the-insecurities-of-a-full-stack-developer/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/the-insecurities-of-a-full-stack-developer/</guid>
+        <link>http://localhost:4000/the-insecurities-of-a-full-stack-developer/</link>
+        <guid isPermaLink="true">http://localhost:4000/the-insecurities-of-a-full-stack-developer/</guid>
       </item>
     
       <item>
@@ -57,8 +57,8 @@
 
 </description>
         <pubDate>Sun, 26 Jun 2016 15:10:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/do-you-need-a-new-job/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/do-you-need-a-new-job/</guid>
+        <link>http://localhost:4000/do-you-need-a-new-job/</link>
+        <guid isPermaLink="true">http://localhost:4000/do-you-need-a-new-job/</guid>
       </item>
     
       <item>
@@ -68,8 +68,8 @@
 
 </description>
         <pubDate>Fri, 17 Jun 2016 22:40:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/using-meteor-offline/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/using-meteor-offline/</guid>
+        <link>http://localhost:4000/using-meteor-offline/</link>
+        <guid isPermaLink="true">http://localhost:4000/using-meteor-offline/</guid>
       </item>
     
       <item>
@@ -79,8 +79,8 @@
 
 </description>
         <pubDate>Sun, 12 Jun 2016 23:10:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/backend-vs-frontend-learning-curves/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/backend-vs-frontend-learning-curves/</guid>
+        <link>http://localhost:4000/backend-vs-frontend-learning-curves/</link>
+        <guid isPermaLink="true">http://localhost:4000/backend-vs-frontend-learning-curves/</guid>
       </item>
     
       <item>
@@ -90,8 +90,8 @@
 
 </description>
         <pubDate>Sun, 08 May 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/silicon-milkroundabout-11-round-up/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/silicon-milkroundabout-11-round-up/</guid>
+        <link>http://localhost:4000/silicon-milkroundabout-11-round-up/</link>
+        <guid isPermaLink="true">http://localhost:4000/silicon-milkroundabout-11-round-up/</guid>
       </item>
     
       <item>
@@ -101,8 +101,8 @@
 
 </description>
         <pubDate>Sat, 07 May 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/anybody-on/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/anybody-on/</guid>
+        <link>http://localhost:4000/anybody-on/</link>
+        <guid isPermaLink="true">http://localhost:4000/anybody-on/</guid>
       </item>
     
       <item>
@@ -112,8 +112,8 @@
 
 </description>
         <pubDate>Sun, 01 May 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/datarize-my-life/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/datarize-my-life/</guid>
+        <link>http://localhost:4000/datarize-my-life/</link>
+        <guid isPermaLink="true">http://localhost:4000/datarize-my-life/</guid>
       </item>
     
       <item>
@@ -123,19 +123,19 @@
 
 </description>
         <pubDate>Fri, 29 Apr 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/raspberry-pi-and-the-impulse-buy/</guid>
+        <link>http://localhost:4000/raspberry-pi-and-the-impulse-buy/</link>
+        <guid isPermaLink="true">http://localhost:4000/raspberry-pi-and-the-impulse-buy/</guid>
       </item>
     
       <item>
 		<author>Andy Smith</author>
-        <title>If you know me, don&#39;t read this</title>
+        <title>If you know me, don't read this</title>
         <description>&lt;p&gt;I apologise for the clickbait-sounding title, but I guess in an intensely annoying way I’m just going to blend in with the rest of the Internet - which I hate. Not because I want to be different, but because I bloody hate clickbait. Perhaps I’m on the Internet far too much to not recognise when &lt;a href=&quot;javascript:void(0);&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;focus&quot; data-content=&quot;Good lord, stop clicking these links!&quot;&gt;&lt;em&gt;“21 unusual uses of cheese - you wouldn’t believe #20”&lt;/em&gt;&lt;/a&gt; will be a pile of garbage. I’m looking at you, Buzzfeed.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 23 Apr 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/if-you-know-me-dont-read-this/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/if-you-know-me-dont-read-this/</guid>
+        <link>http://localhost:4000/if-you-know-me-dont-read-this/</link>
+        <guid isPermaLink="true">http://localhost:4000/if-you-know-me-dont-read-this/</guid>
       </item>
     
       <item>
@@ -147,8 +147,8 @@
 
 </description>
         <pubDate>Wed, 13 Apr 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/keeping-fit-as-a-programmer/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/keeping-fit-as-a-programmer/</guid>
+        <link>http://localhost:4000/keeping-fit-as-a-programmer/</link>
+        <guid isPermaLink="true">http://localhost:4000/keeping-fit-as-a-programmer/</guid>
       </item>
     
       <item>
@@ -158,8 +158,8 @@
 
 </description>
         <pubDate>Tue, 05 Apr 2016 00:00:00 +0100</pubDate>
-        <link>http://Smittey.co.uk/your-search-returned-no-matches/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/your-search-returned-no-matches/</guid>
+        <link>http://localhost:4000/your-search-returned-no-matches/</link>
+        <guid isPermaLink="true">http://localhost:4000/your-search-returned-no-matches/</guid>
       </item>
     
       <item>
@@ -169,8 +169,8 @@
 
 </description>
         <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
-        <link>http://Smittey.co.uk/learning-to-be-creative/</link>
-        <guid isPermaLink="true">http://Smittey.co.uk/learning-to-be-creative/</guid>
+        <link>http://localhost:4000/learning-to-be-creative/</link>
+        <guid isPermaLink="true">http://localhost:4000/learning-to-be-creative/</guid>
       </item>
     
   </channel>

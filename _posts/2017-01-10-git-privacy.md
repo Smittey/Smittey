@@ -21,7 +21,7 @@ Going back to my point about revealing contact information, I have several diffe
 ![git help](/{{ site.img }}/posts-git-privacy-img-binoculars.jpg "git help")
 
 
-I bee lined straight for the companies website and started reading it. It occured to me that perhaps this was part of their plan all along; get their naturally curious demographic to spend their precious time reading about them. I for one barely even give LinkedIn recruiters the time of day unless they really stand out. I digress, this blog post isn't about recruitment; it's about privacy. I navigated to their F&Q page, and funny enough I read "_How did we find you?_". This is the answer that they gave:
+I beelined straight for the companies website and started reading it. It occured to me that perhaps this was part of their plan all along; get their naturally curious demographic to spend their precious time reading about them. I for one barely even give LinkedIn recruiters the time of day unless they really stand out. I digress, this blog post isn't about recruitment; it's about privacy. I navigated to their F&Q page, and funny enough I read "_How did we find you?_". This is the answer that they gave:
 
 >We thought you might be wondering this! We saw your well written code on your Github repository. We cloned the repository and viewed the metadata for the commit.
 
