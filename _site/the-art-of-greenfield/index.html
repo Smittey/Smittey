@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog by Andy Smity, a Software Developer based in the UK">
+    <meta name="author" content="Andy Smith">
+	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
+	
+	<meta property="og:url"                content="http://smittey.co.uk//the-art-of-greenfield//">              
+	<meta property="og:type"               content="article">
+	<meta property="og:title"              content="The Art of Greenfield">
+	<meta property="og:description"        content="What to think about when starting a brand new software project">
+	<meta property="og:image"              content="http://smittey.co.uk/img/post1-img.jpg">
+	<meta property="fb:app_id"             content="1748027778767786">
+
+
+	<title>  The Art of Greenfield |  Blog </title>
+	
+    <link href="/css//bootstrap.min.css" rel="stylesheet">
+
+    <link href="/css//style.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+	<!-- Theme JavaScript -->
+    <script src="/js/blog.js"></script>
+	
+	<!-- Scrolling Nav JavaScript -->
+	<script src="/js/jquery.easing.min.js"></script>
+
+	<!-- Misc JavaScript -->
+	<script type="text/javascript" src="/js/main.js"></script>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script>
+	
+	var devCookie = "my websites cookie=123";
+	if (document.cookie.indexOf(devCookie) === -1) 
+	{
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74354041-2', 'auto');
+		ga('send', 'pageview');
+	}
+
+
+
+	</script>
+	
+</head>
+<body>
+ 
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Smittey.co.uk</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://www.andysmith.me">Personal Website</a>
+                    </li>
+					
+					<li>
+						<a href="/about/">About</a>
+					</li>
+					
+					<li>
+						<a href="/contact/">Contact</a>
+					</li>
+					
+					<li>
+						<a href="/feed.xml"></a>
+					</li>
+					
+					<li>
+						<a href="/"></a>
+					</li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+	
+    <script>
+    $(window).bind("load", function() {
+       $.getScript('/js/social.js', function() {});
+    });
+</script>
+
+<div id="fb-root"></div>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('/img//post1-img.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>The Art of Greenfield</h1>
+					<h2 class="subheading">What to think about when starting a brand new software project</h2>
+					<span class="meta">June 27th, 2018</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
+			<div class="content">
+				<blockquote>
+  <p><em>“If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilisation.”</em><br />
+~ Gerald Weinberg</p>
+</blockquote>
+
+<p>Software is everywhere. Broadly speaking, successful companies are either technology-first that know how to market ‘x’ well, or currently sell ‘y’ and are learning how to utilise software to keep up with the market.</p>
+
+<p>Where does this software come from? Applications are being created every day for the companies in both of the above categories. They often will require new features, upgrades, patches, and sometimes pivots. The lifespan of these applications from birth to maintenance means that they fit in one of the following categories: <strong>Greenfield</strong> or <strong>Brownfield</strong>.</p>
+
+<p>A projects long-term success can be aided by a well thought out project plan and solid ground-work.</p>
+
+<blockquote>
+  <p><em>“Before software can be reusable it first has to be usable.”</em>
+~ Ralph Johnson”</p>
+</blockquote>
+
+<hr />
+
+<h2 id="what-is-brownfield">What is Brownfield?</h2>
+
+<p>Brownfield projects is analogous to building on a brown field where work has already been done with building blocks or infrastructure already in place. It is much more common to find yourself joining a team on a Brownfield project rather than a Greenfield.</p>
+
+<p>Some examples of Brownfield software projects are:</p>
+
+<ol>
+  <li>Changing the functionality of the code to enhance the performance of an application</li>
+  <li>Adding a new feature to pre-existing software</li>
+  <li>Upgrading the codebase</li>
+</ol>
+
+<hr />
+
+<h2 id="what-is-greenfield">What is Greenfield?</h2>
+
+<p>Greenfield, conversely, is analogous to building on a green field without previous buildings or infrastructure, are typically <em>more</em> free of constraints. The term describes a situation where no other development has taken place, so normally there is a greater degree of freedom granted to the creators and founding members.</p>
+
+<p>Some examples of Greenfield software projects are:</p>
+
+<ul>
+  <li>Startups</li>
+  <li>New tools</li>
+  <li>Research projects</li>
+  <li>Prototypes</li>
+  <li>Proof of concepts</li>
+</ul>
+
+<p>What does this mean for brand new software projects?</p>
+
+<p><img src="https://www.biography.com/.image/ar_16:9,c_fill,cs_srgb,fl_progressive,g_faces:center,q_auto:good,w_768/MTMwMjk0MzE2NzE0MjAyMzg2/braveheartjpg.jpg" alt="Freedom" /></p>
+
+<h5 id="legacy-code-what">Legacy Code, What?</h5>
+<p>Perhaps the biggest impact this has on a project, for better or for worse, is <strong>there is no legacy code to deal with</strong>. Nobody can write clearer code (to you) than you can and trying to put yourself in the psychotic mindset of whoever wrote the previous implementation can often be difficult.</p>
+
+<h5 id="technologies-languages-frameworks">Technologies, Languages, Frameworks</h5>
+<p>New project means a blank slate. New language, new framework, new infrastructure! It isn’t <em>always</em> true that you’ll have influence over these and in my experience it is sometimes pre-decided by the client or management. It is an exciting thought though, right? You obviously want be sensible with this and with great power comes great responsibility. You probably don’t want to use a sledgehammer to crack a walnut. Make sensible decisions and considerations. At the very least use a current/supported version of whatever you choose.</p>
+
+<h5 id="programming-and-management-techniques">Programming and Management Techniques</h5>
+<p>Techniques are constantly developing and being adapted to the ever-evolving tech landscape. The chances are that during your last brownfield project, the delivery and management of an agile project for example will have evolved from an ape to a <em>slightly</em> more human ape. Similarly, programming techniques such as patterns and build pipelines are constantly being refined. In a greenfield landscape it is far easier to set a standard than change it in a late-stage brownfield.</p>
+
+<p>You can’t teach an old project new tricks. Sometimes. Unless you’re a wave-maker. And want to be disliked. It will be an uphill battle.</p>
+
+<h5 id="freedom-to-determine-scope">Freedom to determine scope</h5>
+<p>The early stages of any project are always crucial to determining and agreeing scope with stakeholders. Unless the project is being delivered in an agile way (it’s 2018 - it <em>probably</em> should be), over-promising and under-delivering can be a big source of pain with longer running Brownfield projects. Technical debt can be large.</p>
+
+<h5 id="select-the-founding-fathers">Select the Founding Fathers</h5>
+<p>Ok, so not everybody will have a say in this one. However, those chosen at the beginning of the project will play an important part in shaping and carving out best practise as well as the foundations.</p>
+
+<hr />
+
+<h2 id="your-greenfield-design">Your Greenfield Design</h2>
+
+<p><img src="https://images.pexels.com/photos/374079/pexels-photo-374079.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Freedom" /></p>
+
+<p>This is important. Shortcomings or lack of care and consideration in certain areas early in the project could linger or manifest into big hairy beasts. You have the control (and after this post: the knowledge) to shape the project and adopt best practise in many different areas.</p>
+
+<h3 id="programming-approach">Programming Approach</h3>
+<p>The first merge to the codebase is one of the most important. It sets the precedence and standard; a guide for how to move forward. Agree with your team the approach you’re taking.</p>
+
+<h5 id="process">Process</h5>
+<p>Are you doing BDD? TDD? ATDD? Follow and enforce it. An established way of working early on will stick better than an adapted way of working.</p>
+
+<h5 id="branching-model">Branching Model</h5>
+<p>Agree on it. Some teams prefer Master to be left <strong>well</strong> alone and contain only released versions. Some prefer to push little and often to Master with tagged releases. Decide that before the first merge. Your tree will be cleaner and easier to follow and track changes.</p>
+
+<h5 id="best-practise">Best practise</h5>
+<p>Style is important. Nobody likes looking at files with every permutation of inline vs new line braces, inline vs new line parameters, spaces vs tabs etc… Enforce a linter. Most come with (in addition to many analysis benefits) the ability to complain until you comply. Learn to love the linter, even if this is through Stockholm syndrome.</p>
+
+<h5 id="pull-requests">Pull Requests</h5>
+<p>Where possible, everything should be code-reviewed and pull requests should be created accordingly. This isn’t always easy in the early stages of a project where resources may be sparse, but use best efforts.</p>
+
+<h5 id="cicd">CI/CD</h5>
+<p>Automation is key. There is always a time spike for this setup, but early automation could save you a lot of time in the long run. Your first build MVP should be HelloWorld deployed to your environment. Once this is known to work then it can be developed more rapidly from there.</p>
+
+<h3 id="management-approach">Management approach</h3>
+<p>How you manage your team and the project is just as important as the code that your team is producing. Set the standard early and stick with it. Effort should be made to mitigate against time lost for developers by good management and the facilitation of useful tools.</p>
+
+<h5 id="delivery-approach">Delivery approach</h5>
+<p>How are you planning on delivering the project? Whether this is Waterfall, Agile, Scrum, Kanban or lean, one size certainly does not fit all and this should be selected accordingly.</p>
+
+<h5 id="backlog">Backlog</h5>
+<p>A well defined backlog with a broken down list of tasks that make sense to the developer should be in place. This can and should be created in collaboration with key members of the development team and actively maintained to reflect actuals and known time scales.</p>
+
+<h3 id="shared-approach">Shared approach</h3>
+
+<h5 id="documentation">Documentation</h5>
+<p>This is a shared <del>burden</del> responsibility between developers and management, but both parties need to ensure that the relevant information is available. From a management perspective, it should be clear from the beginning what the requirements are for the project/phase. From a technical standpoint, developers should ensure that documentation exists from the beginning with regards to project set up, code discovery, evolving architecture, and commented code.</p>
+
+<blockquote>
+  <p><em>“Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else”</em> 
+~ Eagleson’s law</p>
+</blockquote>
+
+<hr />
+
+<h2 id="reflections">Reflections</h2>
+
+<p>Greenfield projects are a brilliant thing to be involved with. They aren’t as common as Brownfield and can be a White Whale for some developers. Your involvement in this kind of project requires discipline and a well thought out plan. With great power comes great responsibility but the reward of seeing a project grow from the ground up to it’s first deliverable is worth the effort.</p>
+
+
+				
+				<div id="signature-container">
+					<span id="signature-avatar">				
+						<img class="avatar img-circle" style="width:100%; width:auto;" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+					</span>
+					<span id="signature-text">
+						<div class="text">
+							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on June 27th, 2018</p>
+							<br/>
+												
+							<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
+							
+							<div class="search">
+								<form action="//smittey.us13.list-manage.com/subscribe/post?u=9aae1cacdc35a4c57db2d27ca&amp;id=e199dadb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div class="search">
+										<input type="text" name="EMAIL" id="mce-EMAIL" class="form-control input-sm" maxlength="64" placeholder="Type your email to subscribe!">
+										<input type="image" class="button" name="subscribe" id="mc-embedded-subscribe" src="http://i.imgur.com/57uJR8n.gif"/>
+									</div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_9aae1cacdc35a4c57db2d27ca_e199dadb52" tabindex="-1" value="">
+									</div>
+
+								</form>
+							</div>
+							
+							<div style="clear: both;"></div>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
+							<div class="fb-share-button" data-href="http://smittey.co.uk//the-art-of-greenfield//" data-layout="button" data-mobile-iframe="true"></div>
+							<div class="g-plus" data-action="share" data-annotation="none"></div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+
+			<div class="divider"></div>
+							
+			<div class="page-navigation">
+				
+					<a class="prev" href="/building-a-custom-keyboard-case/">&laquo; Building a Custom Keyboard Case</a>
+				
+				
+				<div style="clear: both;"></div>
+			</div>	
+
+			<div id="comments">
+				<div id="disqus_thread"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>
+
+ 
+	<ul id="links">
+		<li><a href="https://www.linkedin.com/in/smittey" class="li">Linked In</a></li>
+		<li><a href="http://stackoverflow.com/users/1295906/smittey" class="so">Stack Overflow</a></li>
+		<li><a href="https://twitter.com/smittey" class="tw">Twitter</a></li>
+		<li><a href="http://github.com/Smittey" class="gh">Github</a></li>
+	</ul>
+
+</body>
+</html>
