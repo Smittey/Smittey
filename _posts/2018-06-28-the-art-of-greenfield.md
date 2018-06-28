@@ -59,7 +59,7 @@ What does this mean for brand-new software projects?
 
 You can't teach an old project new tricks. Sometimes. Unless you're a wave-maker. And want to be disliked. It will be an uphill battle.
 
-**Freedom to determine scope** - The early stages of any project are always crucial to determining and agreeing scope with stakeholders. Unless the project is being delivered in an agile way (it's 2018 - it _probably_ should be), over-promising and under-delivering can be a big source of pain with longer running Brownfield projects. Technical debt can be large.  
+**Freedom to Determine Scope** - The early stages of any project are always crucial to determining and agreeing scope with stakeholders. Unless the project is being delivered in an agile way (it's 2018 - it _probably_ should be), over-promising and under-delivering can be a big source of pain with longer running Brownfield projects. Technical debt can be large.  
 
 **Select the Founding Fathers** - Ok, so not everybody will have a say in this one. However, those chosen at the beginning of the project will play an important part in shaping and carving out best practise as well as the foundations. 
 
@@ -80,20 +80,20 @@ The first merge to the codebase is one of the most important. It sets the preced
 
 **Branching Model** - Agree on it. Some teams prefer Master to be left **well** alone and contain only released versions. Some prefer to push little and often to Master with tagged releases. Decide that before the first merge. Your tree will be cleaner and easier to follow and track changes. 
 
-**Best practise** - Style is important. Nobody likes looking at files with every permutation of inline vs new line braces, inline vs new line parameters, spaces vs tabs etc... Enforce a linter. Most come with (in addition to many analysis benefits) the ability to complain until you comply. Learn to love the linter, even if this is through Stockholm syndrome.
+**Best Practise** - Style is important. Nobody likes looking at files with every permutation of inline vs new line braces, inline vs new line parameters, spaces vs tabs etc... Enforce a linter. Most come with (in addition to many analysis benefits) the ability to complain until you comply. Learn to love the linter, even if this is through Stockholm syndrome.
 
 **Pull Requests** - Where possible, everything should be code-reviewed and pull requests should be created accordingly. This isn't always easy in the early stages of a project where resources may be sparse, but use best efforts.
 
 **CI/CD** - Automation is key. There is always a time spike for this setup, but early automation could save you a lot of time in the long run. Your first build MVP should be HelloWorld deployed to your environment. Once this is known to work then it can be developed more rapidly from there.  
 
-### Management approach
+### Management Approach
 How you manage your team and the project is just as important as the code that your team is producing. Set the standard early and stick with it. Effort should be made to mitigate against time lost for developers by good management and the facilitation of useful tools. 
 
-**Delivery approach** -  How are you planning on delivering the project? Whether this is Waterfall, Agile, Scrum, Kanban or lean, one size certainly does not fit all and this should be selected accordingly. 
+**Delivery Approach** -  How are you planning on delivering the project? Whether this is Waterfall, Agile, Scrum, Kanban or lean, one size certainly does not fit all and this should be selected accordingly. 
 
 **Backlog** - A well-defined backlog with a broken down list of tasks that make sense to the developer should be in place. This can and should be created in collaboration with key members of the development team and actively maintained to reflect actuals and known time scales. 
 
-### Shared approach
+### Shared Approach
 
 **Documentation** - This is a shared ~~burden~~ responsibility between developers and management, but both parties need to ensure that the relevant information is available. From a management perspective, it should be clear from the beginning what the requirements are for the project/phase. From a technical standpoint, developers should ensure that documentation exists from the beginning with regards to project set up, code discovery, evolving architecture, and commented code. 
 
