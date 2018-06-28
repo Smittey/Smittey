@@ -86,14 +86,14 @@ The first merge to the codebase is one of the most important. It sets the preced
 
 **CI/CD** - Automation is key. There is always a time spike for this setup, but early automation could save you a lot of time in the long run. Your first build MVP should be HelloWorld deployed to your environment. Once this is known to work then it can be developed more rapidly from there.  
 
-### Management approach
+### Management Approach
 How you manage your team and the project is just as important as the code that your team is producing. Set the standard early and stick with it. Effort should be made to mitigate against time lost for developers by good management and the facilitation of useful tools. 
 
 **Delivery approach** -  How are you planning on delivering the project? Whether this is Waterfall, Agile, Scrum, Kanban or lean, one size certainly does not fit all and this should be selected accordingly. 
 
 **Backlog** - A well-defined backlog with a broken down list of tasks that make sense to the developer should be in place. This can and should be created in collaboration with key members of the development team and actively maintained to reflect actuals and known time scales. 
 
-### Shared approach
+### Shared Approach
 
 **Documentation** - This is a shared ~~burden~~ responsibility between developers and management, but both parties need to ensure that the relevant information is available. From a management perspective, it should be clear from the beginning what the requirements are for the project/phase. From a technical standpoint, developers should ensure that documentation exists from the beginning with regards to project set up, code discovery, evolving architecture, and commented code. 
 
