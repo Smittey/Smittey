@@ -176,16 +176,5 @@
         <guid isPermaLink="true">http://localhost:4000/your-search-returned-no-matches/</guid>
       </item>
     
-      <item>
-		<author>Andy Smith</author>
-        <title>Learning to be Creative</title>
-        <description>&lt;p&gt;I’ve been doing creative things all of my life from playing the piano from an early age, to sketching and digital art, bouts of photography, creative writing and poetry, composing pieces of music, and web development to name a few. The truth is that I’m not a very creative person. That was slightly contradictory, I’ll rephrase… I’m not a naturally creative person; I just want to be creative.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/learning-to-be-creative/</link>
-        <guid isPermaLink="true">http://localhost:4000/learning-to-be-creative/</guid>
-      </item>
-    
   </channel>
 </rss>
