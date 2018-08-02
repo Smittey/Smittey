@@ -8,6 +8,20 @@
     
       <item>
 		<author>Andy Smith</author>
+        <title>Debugging 101</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“If debugging is the process of removing software bugs, then programming must be the process of putting them in.”&lt;/em&gt;&lt;br /&gt;
+      ~ Edsger W. Dijkstra&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Thu, 02 Aug 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/debugging-101/</link>
+        <guid isPermaLink="true">http://localhost:4000/debugging-101/</guid>
+      </item>
+    
+      <item>
+		<author>Andy Smith</author>
         <title>Let's Talk Keyboards</title>
         <description>&lt;p&gt;For all of the time that folk spend in front of the computer whether it be professional, recreational or both; the keyboard, as important as it is, is often overlooked.&lt;/p&gt;
 
