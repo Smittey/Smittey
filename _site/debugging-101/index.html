@@ -157,7 +157,21 @@
 
 <h2 id="proactivity">Proactivity</h2>
 
-<p>You may have arrived at this blog post because you’re stuck with your code and need help with specific techniques. The next section will help you with this, but it’s good to know how to be proactive to minmise bugs and the time spent identifying their origin,</p>
+<p>You may have arrived at this blog post because you’re stuck with your code and need help with specific techniques. The next section will help you with this, but it’s good to know how to be proactive to minimise future bugs and the time spent identifying their origin. Designing your software using the SOLID principles will make your software more understandable, flexible and maintainable. A deep dive is slightly outside the scope of this post but a high-level overview is described below.</p>
+
+<h4 id="solid-software">SOLID Software</h4>
+
+<p>SOLID is a mnemonic acronym and prescribes the following guidelines:</p>
+
+<ul>
+  <li><strong>Single responsibility principle</strong> - A class should have only a single responsibility</li>
+  <li><strong>Open/closed principle</strong> - A classes behaviour should be able to extended without being modified</li>
+  <li><strong>Liskov substitution principle</strong> - Derived classes must be substitutable for their base classes</li>
+  <li><strong>Interface segregation principle</strong> - Multiple interfaces with a specific purpose are better than one general-purpose interface</li>
+  <li><strong>Dependency inversion principle</strong> - Create a dependency on abstractions, not other modules</li>
+</ul>
+
+<p>A few of these principles are described below in greater detail.</p>
 
 <blockquote>
   <p><em>“With good program architecture debugging is a breeze, because bugs will be where they should be.”</em><br />
@@ -186,7 +200,7 @@
 
 <h4 id="rubber-ducking">Rubber Ducking</h4>
 
-<p>Possibly the best named yet the least known is a technique called ‘rubber ducking’. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck. If the programmer was unable to do so then it’s clear that they don’t understand what is happening, or they will have a moment of clarity. If you don’t have a duck, then grab the person sitting next to you! Normally in doing so, a lot of the time you arrive at the solution yourself before they even start talking.</p>
+<p>Possibly the best named yet the least known is a technique called ‘rubber ducking’. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> by Andy Hunt and Dave Thomas in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck. If the programmer was unable to do so then it’s clear that they don’t understand what is happening, or they will have a moment of clarity. If you don’t have a duck, then grab the person sitting next to you! Normally in doing so, a lot of the time you arrive at the solution yourself before they can answer you.</p>
 
 <p>A lot of people, including my place of employment, have rubber ducks on the desk sat waiting to be talked to. Of course in reality nobody (read - normal people) sits talking to ducks in the office. It’s merely tokenistic and a nod to this method of debugging and development, but it’s a widely adopted method. And it works!</p>
 
