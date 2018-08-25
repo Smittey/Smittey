@@ -8,6 +8,17 @@
     
       <item>
 		<author>Andy Smith</author>
+        <title>The Planck</title>
+        <description>&lt;p&gt;I’ve written a lot about Mechanical keyboards, and if it wasn’t already clear, I’m somewhat of an enthusiast.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 25 Aug 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/the-planck-build-log/</link>
+        <guid isPermaLink="true">http://localhost:4000/the-planck-build-log/</guid>
+      </item>
+    
+      <item>
+		<author>Andy Smith</author>
         <title>Debugging 101</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;“If debugging is the process of removing software bugs, then programming must be the process of putting them in.”&lt;/em&gt;&lt;br /&gt;

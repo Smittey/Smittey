@@ -20,7 +20,7 @@ Membrane keyboards were introduced in the early 90's as a cheaper and more mass-
 #### How they work?
 They are comprised of several layers starting with the top membrane layer. When the key is pressed it moves through a layer convered in holes (one for each key). The pressing-action causes these layers to make contact with the bottom membrane layer to let the keyboard controller know that a certain key has been pressed.
 
-![Membrane layers](https://image.prntscr.com/image/g-_aQstHQO6a_bbRTSHSFg.png)
+![Membrane layers](:https//image.prntscr.com/image/g-_aQstHQO6a_bbRTSHSFg.png)
 #### The Good
 
 

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog by Andy Smity, a Software Developer based in the UK">
+    <meta name="author" content="Andy Smith">
+	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
+	
+	<meta property="og:url"                content="http://smittey.co.uk//the-planck-build-log//">              
+	<meta property="og:type"               content="article">
+	<meta property="og:title"              content="The Planck">
+	<meta property="og:description"        content="My build log of the 40% Planck Keyboard">
+	<meta property="og:image"              content="http://smittey.co.uk/img/post-planck.jpg">
+	<meta property="fb:app_id"             content="1748027778767786">
+
+
+	<title>  The Planck |  Blog </title>
+	
+    <link href="/css//bootstrap.min.css" rel="stylesheet">
+
+    <link href="/css//style.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+	<!-- Theme JavaScript -->
+    <script src="/js/blog.js"></script>
+	
+	<!-- Scrolling Nav JavaScript -->
+	<script src="/js/jquery.easing.min.js"></script>
+
+	<!-- Misc JavaScript -->
+	<script type="text/javascript" src="/js/main.js"></script>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script>
+	
+	var devCookie = "my websites cookie=123";
+	if (document.cookie.indexOf(devCookie) === -1) 
+	{
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74354041-2', 'auto');
+		ga('send', 'pageview');
+	}
+
+
+
+	</script>
+	
+</head>
+<body>
+ 
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Smittey.co.uk</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://www.andysmith.me">Personal Website</a>
+                    </li>
+					
+					<li>
+						<a href="/about/">About</a>
+					</li>
+					
+					<li>
+						<a href="/contact/">Contact</a>
+					</li>
+					
+					<li>
+						<a href="/feed.xml"></a>
+					</li>
+					
+					<li>
+						<a href="/"></a>
+					</li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+	
+    <script>
+    $(window).bind("load", function() {
+       $.getScript('/js/social.js', function() {});
+    });
+</script>
+
+<div id="fb-root"></div>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('/img//post-planck.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>The Planck</h1>
+					<h2 class="subheading">My build log of the 40% Planck Keyboard</h2>
+					<span class="meta">August 25th, 2018</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
+			<div class="content">
+				<p>I’ve written a lot about Mechanical keyboards, and if it wasn’t already clear, I’m somewhat of an enthusiast.</p>
+
+<p>This hobby and interest exposes you to a range of keyboards that you didn’t previously know existed with an array of layouts, sizes, and colours. I became particularly intrigued by tiny keyboards as they not only look weird, but supposedly can help with both typing efficiency and RSI. After many months of browsing enthusiast forums I came across a Planck. Looking down at your keyboard now you’ll notice that the layout is staggered, meaning the keys aren’t all aligned. The Planck on the other hand is ‘Ortholinear’; the keys are in a columnar fashion! Weird. I like it!</p>
+
+<p>The Planck, being an enthusiast board and 40% of the size of a normal keyboard, is not purchasable in your normal high street shop and once acquiring all of the parts it must be assembled by hand. After initially being put off by the idea seeing as I hadn’t soldered since school, I decided to take the plunge. This is the build log of my Planck.</p>
+
+<hr />
+
+<h4 id="parts">Parts</h4>
+
+<p>After waiting six months and through many delays, the parts were finally delivered. I don’t think I’ve unwrapped and opened a box that quickly since Christmas as a kid! The box contained:</p>
+
+<ul>
+  <li>PCB plate (Rev 5)</li>
+  <li>Cherry MX Brown switches</li>
+  <li>XDA Canvas Keycaps</li>
+  <li>Spacebar stabilizer</li>
+  <li>Screws</li>
+  <li>Steel plate</li>
+  <li>Aluminium case</li>
+  <li>USB cable</li>
+  <li>Felt carrying case</li>
+</ul>
+
+<p><img src="https://i.imgur.com/oQ2G8uN.jpg" alt="" /></p>
+
+<hr />
+
+<h4 id="build-log">Build Log</h4>
+
+<p>I began by plugging the PCB in to my laptop to check that the thing even powers on. Nothing would be more annoying than spending an evening assembling and soldering a paperweight.</p>
+
+<p><img src="https://i.imgur.com/DkbJs7l.jpg" alt="" /></p>
+
+<p>Success! Sort of. All I know is that the PCB powers up, I have no idea if it’ll even allow me to type. But we’ll leave that mystery until later.</p>
+
+<p>I was building this with my other keyboard enthusiast friend James and his OCD took over a bit. I can’t complain too much as it turned out to be a pretty cool photo. Here you can see most of the parts mentioned above that came in the box.</p>
+
+<p><img src="https://i.imgur.com/iXsSqsr.jpg" alt="" /></p>
+
+<p>After what felt like years grappling with the tiny parts of the spacebar stabilizer, it was finally assembled and clipped onto the PCB. Out of everything that you’ll see in this post this was the most challenging. It turns out I’m not as dexterous as I thought I was. Nor James. It took professional software engineers about 15 minutes to assemble 3 bits of plastic. Depressing.</p>
+
+<p><img src="https://i.imgur.com/oq3FgLW.jpg" alt="" /></p>
+
+<p>Once in place with the spacebar switch firmly slotted in, the steel plate was then placed over the top and held in place by corner switches to ensure that it wouldn’t move and was level.</p>
+
+<p><img src="https://i.imgur.com/e0AzT4R.jpg" alt="" /></p>
+
+<p>Voila! All 47 switches are now in place. After flipping the board over and ensuring that all of the switches of the pins were straight and poking through the PCB holes, it was time to get the soldering iron out! Let the fun begin.</p>
+
+<p><img src="https://i.imgur.com/mpYeZFf.jpg" alt="" /></p>
+
+<p>The soldering iron was assembled, the sponge dampened in preparation for wiping excess solder off the end of the iron, and tools such as a desoldering pump and a range of soldering assists were at hand in case it all goes tits-up. This was my genuine expectation for this project having not soldered since school.</p>
+
+<p><img src="https://i.imgur.com/9N2JanR.jpg" alt="" /></p>
+
+<p>I started by wiping the tip of the soldering iron with the damp sponge to clean of any residue left from the previous activity, and then applied it to the connection on the PCB. The solder was then fed onto the heated connection until it was well coated, leaving a droplet-looking splodge on the PCB connection.</p>
+
+<p><img src="https://i.imgur.com/0a8AgDp.jpg" alt="" /></p>
+
+<p>This was then repeated for all 94 legs of the switches taking care not to accidentally join connections or touch the processor. Getting solder on the processor could effectively be game over unless carefully salvaged. I feared that I did not possess the skill set to remedy this worse-case scenario…</p>
+
+<p><img src="https://i.imgur.com/uHlr2AY.jpg" alt="" /></p>
+
+<p>On reflection, if I were to do this regularly, it would be sensible to wear a face mask due to the fumes the solder pumped out. However, care was taken to keep the area well ventilated with a fan.</p>
+
+<p><img src="/img//posts-planck-video-soldering.gif" width="100%" alt="Soldering" /></p>
+
+<p>So I won’t be winning any awards for soldering any time soon, but I don’t think it turned out too bad! The proof will be in the pudding however… Will this thing even work?</p>
+
+<p><img src="https://i.imgur.com/Ez4y2Hr.jpg" alt="" /></p>
+
+<p>At this point I could have just reconnected it to my laptop and tested each switch. To be honest, I should have just done that as again, it could save time in the event of a board failure. However, I was keen to get the keycaps on this thing so it was screwed to the case to allow pressure to be applied to the switches for the keycaps to be pushed into place.</p>
+
+<p><img src="https://i.imgur.com/iAlUXBb.jpg" alt="" /></p>
+
+<p>Starting to look good…</p>
+
+<p><img src="https://i.imgur.com/kDFhoCb.jpg" alt="" /></p>
+
+<p>And there we go! After plugging it in and initially freaking out as my mac didn’t recognise it, I tested every switch and it works!</p>
+
+<p><img src="https://i.imgur.com/qmJEHlF.jpg" alt="" /></p>
+
+<p>A nice snug fit in the carry case too!</p>
+
+<p><img src="https://i.imgur.com/bmglo9L.jpg" alt="" /></p>
+
+<p>And there we have it. The Planck sitting on my desk at work having been transported in the felt carry case in my work bag.</p>
+
+<p><img src="https://i.imgur.com/4MkIqGM.jpg" alt="" /></p>
+
+<p>I get asked approximately 3 times per hour what the hell is sitting on my desk but I realised that it’s actually a great way to meet people and network at work. I barely have to put any effort in to reach out; they come to me!</p>
+
+<hr />
+
+<p>I hope that you enjoyed reading, or learned something from this. If you are another keyboard enthusiast looking for tips in preparation for building your own, let me know in the comments if you need any help.</p>
+
+<p>This is part one in a two part series. The Planck is fully programmable meaning that the keys can be mapped to anything you want. Due to the compactness of the board and my inevitably unique use for it, I spent a lot of time thinking about what I wanted the different layers to contain when activated. E.g holding the RAISE (orange) key will give me access to numbers or symbols. Part two will go into the different layers and my decisions behind them.</p>
+
+<p>Thanks for reading and happy clacking!</p>
+
+
+				
+				<div id="signature-container">
+					<span id="signature-avatar">				
+						<img class="avatar img-circle" style="width:100%; width:auto;" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+					</span>
+					<span id="signature-text">
+						<div class="text">
+							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on August 25th, 2018</p>
+							<br/>
+												
+							<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
+							
+							<div class="search">
+								<form action="//smittey.us13.list-manage.com/subscribe/post?u=9aae1cacdc35a4c57db2d27ca&amp;id=e199dadb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div class="search">
+										<input type="text" name="EMAIL" id="mce-EMAIL" class="form-control input-sm" maxlength="64" placeholder="Type your email to subscribe!">
+										<input type="image" class="button" name="subscribe" id="mc-embedded-subscribe" src="http://i.imgur.com/57uJR8n.gif"/>
+									</div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_9aae1cacdc35a4c57db2d27ca_e199dadb52" tabindex="-1" value="">
+									</div>
+
+								</form>
+							</div>
+							
+							<div style="clear: both;"></div>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
+							<div class="fb-share-button" data-href="http://smittey.co.uk//the-planck-build-log//" data-layout="button" data-mobile-iframe="true"></div>
+							<div class="g-plus" data-action="share" data-annotation="none"></div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+
+			<div class="divider"></div>
+							
+			<div class="page-navigation">
+				
+					<a class="prev" href="/debugging-101/">&laquo; Debugging 101</a>
+				
+				
+				<div style="clear: both;"></div>
+			</div>	
+
+			<div id="comments">
+				<div id="disqus_thread"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>
+
+ 
+	<ul id="links">
+		<li><a href="https://www.linkedin.com/in/smittey" class="li">Linked In</a></li>
+		<li><a href="http://stackoverflow.com/users/1295906/smittey" class="so">Stack Overflow</a></li>
+		<li><a href="https://twitter.com/smittey" class="tw">Twitter</a></li>
+		<li><a href="http://github.com/Smittey" class="gh">Github</a></li>
+	</ul>
+
+</body>
+</html>
