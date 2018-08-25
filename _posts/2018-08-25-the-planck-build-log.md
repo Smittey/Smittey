@@ -14,7 +14,7 @@ The Planck, being an enthusiast board and 40% of the size of a normal keyboard, 
 
 ______
 
-#### The finished product####
+#### The finished product ####
 
 ![The Planck fully built](https://i.imgur.com/4MkIqGM.jpg)
 
