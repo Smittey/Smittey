@@ -6,7 +6,7 @@ posted-on: September 3rd, 2018
 post-img: post-planck-layout.jpg
 ---
 
-[Part one](http://smittey.co.uk/the-planck-key-theory/) of this two part series talked about the building of this Planck keyboard. It concluded by mentioning the full programmability aspect of one of these things, allowing you to customise every aspect of it. Every single key can be mapped to pretty much whatever you want whether it's the desire to set every key to the 'A' key, or creating a new function key/layer. Given this ability, it only makes sense to organise these layers in a sensible way! This post will explore the layers that I created and my thinking behind them. 
+[Part one](http://smittey.co.uk/the-planck-build-log/) of this two part series talked about the building of this Planck keyboard. It concluded by mentioning the full programmability aspect of one of these things, allowing you to customise every aspect of it. Every single key can be mapped to pretty much whatever you want whether it's the desire to set every key to the 'A' key, or creating a new function key/layer. Given this ability, it only makes sense to organise these layers in a sensible way! This post will explore the layers that I created and my thinking behind them. 
 
 ![The Planck fully built](https://i.imgur.com/4MkIqGM.jpg)
 
