@@ -83,6 +83,7 @@ You can see that `KC_TAB` corresponds to the tab key, `KC_ESC` to escape and so 
 These mappings are then applied by running a simple command where _'smittey'_ is the name of my layout, _'rev5'_ is the PCB revision, and _'dfu'_ is the bootloader:
 
 `make planck/rev5:smittey:dfu`
+
 __________
 
 As I mentioned, these layers are a work in progress and are constantly being tweaked to work better for me. I doubt that they will change drastically but it's likely that in a few months my actual mappings won't reflect what's in this post. For now though this is a good record of _V 1.0_ of my Planck keyboard. 
