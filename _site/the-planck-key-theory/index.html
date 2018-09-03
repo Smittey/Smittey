@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog by Andy Smity, a Software Developer based in the UK">
+    <meta name="author" content="Andy Smith">
+	<meta name="keywords" content="Andy,Smith,Blog,Writing,Posts,Software,Developer,Engineer,Programmer,Coder,designer">
+	
+	<meta property="og:url"                content="http://smittey.co.uk//the-planck-key-theory//">              
+	<meta property="og:type"               content="article">
+	<meta property="og:title"              content="The Planck - Key Theory">
+	<meta property="og:description"        content="Part 2, How I approached and adapted the layout of the Planck">
+	<meta property="og:image"              content="http://smittey.co.uk/img/post-planck-layout.jpg">
+	<meta property="fb:app_id"             content="1748027778767786">
+
+
+	<title>  The Planck - Key Theory |  Blog </title>
+	
+    <link href="/css//bootstrap.min.css" rel="stylesheet">
+
+    <link href="/css//style.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+	<!-- Theme JavaScript -->
+    <script src="/js/blog.js"></script>
+	
+	<!-- Scrolling Nav JavaScript -->
+	<script src="/js/jquery.easing.min.js"></script>
+
+	<!-- Misc JavaScript -->
+	<script type="text/javascript" src="/js/main.js"></script>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script>
+	
+	var devCookie = "my websites cookie=123";
+	if (document.cookie.indexOf(devCookie) === -1) 
+	{
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74354041-2', 'auto');
+		ga('send', 'pageview');
+	}
+
+
+
+	</script>
+	
+</head>
+<body>
+ 
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Smittey.co.uk</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://www.andysmith.me">Personal Website</a>
+                    </li>
+					
+					<li>
+						<a href="/about/">About</a>
+					</li>
+					
+					<li>
+						<a href="/contact/">Contact</a>
+					</li>
+					
+					<li>
+						<a href="/feed.xml"></a>
+					</li>
+					
+					<li>
+						<a href="/"></a>
+					</li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+	
+    <script>
+    $(window).bind("load", function() {
+       $.getScript('/js/social.js', function() {});
+    });
+</script>
+
+<div id="fb-root"></div>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('/img//post-planck-layout.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>The Planck - Key Theory</h1>
+					<h2 class="subheading">Part 2, How I approached and adapted the layout of the Planck</h2>
+					<span class="meta">September 3rd, 2018</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 page">
+			<div class="content">
+				<p><a href="http://smittey.co.uk/the-planck-key-theory/">Part one</a> of this two part series talked about the building of this Planck keyboard. It concluded by mentioning the full programmability aspect of one of these things, allowing you to customise every aspect of it. Every single key can be mapped to pretty much whatever you want whether it’s the desire to set every key to the ‘A’ key, or creating a new function key/layer. Given this ability, it only makes sense to organise these layers in a sensible way! This post will explore the layers that I created and my thinking behind them.</p>
+
+<p><img src="https://i.imgur.com/4MkIqGM.jpg" alt="The Planck fully built" /></p>
+
+<p>The Planck comes stock with a few different layers: Lower, Raise, Base layer, and Adjust (Lower + Raise). It also comes stock with the ability to set the base layer to a variety of layouts such as QWERTY, Dvorak, Colemak, and Plover. However, I’m not counting these as layers as it effectively just modifies the base layer keys that you see below! Still cool though.</p>
+
+<h4 id="base-layer">Base layer</h4>
+
+<p><img src="https://i.imgur.com/7kAJ21Y.png" alt="Imgur" /></p>
+
+<p>I didn’t actually change the base layer much. As the development of the layers progressed, I saw a need to separate functionality a bit more and instead of having crowded Raise (red) and Lower (blue) layers, I introduced another function key ‘FN’ (green) as well as turning the spacebar into a function key (orange) when held. Turns out the space function created quite a nice user experience! We’ll get to those later though.</p>
+
+<p>A few other key considerations is that I swapped the position of ‘CTRL’ to be the left-most key as this is what I’m used to on other boards, and I also turned ‘Enter’ into ‘Shift’ when held. It turns out that I struggle to cope without right shift. I wasn’t aware until I tried this keyboard out!</p>
+
+<h4 id="lower-">Lower ⇓</h4>
+
+<p><img src="https://i.imgur.com/dREx6cK.png" alt="Imgur" /></p>
+
+<p>Numbers. Who doesn’t love a bit of numbers? I previously mentioned that I wanted to group the functionality of similar keys. I basically wanted an entire layer dedicated to the numpad for doing calculations. I also added a shift key in there too in case for whatever reason I wanted to turn these numbers into symbols like you can with a normal keyboard by holding the shift key down. I doubt I’ll ever use it but I had the real estate available.</p>
+
+<h4 id="raise-">Raise ⇑</h4>
+
+<p><img src="https://i.imgur.com/vZJoT5f.png" alt="Imgur" /></p>
+
+<p>I’m a Software Engineer by trade, and as such I use a lot of symbols. The Raise layer contains all of the symbols that I’ll need to be able to code . This is the layer that I arguably spent the most amount of time revising. It went through many iterations where all of the brackets were mainly grouped in the right corner but didn’t work without making a funny claw shape with my hand. After trying it out for many weeks this just didn’t work as well as I wanted to. I had to stop lying to myself that this layer that I’d spent ~6 months working on before the keyboard arrived wasn’t absolute crap.</p>
+
+<p>I decided to follow the Colemak pattern and moved these commonly used keys to the ‘Home row’. The ‘Home row’ is the row of keys where your fingers naturally rest (the row containing ‘F’ and ‘J’ on QWERTY). By putting commonly used keys on this row it minimises the need to move your hands around as much. As it turns out, this works pretty well and is super comfortable to use. It took a little while to remember where I put everything, but once I did it felt very natural.</p>
+
+<h4 id="fn">FN</h4>
+
+<p><img src="https://i.imgur.com/UNUV9Hn.png" alt="Imgur" /></p>
+
+<p>This additional FN layer was intended to be home to function keys and macros. I don’t normally use the ‘F1-12’ keys so I moved them away from the common ‘Raise’ and ‘Lower’ layers and put them here. I also love ASCII art and use the faces that you see above quite often as responses to messages. It can sometimes be a chore to google, copy, and paste them. Why not put them on a layer of their own? This is still a work in progress and I haven’t quite figured out how to program them into the keyboard, but this is my intention.</p>
+
+<h4 id="space-fn">Space FN</h4>
+<p><img src="https://i.imgur.com/7WGlLuP.png" alt="Imgur" /></p>
+
+<p>Aaaaaand everything else. I mentioned a few times that I didn’t want to overcrowd the layers. The space layer became a bit of a navigation layer as sometimes it can be a bit of an effort to use the arrows keys on the base layer. Having two commonly placed sets of arrows (‘WASD’ and ‘HJKL’) equidistant to the spacebar makes for a very convenient and comfortable way to navigate around. I may move ‘Page Up’, ‘Page Down’, ‘Home’, and ‘End’ to this layer at some point but it’s fine for now.</p>
+
+<h4 id="adjust--">Adjust (⇑ ⇓)</h4>
+
+<p><img src="https://i.imgur.com/nCvbd0e.png" alt="Imgur" /></p>
+
+<p>Finally the adjust layer contains keyboard settings and configurations. The default layout for this layer to me made absolutely no sense. There was no pattern or indication as to why the keys were in the positions they were, so I shuffled them. That’s the beauty of this firmware!</p>
+
+<p>The layout changers were placed on their initials key, so ‘QWERTY’ on ‘Q’, ‘Colemak’ on C, and ‘Dvorak’ on ‘D’. I then grouped the on/off up/down keys on the right all following the same convention. This is the layer that I expect to be on the least but it’s good to have it organised in case I require it.</p>
+
+<h4 id="the-technicals">The Technicals</h4>
+
+<p><em>“How do you even program the keyboard?”</em> I hear you cry out. The firmware, QMK (<em>Quantum Mechanical Keyboard</em>), is written in C and allows you to use the defined key-codes to create your mappings.</p>
+
+<p>Let’s take the base layer for example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Qwerty                                                                              
+ * ,-----------------------------------------------------------------------------------.
+ * | Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * | Esc  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Ctrl |  FN  | Alt  | GUI  |Lower |    Space    |Raise | Left | Down |  Up  |Right |
+ * `-----------------------------------------------------------------------------------'
+ */
+[_QWERTY] = LAYOUT_planck_grid(
+    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,      KC_Y,      KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
+    KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,      KC_H,      KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,      KC_N,      KC_M,    KC_COMM, KC_DOT,  KC_SLSH, MT(MOD_LSFT, KC_ENT),
+    KC_LCTL, FN,      KC_LALT, KC_LGUI, LOWER,   SPACE_FN,  SPACE_FN,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+),
+</code></pre></div></div>
+
+<p>You can see that <code class="highlighter-rouge">KC_TAB</code> corresponds to the tab key, <code class="highlighter-rouge">KC_ESC</code> to escape and so forth. <code class="highlighter-rouge">MT(MOD_LSFT, KC_ENT)</code> for example is <em>‘Mod-Tap’</em>. I mentioned during the Base layer section that I turned ‘Enter’ (<code class="highlighter-rouge">KC_ENT</code>) into ‘Shift’ (<code class="highlighter-rouge">MOD_LSFT</code>) when held down and when tapped it acts as a normal Enter key. <code class="highlighter-rouge">MT</code> in this case allows me to do this. Full documentation on the keycodes available is accessible at the <a href="https://github.com/qmk/qmk_firmware">QMK github repository</a>.</p>
+
+<p>These mappings are then applied by running a simple command where <em>‘smittey’</em> is the name of my layout, <em>‘rev5’</em> is the PCB revision, and <em>‘dfu’</em> is the bootloader:</p>
+
+<p><code class="highlighter-rouge">make planck/rev5:smittey:dfu</code>
+<strong>__</strong><em>__</em></p>
+
+<p>As I mentioned, these layers are a work in progress and are constantly being tweaked to work better for me. I doubt that they will change drastically but it’s likely that in a few months my actual mappings won’t reflect what’s in this post. For now though this is a good record of <em>V 1.0</em> of my Planck keyboard.</p>
+
+<p>You can find my full mappings and source code on Github <a href="https://github.com/Smittey/qmk_firmware/tree/master/keyboards/planck/keymaps/smittey">here</a>, the above layout to edit and further improve on <a href="http://www.keyboard-layout-editor.com/#/gists/a6e7ed3e7ce0b161ffa0cecd5655c6b1">here</a>, and if you have any comments or potential improvements (as I’m sure there are many) please do let me know in the comments below!</p>
+
+				
+				<div id="signature-container">
+					<span id="signature-avatar">				
+						<img class="avatar img-circle" style="width:100%; width:auto;" src="http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=100"/>
+					</span>
+					<span id="signature-text">
+						<div class="text">
+							<p>By <a href="http://www.andysmith.me">Smittey</a><br/>Posted on September 3rd, 2018</p>
+							<br/>
+												
+							<a href='https://ko-fi.com/A14212M' target='_blank'><img height='32' style='border:0px;height:32px; margin:5px 5px 5px 0; float:left' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee' /></a> 
+							
+							<div class="search">
+								<form action="//smittey.us13.list-manage.com/subscribe/post?u=9aae1cacdc35a4c57db2d27ca&amp;id=e199dadb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+									<div class="search">
+										<input type="text" name="EMAIL" id="mce-EMAIL" class="form-control input-sm" maxlength="64" placeholder="Type your email to subscribe!">
+										<input type="image" class="button" name="subscribe" id="mc-embedded-subscribe" src="http://i.imgur.com/57uJR8n.gif"/>
+									</div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_9aae1cacdc35a4c57db2d27ca_e199dadb52" tabindex="-1" value="">
+									</div>
+
+								</form>
+							</div>
+							
+							<div style="clear: both;"></div>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-via="Smittey"></a>
+							<div class="fb-share-button" data-href="http://smittey.co.uk//the-planck-key-theory//" data-layout="button" data-mobile-iframe="true"></div>
+							<div class="g-plus" data-action="share" data-annotation="none"></div>
+						</div>
+					</span>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+
+			<div class="divider"></div>
+							
+			<div class="page-navigation">
+				
+					<a class="prev" href="/the-planck-build-log/">&laquo; The Planck</a>
+				
+				
+				<div style="clear: both;"></div>
+			</div>	
+
+			<div id="comments">
+				<div id="disqus_thread"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//smittey.disqus.com/count.js" async></script>
+
+ 
+	<ul id="links">
+		<li><a href="https://www.linkedin.com/in/smittey" class="li">Linked In</a></li>
+		<li><a href="http://stackoverflow.com/users/1295906/smittey" class="so">Stack Overflow</a></li>
+		<li><a href="https://twitter.com/smittey" class="tw">Twitter</a></li>
+		<li><a href="http://github.com/Smittey" class="gh">Github</a></li>
+	</ul>
+
+</body>
+</html>

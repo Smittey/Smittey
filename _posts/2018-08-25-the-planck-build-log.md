@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Planck
-sub-title: My build log of the 40% Planck Keyboard
+sub-title: Part 1, My build log of the 40% Planck Keyboard
 posted-on: August 25th, 2018
 post-img: post-planck.jpg
 ---
@@ -37,7 +37,7 @@ After waiting six months and through many delays, the parts were finally deliver
 
 ______
 
-#### Build Log####
+#### Build Log ####
 
 I began by plugging the PCB in to my laptop to check that the thing even powers on. Nothing would be more annoying than spending an evening assembling and soldering a paperweight.
 
@@ -108,7 +108,7 @@ __________
 
 I hope that you enjoyed reading, or learned something from this. If you are another keyboard enthusiast looking for tips in preparation for building your own, let me know in the comments if you need any help.
 
-This is part one in a two part series. The Planck is fully programmable meaning that the keys can be mapped to anything you want. Due to the compactness of the board and my inevitably unique use for it, I spent a lot of time thinking about what I wanted the different layers to contain when activated. E.g holding the RAISE (orange) key will give me access to numbers or symbols. Part two will go into the different layers and my decisions behind them.
+This is part one in a [two part](http://smittey.co.uk/the-planck-key-theory/) series. The Planck is fully programmable meaning that the keys can be mapped to anything you want. Due to the compactness of the board and my inevitably unique use for it, I spent a lot of time thinking about what I wanted the different layers to contain when activated. E.g holding the RAISE (orange) key will give me access to numbers or symbols. [See part two](http://smittey.co.uk/the-planck-key-theory/) for a look into the different layers and my decisions behind them.
 
 Thanks for reading and happy clacking! 
 
