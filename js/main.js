@@ -6,7 +6,7 @@
 		
 		
 	//Get top artists from lastfm account
-	$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=smitteyyyy&period=1month&api_key=9ddaab7dc99dbcfb3f2ed8204ef965ce&limit=5&format=json&callback=?", function(json) {
+	$.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=smitteyyyy&period=1month&api_key=9ddaab7dc99dbcfb3f2ed8204ef965ce&limit=5&format=json&callback=?", function(json) {
         var html = '';
         $.each(json.topartists.artist, function(i, item) {
             
@@ -20,7 +20,7 @@
  			var songName = item.name;
  			var url = item.url;
   
- 			html += "<a href='http://www.last.fm/user/Smitteyyyy/library/music/" + result + "?date_preset=LAST_30_DAYS' target='_blank'>" + item.name + "</a>, ";
+ 			html += "<a href='https://www.last.fm/user/Smitteyyyy/library/music/" + result + "?date_preset=LAST_30_DAYS' target='_blank'>" + item.name + "</a>, ";
         });
 		
 		//Strip out the final comma
@@ -41,7 +41,7 @@
 var currentSongName;
 function getNowPlaying() 
 {
-	$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=smitteyyyy&api_key=9ddaab7dc99dbcfb3f2ed8204ef965ce&limit=1&format=json&callback=?", function(json) {
+	$.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=smitteyyyy&api_key=9ddaab7dc99dbcfb3f2ed8204ef965ce&limit=1&format=json&callback=?", function(json) {
         $.each(json.recenttracks.track, function(i, item) {
             			
 			//Limit to the first iteration. Lastfm seems to want to return at least 2
@@ -80,7 +80,7 @@ function getNowPlaying()
 $(window).load(function() {
     var height = $("#signature-text").height();
 	
-	$('.avatar').attr('src', 'http://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=' + height);
+	$('.avatar').attr('src', 'https://www.gravatar.com/avatar/2336ccd6a816e8582b8e9770f3eacadd?s=' + height);
 
 });
 
