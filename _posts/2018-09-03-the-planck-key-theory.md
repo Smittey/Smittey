@@ -4,6 +4,7 @@ title: The Planck - Key Theory
 sub-title: Part 2, How I approached and adapted the layout of the Planck
 posted-on: September 3rd, 2018
 post-img: post-planck-layout.jpg
+categories: keyboards development
 ---
 
 [Part one](http://smittey.co.uk/the-planck-build-log/) of this two part series talked about the building of this Planck keyboard. It concluded by mentioning the full programmability aspect of one of these things, allowing you to customise every aspect of it. Every single key can be mapped to pretty much whatever you want whether it's the desire to set every key to the 'A' key, or creating a new function key/layer. Given this ability, it only makes sense to organise these layers in a sensible way! This post will explore the layers that I created and my thinking behind them. 

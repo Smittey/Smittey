@@ -10,3 +10,12 @@ title: "Return Rambling"
 author: "Andy Smith"
 url: "https://www.smittey.co.uk"
 email: "andy@andysmith.me"
+
+social-media:
+    linkedin: smittey
+    github: smittey
+    stackoverflow: 1295906/smittey
+
+sass:
+    style: compressed
+    sass_dir: ./assets/stylesheets

@@ -1,0 +1,37 @@
+.index-post-wrapper {
+  margin-bottom: 50px;
+
+
+  .post-title {
+
+    color: $link-color;
+    margin-bottom: 0;
+
+    a {
+      font-family: $font-family-bold;
+      font-size: $font-item-title;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .post-category {
+
+      color: $accent-color;
+   }
+
+  .post-posted-on {
+    font-family: $font-family-bold;
+  }
+
+  .post-excerpt {
+    font-family: $font-family-italic;
+
+    a {
+      color: $accent-color;
+    }
+  }
+}

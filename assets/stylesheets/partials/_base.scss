@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    background: $background-color;
+    font-family: $font-family-regular;
+    color: $font-color-dark;
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+}
+
+body {
+    position: relative; 
+}

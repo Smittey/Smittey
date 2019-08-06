@@ -1,0 +1,60 @@
+.header { 
+
+    .heading-text {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      h1 {
+        color: $accent-color;
+        font-family: $font-family-bold;
+        font-size: $font-page-title;
+      }
+
+      span {
+        font-size: $font-sub-title;
+        font-family: $font-family-regular;
+        color: $font-color-light;
+      }
+    }
+
+    .media-icons {
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+
+        
+        .social-media-icon {
+          width: 40px;
+
+          &.svg {
+            cursor: pointer;
+            filter: invert(29%) sepia(6%) saturate(9%) hue-rotate(323deg) brightness(88%) contrast(88%);
+
+            &:hover {
+              filter: invert(59%) sepia(22%) saturate(837%) hue-rotate(124deg) brightness(91%) contrast(95%); 
+            }
+          }
+        }
+
+      .social-media-icon-margin {
+        margin-right: 10px;
+      }
+    }
+   
+    .avatar {
+      text-align: center;
+      margin: 10px 0px 5px 0px;
+    }
+
+    .line-divide {
+      // display: flex;
+      // align-items: center;
+
+      hr {
+        width: 100%;
+      }
+    }
+
+  }
