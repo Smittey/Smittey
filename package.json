@@ -1,0 +1,76 @@
+{
+  "name": "andysmith.me",
+  "private": true,
+  "description": "Personal website of Andy Smith, software engineer",
+  "version": "0.1.0",
+  "author": "Andy Smith",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "eslintIgnore": [
+    "/build/*",
+    "/scripts/*",
+    "/public/**/*"
+  ],
+  "dependencies": {
+    "axios": "^0.19.1",
+    "classnames": "^2.2.6",
+    "disqus-react": "^1.0.7",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-react": "^7.17.0",
+    "gatsby": "^2.18.12",
+    "gatsby-background-image": "^0.9.12",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-google-analytics": "^2.1.33",
+    "gatsby-plugin-manifest": "^2.2.42",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-remark-images": "^3.1.44",
+    "gatsby-remark-images-contentful": "^2.1.31",
+    "gatsby-source-contentful": "^2.1.89",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-sharp": "^2.3.16",
+    "gatsby-transformer-sqip": "^2.1.65",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.13.0",
+    "npm": "^6.13.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^5.2.1",
+    "react-highlight-words": "^0.16.0",
+    "react-icons": "^3.8.0",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "contentful-import": "^7.6.2",
+    "prettier": "^1.19.1"
+  }
+}

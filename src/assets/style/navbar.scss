@@ -1,0 +1,145 @@
+.rightNav {
+  .icon {
+    color: $theme-color;
+  }
+
+  .iconClicked {
+    color: #393939;
+  }
+  
+  .menuIcon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    font-size: 40px;
+
+    background-color: Transparent;
+    border: none;
+    outline:none;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:focus {
+      background-color: Transparent;
+      border: none;
+      outline:none;
+      box-shadow:none !important;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .menuWrapper {
+    background-color: $theme-color;
+    width: fit-content;
+    float:right;
+    position: relative;
+    display: flex;
+    min-width: fit-content;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    .menuText {
+      font-size: 25px;
+      margin:25px;
+      z-index: 999;
+      text-align: center;
+      opacity: 0.5;
+    }
+
+    
+
+    .indexImgWrapper {
+      height: 90%;
+      width: 100%;
+
+      @include desktop {
+        margin-left: -100px;
+        position: absolute;
+      }
+      
+    }
+
+    .nonIndexImgWrapper {
+      height: 90%;
+      width: 100%;
+
+      [class^="nonIndexImg"] {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE 6-9 */;
+        transition: all 0.2s ease;
+
+        &:hover {
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(0%);
+          filter: gray; /* IE 6-9 */;
+        }
+      }
+    }
+
+
+    
+    .icons {
+      text-align: center;
+
+      .iconsWrapper {
+        // margin: 0;
+        // position: absolute;
+        // top: 50%;
+        // -ms-transform: translateY(-50%);
+        // transform: translateY(-50%);
+      }
+
+      .imgBox:not(:first-child):not(:last-child) {
+        margin: 0px 10px 0px 10px;
+      }
+
+      .social {
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 0.4;
+          outline: 0;
+        }
+      }
+
+
+    }
+
+    .imgWrappers {
+      bottom: 0;
+      flex-grow: 1;
+  
+    }
+
+    @include mobile {
+      display: none;
+      width: 0px;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      right: 0px;
+      transition: all 0.5s ease 0s;
+    }
+
+    @include desktop {
+      display: flex !important;
+    }
+  }
+
+  @include mobile {
+    min-width: 0% !important;
+  }
+}

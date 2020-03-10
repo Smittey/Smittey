@@ -1,0 +1,14 @@
+.header {
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+
+    .otherLink {
+        flex: 0.5;
+    }
+
+    .siteTitle {
+        text-align: center;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: $regular;
+    color: $primary-font-color;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 60px;
+
+    span {
+        font-family: $bold;
+    }
+}
+
+h2 {
+    font-size: 25px;
+    font-family: $bold;
+}
+
+h4 {
+    font-family: $bold;
+}
+
+h5 {
+    font-family: $bold;
+}
+
+a {
+    color: $primary-font-color;
+    text-decoration: none;
+}
+
+.bold {
+    font-family: $bold;
+}
+
+.italic {
+    font-family: $italic;
+}
+
+.regular {
+    font-family: $regular;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+}
+
+.button {
+    border: 1px solid #83D5D5;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: $primary-font-color;
+
+    &:hover,&:focus {
+        background-color: $theme-color;
+        color: white;
+        outline:none;
+        box-shadow:none !important;
+    }
+}
+  
+  
+.content {
+    flex-basis: 100%;
+
+    height: 100vh; 
+    overflow: auto;
+    position: relative;
+
+    margin-left: 10%;
+    margin-right: 15%;
+        scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+    @include mobile {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+
+    h1 {
+        @include mobile {
+            font-size: calc(3vw + 3vh);
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
+  
+  
+.left::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.theme-primary-colour {
+    color: $theme-color;
+}

@@ -1,0 +1,203 @@
+.articlePreviews {
+
+    .toggleView {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .layoutIcons {
+            color: $light-grey;
+            font-size: 30px;
+
+            &:nth-child(1) {
+                margin-left: 5px;
+            }
+    
+            &:hover {
+                color: $theme-color;
+            }
+        }
+            
+        .active {
+            color: $theme-color;
+        }
+    }
+
+    a {
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    h1 {
+        margin-left: 15%;
+    }
+    
+    .separator {
+        color: $theme-color;
+    }
+
+    .description {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .date {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+
+    .tags {
+        padding-top: 10px;
+    }
+
+    .itemWrapperGrid {
+        display: grid;
+        background-color: #fff;
+        color: #444;
+
+        @include desktop {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        @include mobile {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .imgBox {
+            overflow: hidden;
+        }
+
+        @include mobile {
+            border-bottom: 1px solid #C9C6C6;
+        }
+
+        @include tablet {
+            border-bottom: 1px solid #C9C6C6;
+        }
+
+        .box {
+            padding: 0px 20px;
+
+            h2 { 
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+        
+            h4 { 
+                margin-top: 0px;
+            }
+
+            .previewText {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                margin-top: 0px;
+                margin-bottom: 8px;
+            }
+
+
+            @include mobile {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            @include tablet {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        &:nth-child(even) {
+            grid-template-columns: 55% 45%;
+            @include mobile {
+                grid-template-columns: 100%;
+            }
+    
+            @include tablet {
+                grid-template-columns: 100%;
+            }
+        }
+
+        &:nth-child(odd) {
+            grid-template-columns: 45% 55%;
+
+            @include mobile {
+                grid-template-columns: 100%;
+            }
+    
+            @include tablet {
+                grid-template-columns: 100%;
+            }
+        }
+
+        .heroImageGatsby {
+            // height: 100%;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            
+            min-height: 100%;
+            height: 200px;
+            &:hover
+            {
+                transform: scale(1.07);
+            }
+        }
+
+    }
+
+    .itemWrapperList {
+        .blogList {
+            margin: 30px 0 0 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+        } 
+        
+        .blogList > li {
+            position: relative;
+        }
+    
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    
+        /* The date/time */
+        .blogList > li .time {
+            display: block;
+            // width: 30%;
+            // padding-right: 100px;
+            position: absolute;
+        }
+    
+        .blogList > li .time span {
+            display: block;
+            text-align: left;
+        }
+    
+        /* Right content */
+        .blogList > li .label {
+            margin: 0 0 50px 15%;
+            position: relative;
+        }
+    
+        .blogList > li .label h2 { 
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    
+        .blogList > li .label h4 { 
+            margin-top: 0px;
+        }
+    
+        .tags {
+            padding-top: 10px;
+        }
+    }
+    
+}
