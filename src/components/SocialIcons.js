@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const SocialIcons = ({ size }) => {
-  const { allContentfulSocialMediaIcons } = useStaticQuery(
+  const { allContentfulSocialMediaIcons, contentfulAsset } = useStaticQuery(
     graphql`
           query {
             allContentfulSocialMediaIcons {
@@ -18,6 +18,11 @@ const SocialIcons = ({ size }) => {
                   }
                 }
               }
+            }
+            contentfulAsset(contentful_id: {eq: "1WJRLO2hr4gqnJcDW4p7Za"}) {
+              sizes(maxHeight: 200) {
+                ...GatsbyContentfulSizes
+              }            
             }
           }
         `,
@@ -47,6 +52,23 @@ const SocialIcons = ({ size }) => {
           </OutboundLink>
         ))
       }
+      <OutboundLink
+          href="https://www.andysmith.me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="imgBox"
+        >
+          <Img
+            className="social"
+            style={{
+              display: 'inline-block',
+              width: size,
+              height: size,
+            }}
+            sizes={contentfulAsset.sizes}
+            alt="Personal website icon link"
+          />
+        </OutboundLink>
       </div>
     </div>
   );

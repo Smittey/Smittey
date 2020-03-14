@@ -29,14 +29,14 @@ const Header = ({ isIndex }) => {
   return (
     <header className="header bold">
 
-      <OutboundLink
+      {/* <OutboundLink
         href={personalSiteUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="otherLink"
       >
         Personal Website
-      </OutboundLink>
+      </OutboundLink> */}
 
       
         <div className="siteTitle">

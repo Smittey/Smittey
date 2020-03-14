@@ -1,4 +1,9 @@
 .rightNav {
+
+  @include desktop {
+    width: 500px;
+  }
+
   .icon {
     color: $theme-color;
   }
@@ -35,14 +40,29 @@
 
   .menuWrapper {
     background-color: $theme-color;
-    width: fit-content;
     float:right;
     position: relative;
     display: flex;
-    min-width: fit-content;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    width: fit-content;
+
+
+    @include mobile {
+      display: none;
+      width: 70%;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      right: 0px;
+      transition: all 0.5s ease 0s;
+    }
+
+    @include desktop {
+      display: flex !important;
+      min-width: fit-content;
+      width: 100%;
+    }
 
     .menuText {
       font-size: 25px;
@@ -102,8 +122,12 @@
         // transform: translateY(-50%);
       }
 
-      .imgBox:not(:first-child):not(:last-child) {
-        margin: 0px 10px 0px 10px;
+      // .imgBox:not(:first-child):not(:last-child) {
+      //   margin: 0px 10px 0px 10px;
+      // }
+
+      .imgBox:not(:last-child) {
+        margin-right: 10px;
       }
 
       .social {
@@ -122,20 +146,6 @@
       bottom: 0;
       flex-grow: 1;
   
-    }
-
-    @include mobile {
-      display: none;
-      width: 0px;
-      position: fixed;
-      z-index: 1;
-      top: 0px;
-      right: 0px;
-      transition: all 0.5s ease 0s;
-    }
-
-    @include desktop {
-      display: flex !important;
     }
   }
 

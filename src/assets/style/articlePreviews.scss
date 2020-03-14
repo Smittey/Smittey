@@ -1,9 +1,17 @@
 .articlePreviews {
 
     .toggleView {
-        position: absolute;
-        top: 0;
-        right: 0;
+
+        // @include desktop {
+        //     // position: absolute;
+            // top: 0;
+            // right: 0;
+            text-align: right;
+        // }
+
+        // @include mobile {
+        //     text-align: center;
+        // }
 
         .layoutIcons {
             color: $light-grey;
@@ -30,7 +38,12 @@
     }
 
     h1 {
-        margin-left: 15%;
+        padding: 0px 0px;
+        margin: 0px 0px 50px 0px;
+                
+        @include desktop {
+            margin-left: 15%;
+        }
     }
     
     .separator {
@@ -170,9 +183,14 @@
         /* The date/time */
         .blogList > li .time {
             display: block;
-            // width: 30%;
-            // padding-right: 100px;
-            position: absolute;
+
+            @include mobile {
+                margin-bottom: 10px
+            }
+
+            @include desktop {
+                position: absolute;
+            }
         }
     
         .blogList > li .time span {
@@ -182,8 +200,15 @@
     
         /* Right content */
         .blogList > li .label {
-            margin: 0 0 50px 15%;
             position: relative;
+
+            @include mobile {
+                margin: 0 0 50px 0%;
+            }
+
+            @include desktop {
+                margin: 0 0 50px 15%;
+            }
         }
     
         .blogList > li .label h2 { 

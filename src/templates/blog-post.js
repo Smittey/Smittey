@@ -10,66 +10,66 @@ import Disqus from 'disqus-react';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   
-    const {
-      title,
-      heroImage,
-      body,
-      publishDate,
-      tags,
-      slug,
-      description
-    } = data.contentfulBlogPost;
+  const {
+    title,
+    heroImage,
+    body,
+    publishDate,
+    tags,
+    slug,
+    description
+  } = data.contentfulBlogPost;
 
-    const { 
-      title: siteTitle,
-      baseUrl
-    } =  data.site.siteMetadata;
+  const { 
+    title: siteTitle,
+    baseUrl
+  } =  data.site.siteMetadata;
 
-    const {
-      prev,
-      next
-    } = pageContext;
-    
-    const disqusShortname = 'smittey';
-    const disqusConfig = {
-        url: `https://smittey.co.uk/${slug}/`
-    };
+  const {
+    prev,
+    next
+  } = pageContext;
+  
+  const disqusShortname = 'smittey';
+  const disqusConfig = {
+      url: `https://smittey.co.uk/${slug}/`
+  };
 
-    return (
-      <Layout>
+  return (
+    <Layout>
+      <div>
+        <Helmet title={`${title} | ${siteTitle}`} />
         <div>
-          <Helmet title={`${title} | ${siteTitle}`} />
-          <div>
-            <Img 
-              alt={title} 
-              fluid={heroImage.fluid}
-              style={{ maxHeight: '50vh' }}
-            />
-          </div>
-          <div className="blogWrapper">
-            <div className="infoHeader bold">
-              <span className="date">{publishDate}</span>
-              <h1 className="title">{title}</h1>
-              <h2 className="description">{description.description}</h2>
-              <span className="tags"><Tags tags={tags}/></span>
-            </div>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: body.childMarkdownRemark.html,
-              }}
-            />
-
-            <Author />
-
-            <PrevNext baseUrl={baseUrl} prevPost={prev} nextPost={next} />
-              
-            <div className="divider"></div>
-            
-            <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-          </div>
+          <Img 
+            alt={title} 
+            fluid={heroImage.fluid}
+            style={{ maxHeight: '50vh' }}
+          />
         </div>
-      </Layout>
-    )
+        <div className="blogWrapper">
+          <div className="infoHeader bold">
+            <span className="date">{publishDate}</span>
+            <h1 className="title">{title}</h1>
+            <h2 className="description">{description.description}</h2>
+            <span className="tags"><Tags tags={tags}/></span>
+          </div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: body.childMarkdownRemark.html,
+            }}
+          />
+
+          <Author />
+
+          <PrevNext baseUrl={baseUrl} prevPost={prev} nextPost={next} />
+            
+          <div className="divider"></div>
+          
+          <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        </div>
+      </div>
+    </Layout>
+  )
   
 }
 

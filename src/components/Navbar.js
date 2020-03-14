@@ -44,7 +44,7 @@ const Navbar = ({ isIndex }) => {
   };
 
   return (
-    <nav className="rightNav" style={{ maxWidth: '20%' }}>
+    <nav className="rightNav" >
 
       <span role="button" className="menuIcon" onClick={() => navToggle()} tabIndex="0" onKeyDown={navToggle}>
         <IconContext.Provider value={{ className: (menuState === 'closed') ? 'icon' : 'iconClicked' }}>

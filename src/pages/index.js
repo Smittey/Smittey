@@ -28,20 +28,18 @@ const IndexPage = ({ data }) => {
           <span className="theme-primary-colour bold">Writing</span>
         </h1>
 
-      
         <div className="toggleView">
           <IconContext.Provider value={{ className: 'layoutIcons' }}>
-            <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(displayView === 'grid') && "active"}/></a>
             <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(displayView === 'list') && "active"} /></a>  
+            <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(displayView === 'grid') && "active"}/></a>
           </IconContext.Provider>
-
         </div>
 
-          {
-            (displayView === 'grid') 
-            ? <ArticlePreviewGrid articles={articles} /> 
-            : <ArticlePreviewList articles={articles} />
-          }
+        {
+          (displayView === 'grid') 
+          ? <ArticlePreviewGrid articles={articles} /> 
+          : <ArticlePreviewList articles={articles} />
+        }
 
       </div>
     </Layout>
