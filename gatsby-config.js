@@ -70,11 +70,11 @@ module.exports = {
     },
     
     'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-74354041-1',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId: 'UA-74354041-1',
+    //   },
+    // },
   ],
 };
