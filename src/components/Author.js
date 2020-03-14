@@ -6,14 +6,19 @@ import Img from "gatsby-image"
 
 const Author = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState();
+    
     useEffect(() => {
       const handleResize = () => {
-        setWidth(window.innerWidth);
+        setScreenSize();
       };
       window.addEventListener('resize', handleResize);
       return () => { window.removeEventListener('resize', handleResize); };
     }, []);
+
+    const setScreenSize = () => {
+        setWidth(window.innerWidth)
+    }
 
     const { contentfulAsset } = useStaticQuery(
         graphql`
