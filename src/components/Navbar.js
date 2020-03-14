@@ -31,7 +31,7 @@ const Navbar = ({ isIndex }) => {
     graphql`
       query {
         contentfulAsset(contentful_id: {eq: "3Q1Kn2aUi6rUxunGYPZkAI"}) {
-          sizes(maxHeight: 2000) {
+          sizes(maxHeight: 700) {
               ...GatsbyContentfulSizes
           }
         }

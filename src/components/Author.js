@@ -12,6 +12,8 @@ const Author = () => {
       const handleResize = () => {
         setScreenSize();
       };
+
+      setScreenSize();
       window.addEventListener('resize', handleResize);
       return () => { window.removeEventListener('resize', handleResize); };
     }, []);
