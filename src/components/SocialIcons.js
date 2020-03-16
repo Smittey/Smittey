@@ -4,28 +4,33 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const SocialIcons = ({ size }) => {
-  const { allContentfulSocialMediaIcons, contentfulAsset } = useStaticQuery(
+  const { allContentfulSocialMediaIcons, contentfulAsset, site } = useStaticQuery(
     graphql`
-          query {
-            allContentfulSocialMediaIcons {
-              nodes {
-                name
-                link
-                altText
-                image {
-                  sizes(maxHeight: 300) {
-                      ...GatsbyContentfulSizes
-                  }
-                }
+      query {
+        allContentfulSocialMediaIcons {
+          nodes {
+            name
+            link
+            altText
+            image {
+              sizes(maxHeight: 300) {
+                  ...GatsbyContentfulSizes
               }
             }
-            contentfulAsset(contentful_id: {eq: "1WJRLO2hr4gqnJcDW4p7Za"}) {
-              sizes(maxHeight: 200) {
-                ...GatsbyContentfulSizes
-              }            
-            }
           }
-        `,
+        }
+        contentfulAsset(contentful_id: {eq: "1WJRLO2hr4gqnJcDW4p7Za"}) {
+          sizes(maxHeight: 200) {
+            ...GatsbyContentfulSizes
+          }            
+        }
+        site {
+          siteMetadata {
+            personalSiteUrl
+          }
+        }
+      }
+    `,
   );
   return (
     <div className="icons">
@@ -53,7 +58,7 @@ const SocialIcons = ({ size }) => {
         ))
       }
       <OutboundLink
-          href="https://www.andysmith.me"
+          href={site.siteMetadata.personalSiteUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="imgBox"

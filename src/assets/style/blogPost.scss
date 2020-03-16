@@ -22,6 +22,11 @@
         text-align: center;
 
         h1 {
+
+            @include mobile {
+                font-size: calc(6vw + 3vh);
+            }
+
             margin-top: 0px;
             margin-bottom: 5px;
 
@@ -121,22 +126,40 @@
     .pagination {
 
         padding-bottom: 50px;
+        display: flex;
 
         .icons {
             vertical-align: middle;
         }
 
-        .left{
+        .leftTitle {
             float: left;
-            text-align: left;
-            width: 50%
-          }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin-right: 5px;
+
+            .leftArrow {
+                margin-right: 5px;
+            }
+        }
           
-          .right{
+        .rightTitle {
             float: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
             text-align: right;
-            width: 50%
-          }
+            margin-left: 5px;
+
+            .rightArrow {
+                text-align: right;
+                margin-left: 5px;
+            }
+        }
+
     }
 
     .divider {

@@ -18,12 +18,19 @@ const PrevNext = ({ baseUrl, prevPost, nextPost }) => {
         <div className="pagination bold">
             <IconContext.Provider value={{ className: 'icons' }}>
 
-                <div className="left">
-                    <a href={(process.env.environment === "production") ? `${baseUrl}` : `/${prevSlug}`}><FaAngleDoubleLeft /> {prevTitle}</a>
-                </div>
-                <div className="right">
-                    <a href={(process.env.environment === "production") ? `${baseUrl}` : `/${nextSlug}`}>{nextTitle} <FaAngleDoubleRight /></a>
-                </div>
+                <a className="leftTitle" href={(process.env.environment === "production") ? `${baseUrl}` : `/${prevSlug}`}>
+                    <div className="leftArrow">
+                        <FaAngleDoubleLeft /> 
+                    </div>
+                    {prevTitle}
+                </a>
+
+                <a className="rightTitle" href={(process.env.environment === "production") ? `${baseUrl}` : `/${nextSlug}`}>
+                    {nextTitle}
+                    <div className="rightArrow">
+                        <FaAngleDoubleRight /> 
+                    </div>
+                </a>
             </IconContext.Provider>
         </div>   
     )

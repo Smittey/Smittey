@@ -10,8 +10,7 @@ const Header = ({ isIndex }) => {
       query {
         site {
           siteMetadata {
-            title,
-            personalSiteUrl
+            title
           }
         }
       }
@@ -19,8 +18,7 @@ const Header = ({ isIndex }) => {
   );
 
   const {
-    title,
-    personalSiteUrl,
+    title
   } = site.siteMetadata;
 
 
@@ -28,26 +26,13 @@ const Header = ({ isIndex }) => {
 
   return (
     <header className="header bold">
-
-      {/* <OutboundLink
-        href={personalSiteUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="otherLink"
-      >
-        Personal Website
-      </OutboundLink> */}
-
-      
-        <div className="siteTitle">
-          { !isIndex ? (
-            <Link to="/">
-              {titleSplit[0]}.<span className="theme-primary-colour">{titleSplit[1]}</span>
-            </Link>
-          )
-        : <span>&nbsp;</span>}
-        </div> 
-      
+      <div className="siteTitle">
+        { !isIndex && (
+          <Link to="/">
+            {titleSplit[0]}.<span className="theme-primary-colour">{titleSplit[1]}</span>
+          </Link>
+        )}
+      </div> 
     </header>
   );
 }
