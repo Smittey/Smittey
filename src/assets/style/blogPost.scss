@@ -126,7 +126,6 @@
     .pagination {
 
         padding-bottom: 50px;
-        display: flex;
 
         .icons {
             vertical-align: middle;
@@ -135,10 +134,7 @@
         .leftTitle {
             float: left;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            margin-right: 5px;
+            flex-grow: 1;
 
             .leftArrow {
                 margin-right: 5px;
@@ -148,11 +144,7 @@
         .rightTitle {
             float: right;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
             text-align: right;
-            margin-left: 5px;
 
             .rightArrow {
                 text-align: right;
