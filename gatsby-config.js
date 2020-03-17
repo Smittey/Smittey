@@ -25,6 +25,7 @@ module.exports = {
     author: '@smittey',
     baseUrl: 'https://www.smittey.co.uk/',
     personalSiteUrl: 'https://www.andysmith.me/',
+    tagsPath: '/tags/'
   },
   plugins: [
     {

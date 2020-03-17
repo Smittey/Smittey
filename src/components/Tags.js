@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 const Tags = ({
-    tags
+    tags,
+    selectedTag,
 }) => {
 
-    const separator = " • ";
+    const { site } = useStaticQuery(
+      graphql`
+        query {
+          site {
+            siteMetadata {
+              tagsPath
+            }
+          }
+        }
+      `,
+    );
 
+    const { tagsPath } = site.siteMetadata;
+    const separator = " • ";
     return (
         tags.map((tag, index) => 
-            <span>
+            <span className={(selectedTag && tag !== selectedTag) && "unSelectedTag"}>
                 { (index > 0) && <span className="separator">{separator}</span> }
-                <a type="button" onClick={() => {}}>
-                    
-                    #{tag}
-                </a>
+                <Link to={`${tagsPath}${tag}/`}>
+                  {tag}
+                </Link>
             </span>
         )   
     )

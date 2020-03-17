@@ -4,12 +4,17 @@ import ArticlePreviewGridItem from './ArticlePreviewGridItem';
 
 const ArticlePreviewGrid = ({
   articles,
+  selectedTag
 }) => {
 
   return (
     articles.map((article, i) => (
       <div className="itemWrapperGrid" key={article.title}>
-        <ArticlePreviewGridItem article={article} index={i} />
+        <ArticlePreviewGridItem 
+          article={article}
+          selectedTag={ selectedTag ? selectedTag : undefined }
+          index={i} 
+        />
       </div>
     ))
   );

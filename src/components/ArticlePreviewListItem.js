@@ -7,6 +7,7 @@ import { Link } from 'gatsby';
 
 const ArticlePreviewListItem = ({
   article,
+  selectedTag
 }) => {
   const {
     title,
@@ -18,7 +19,6 @@ const ArticlePreviewListItem = ({
   } = article;
 
   const formattedPublishedDate = moment(publishDate).format('MMM [\']YY');
-
   return (
     <li>
       <time className="time" dateTime="2013-04-10 18:30">
@@ -32,7 +32,12 @@ const ArticlePreviewListItem = ({
         </Link>
 
         <div>{previewText.previewText}</div>
-        <div className="tags bold"><Tags tags={tags} /></div>
+        <div className="tags bold">
+          <Tags 
+            tags={tags} 
+            selectedTag={selectedTag}
+          />
+        </div>
       </div>
     </li>
   );

@@ -4,13 +4,19 @@ import ArticlePreviewListItem from './ArticlePreviewListItem';
 
 const ArticlePreviewList = ({
   articles,
+  selectedTag
 }) => {
-
   return (
     <div className="itemWrapperList">
       <ul className="blogList">
         {
-          articles.map(article => <ArticlePreviewListItem key={article.title} article={article} />)
+          articles.map(article => 
+            <ArticlePreviewListItem 
+              key={article.title}
+              article={article}
+              selectedTag={ selectedTag ? selectedTag : undefined }
+            />
+          )
         }
       </ul>
     </div>

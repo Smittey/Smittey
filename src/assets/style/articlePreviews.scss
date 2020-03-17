@@ -2,16 +2,7 @@
 
     .toggleView {
 
-        // @include desktop {
-        //     // position: absolute;
-            // top: 0;
-            // right: 0;
-            text-align: right;
-        // }
-
-        // @include mobile {
-        //     text-align: center;
-        // }
+        text-align: right;
 
         .layoutIcons {
             color: $light-grey;
@@ -37,13 +28,16 @@
         }
     }
 
-    h1 {
-        padding: 0px 0px;
-        margin: 0px 0px 50px 0px;
-                
+    .headerBlock {
         @include desktop {
-            margin-left: 15%;
+            margin-left: 100px;
         }
+        
+        h1 {
+            padding: 0px 0px;
+            margin: 0px 0px 50px 0px;
+        }
+
     }
     
     .separator {
@@ -62,6 +56,14 @@
 
     .tags {
         padding-top: 10px;
+    }
+
+    .unSelectedTag a {
+        color: #dfe0e0;
+
+        &:hover {
+            color: $theme-color;
+        }
     }
 
     .itemWrapperGrid {

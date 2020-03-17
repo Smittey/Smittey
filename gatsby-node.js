@@ -6,6 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const tagTemplate = path.resolve("src/templates/tags.js")
 
     resolve(
       graphql(
@@ -17,6 +18,15 @@ exports.createPages = ({ graphql, actions }) => {
                   title
                   slug
                 }
+              }
+              group(field: tags) {
+                fieldValue
+                totalCount
+              }
+            }
+            site {
+              siteMetadata {
+                tagsPath
               }
             }
           }
@@ -39,6 +49,20 @@ exports.createPages = ({ graphql, actions }) => {
               slug: post.node.slug,
               prev,
               next,
+            },
+          })
+        })
+
+        const tags = result.data.allContentfulBlogPost.group;
+        const tagsPath = result.data.site.siteMetadata.tagsPath;
+
+        // Make tag pages
+        tags.forEach(tag => {
+          createPage({
+            path: `${tagsPath}${tag.fieldValue}/`,
+            component: tagTemplate,
+            context: {
+              tag: tag.fieldValue,
             },
           })
         })

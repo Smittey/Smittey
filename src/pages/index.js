@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from "gatsby"
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -12,21 +12,26 @@ const IndexPage = ({ data }) => {
 
   const [displayView, setDisplayView] = useState("list");
 
-  const articles = data.allContentfulBlogPost.nodes;
-
   const viewToggleHandler = (viewToSet) => {
     setDisplayView(viewToSet);
   }
+
+  const articles = data.allContentfulBlogPost.nodes;
+
 
   return (
     <Layout isIndex={true}>
       <SEO title="Blog Home" />
 
-        <div className="articlePreviews">
-        <h1>
-          <span>Andy.</span>
-          <span className="theme-primary-colour bold">Writing</span>
-        </h1>
+      <div className="articlePreviews">
+        <div className="headerBlock">
+          <Link to="/">
+            <h1>
+              <span>Andy.</span>
+              <span className="theme-primary-colour bold">Writing</span>
+            </h1>
+          </Link>
+        </div>
 
         <div className="toggleView">
           <IconContext.Provider value={{ className: 'layoutIcons' }}>

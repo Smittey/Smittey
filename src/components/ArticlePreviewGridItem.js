@@ -9,6 +9,7 @@ import { Link } from 'gatsby';
 const ArticlePreviewGridItem = ({
   article,
   index,
+  selectedTag
 }) => {
   const {
     title,
@@ -33,7 +34,11 @@ const ArticlePreviewGridItem = ({
             </Link>
             <p className="date">{formattedPublishedDate}</p>
             <p className="previewText">{previewText.previewText}</p>
-            <div className="tags bold"><Tags tags={tags} /></div>
+            <div className="tags bold">
+              <Tags tags={tags} 
+                selectedTag={selectedTag}
+              />
+            </div>
           </div>
 
           <Link to={slug} className="imgBox">
@@ -67,7 +72,11 @@ const ArticlePreviewGridItem = ({
             </Link>
             <p className="date">{formattedPublishedDate}</p>
             <p className="previewText">{previewText.previewText}</p>
-            <div className="tags bold"><Tags tags={tags} /></div>
+            <div className="tags bold">
+              <Tags tags={tags} 
+                selectedTag={selectedTag}
+              />
+            </div>
           </div>
         </>
       )
