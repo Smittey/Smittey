@@ -21,11 +21,11 @@ const Tags = ({ pageContext, data }) => {
     } = data.allContentfulBlogPost;
 
     const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${tag}"`
-
+    const seoTitle = `${tag} (${totalCount})`
     return (
 
       <Layout isIndex={true}>
-        <SEO title={tagHeader} />
+        <SEO title={seoTitle} />
           <div className="articlePreviews">
             <div className="headerBlock">
               <Link to="/">
