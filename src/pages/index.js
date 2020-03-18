@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, graphql } from "gatsby"
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
@@ -7,17 +7,21 @@ import ArticlePreviewGrid from '../components/ArticlePreviewGrid';
 import ArticlePreviewList from '../components/ArticlePreviewList';
 import { FaBars, FaThLarge } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import {
+  GlobalDispatchContext,
+  GlobalStateContext,
+} from "../utils/GlobalContextProvider"
 
 const IndexPage = ({ data }) => {
 
-  const [displayView, setDisplayView] = useState("list");
+  const dispatch = useContext(GlobalDispatchContext)
+  const state = useContext(GlobalStateContext)
 
   const viewToggleHandler = (viewToSet) => {
-    setDisplayView(viewToSet);
+    dispatch({ type: "TOGGLE_VIEW" })
   }
 
   const articles = data.allContentfulBlogPost.nodes;
-
 
   return (
     <Layout isIndex={true}>
@@ -35,13 +39,13 @@ const IndexPage = ({ data }) => {
 
         <div className="toggleView">
           <IconContext.Provider value={{ className: 'layoutIcons' }}>
-            <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(displayView === 'list') && "active"} /></a>  
-            <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(displayView === 'grid') && "active"}/></a>
+            <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(state.view === 'list') && "active"} /></a>  
+            <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
           </IconContext.Provider>
         </div>
 
         {
-          (displayView === 'grid') 
+          (state.view === 'grid') 
           ? <ArticlePreviewGrid articles={articles} /> 
           : <ArticlePreviewList articles={articles} />
         }

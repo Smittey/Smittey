@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import React, { useState, useContext } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -6,56 +6,62 @@ import ArticlePreviewGrid from '../components/ArticlePreviewGrid';
 import ArticlePreviewList from '../components/ArticlePreviewList';
 import { FaBars, FaThLarge } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import {
+  GlobalDispatchContext,
+  GlobalStateContext,
+} from "../utils/GlobalContextProvider"
 
 const Tags = ({ pageContext, data }) => {
-    const [displayView, setDisplayView] = useState("list");
 
-    const viewToggleHandler = (viewToSet) => {
-        setDisplayView(viewToSet);
-    }
+  const dispatch = useContext(GlobalDispatchContext)
+  const state = useContext(GlobalStateContext)
 
-    const { tag } = pageContext;
-    const {
-        nodes: articles,
-        totalCount,
-    } = data.allContentfulBlogPost;
+  const viewToggleHandler = (viewToSet) => {
+    dispatch({ type: "TOGGLE_VIEW" })
+  }
 
-    const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${tag}"`
-    const seoTitle = `${tag} (${totalCount})`
-    return (
+  const { tag } = pageContext;
+  const {
+      nodes: articles,
+      totalCount,
+  } = data.allContentfulBlogPost;
 
-      <Layout isIndex={true}>
-        <SEO title={seoTitle} />
-          <div className="articlePreviews">
-            <div className="headerBlock">
-              <Link to="/">
-                <h1>
-                  <span>Andy.</span>
-                  <span className="theme-primary-colour bold">Writing</span>
-                </h1>
-              </Link>
-              <h2>
-                <span>{tagHeader}</span>
-              </h2>
-            </div>
+  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${tag}"`
+  const seoTitle = `${tag} (${totalCount})`
 
-            <div className="toggleView">
-              <IconContext.Provider value={{ className: 'layoutIcons' }}>
-                  <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(displayView === 'list') && "active"} /></a>  
-                  <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(displayView === 'grid') && "active"}/></a>
-              </IconContext.Provider>
-            </div>
+  return (
+    <Layout isIndex={true}>
+      <SEO title={seoTitle} />
+        <div className="articlePreviews">
+          <div className="headerBlock">
+            <Link to="/">
+              <h1>
+                <span>Andy.</span>
+                <span className="theme-primary-colour bold">Writing</span>
+              </h1>
+            </Link>
+            <h2>
+              <span>{tagHeader}</span>
+            </h2>
+          </div>
 
-            {
-            (displayView === 'grid') 
+          <div className="toggleView">
+            <IconContext.Provider value={{ className: 'layoutIcons' }}>
+              <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(state.view === 'list') && "active"} /></a>  
+              <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
+            </IconContext.Provider>
+          </div>
+
+          {
+            (state.view === 'grid') 
             ? <ArticlePreviewGrid articles={articles} selectedTag={tag} /> 
             : <ArticlePreviewList articles={articles} selectedTag={tag} />
-            }
+          }
 
-        </div>
-        <Link to="/tags">All tags</Link>
+      </div>
+      <Link to="/tags">All tags</Link>
 
-      </Layout>
+    </Layout>
   )
 }
 
