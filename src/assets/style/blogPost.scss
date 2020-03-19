@@ -11,6 +11,10 @@
     a {
         &:hover {
             color: $theme-color;
+
+            .dark-theme & {
+                color: rgb(185, 216, 192);
+            }
         }
     }
 
@@ -101,22 +105,17 @@
                         color: $theme-color;
                         opacity: 0.4;
                     }
-                    
                 }
-    
-            }
-            
+            }    
         }
 
         .text {
             @include desktop {
                 margin-bottom: 20px;
-
             }
 
             @include mobile {
                 margin-bottom: 50px;
-
             }
         }
 

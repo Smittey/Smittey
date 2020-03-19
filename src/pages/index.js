@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
   const dispatch = useContext(GlobalDispatchContext)
   const state = useContext(GlobalStateContext)
 
-  const viewToggleHandler = (viewToSet) => {
+  const viewToggleHandler = () => {
     dispatch({ type: "TOGGLE_VIEW" })
   }
 
@@ -39,8 +39,8 @@ const IndexPage = ({ data }) => {
 
         <div className="toggleView">
           <IconContext.Provider value={{ className: 'layoutIcons' }}>
-            <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(state.view === 'list') && "active"} /></a>  
-            <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
+            <a type="button" onClick={() => viewToggleHandler()}><FaBars className={(state.view === 'list') && "active"} /></a>  
+            <a type="button" onClick={() => viewToggleHandler()}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
           </IconContext.Provider>
         </div>
 

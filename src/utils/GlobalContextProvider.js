@@ -4,7 +4,8 @@ export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
 
 const initialState = {
-  view: "list",
+  view: 'list',
+  theme: 'light',
 }
 
 function reducer(state, action) {
@@ -13,6 +14,12 @@ function reducer(state, action) {
       return {
         ...state,
         view: state.view === "list" ? "grid" : "list",
+      }
+    }
+    case "TOGGLE_THEME": {
+      return {
+        ...state,
+        theme: state.theme === "light" ? "dark" : "light",
       }
     }
     default:

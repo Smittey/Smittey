@@ -47,6 +47,10 @@
     height: 100vh;
     width: fit-content;
 
+    .dark-theme & {
+      background-color: rgb(71, 98, 87);
+    }
+
 
     @include mobile {
       display: none;

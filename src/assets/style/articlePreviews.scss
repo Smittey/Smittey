@@ -14,17 +14,29 @@
     
             &:hover {
                 color: $theme-color;
+
+                .dark-theme & {
+                    color: rgb(185, 216, 192);
+                }
             }
         }
             
         .active {
             color: $theme-color;
+
+            .dark-theme & {
+                color: rgb(185, 216, 192);
+            }
         }
     }
 
     a {
         &:hover {
             color: $theme-color;
+
+            .dark-theme & {
+                color: rgb(185, 216, 192);
+            }
         }
     }
 
@@ -68,8 +80,6 @@
 
     .itemWrapperGrid {
         display: grid;
-        background-color: #fff;
-        color: #444;
 
         @include desktop {
             padding-top: 30px;

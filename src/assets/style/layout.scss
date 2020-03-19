@@ -3,6 +3,11 @@ body {
     color: $primary-font-color;
     margin: 0;
     padding: 0;
+
+    &.dark-theme {
+        background-color: var(--dark-background);
+        color: var(--dark-color);
+    }
 }
   
 html {
@@ -34,6 +39,18 @@ h5 {
 a {
     color: $primary-font-color;
     text-decoration: none;
+
+    .dark-theme & {
+        color: rgb(247, 229, 199);
+        text-decoration-color: initial;
+    }
+}
+
+.themeToggle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 999;
 }
 
 .bold {
@@ -113,4 +130,8 @@ main {
 
 .theme-primary-colour {
     color: $theme-color;
+
+    .dark-theme & {
+        color: rgb(185, 216, 192);
+    }
 }

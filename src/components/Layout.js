@@ -1,22 +1,75 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import '../assets/style/main.scss';
 import Header from '../components/Header'
+import Switch from 'react-switch';
+import sunIcon from '../assets/images/sun-icon.svg';
+import moonIcon from '../assets/images/moon-icon.svg';
+// import lightDarkIcon from '../assets/images/light-dark.svg';
+import { Helmet } from 'react-helmet'
+import {
+  GlobalDispatchContext,
+  GlobalStateContext,
+} from "../utils/GlobalContextProvider"
 
-const Layout = ({ children, isIndex }) => (
-  <div>
-    <div className="container">
-      <div className="content">
-        <Header isIndex={isIndex}/>
-        <main>
-          {children}
-        </main>
+const Layout = ({ children, isIndex }) => {
+
+  const dispatch = useContext(GlobalDispatchContext)
+  const state = useContext(GlobalStateContext)
+
+  const themeToggleHandler = () => {
+    dispatch({ type: "TOGGLE_THEME" })
+  }
+
+  const lightDarkIcon = `M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z`;
+
+  return (
+    <>
+      <Helmet>
+        <body className={ state.theme === 'light' ? 'light-theme' : 'dark-theme' } />
+      </Helmet>
+      <div className="themeToggle">
+
+      <span className="root" role="figure" onClick={() => themeToggleHandler()} >
+        <svg
+          version="1.1"
+          width="20px"
+          height="20px"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d={lightDarkIcon} style={{ fill: "currentColor" }} />
+        </svg>
+      </span>
+
+
+        {/* <img src={lightDarkIcon} type="button" onClick={() => themeToggleHandler()}/> */}
+        {/* <Switch 
+          onChange={themeToggleHandler}
+          checked={state.theme === 'light' ? false : true}
+          checkedIcon={<img src={moonIcon} alt="moon icon" />}
+          uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+          width={28}
+          height={15}
+          handleDiameter={15}
+          className="themeToggle"
+        /> */}
       </div>
-      {isIndex && <Navbar />}
-    </div>
-  </div>
-);
+      <div className="container">
+        <div className="content">
+          <Header isIndex={isIndex}/>
+          <main>
+            {children}
+          </main>
+        </div>
+        {isIndex && <Navbar />}
+      </div>
+    </>
+  )
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
