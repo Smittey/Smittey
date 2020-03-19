@@ -67,7 +67,6 @@
     "react-helmet": "^5.2.1",
     "react-highlight-words": "^0.16.0",
     "react-icons": "^3.8.0",
-    "react-switch": "^5.0.1",
     "recompose": "^0.30.0"
   },
   "devDependencies": {

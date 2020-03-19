@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import '../assets/style/main.scss';
 import Header from '../components/Header'
-import Switch from 'react-switch';
-import sunIcon from '../assets/images/sun-icon.svg';
-import moonIcon from '../assets/images/moon-icon.svg';
-// import lightDarkIcon from '../assets/images/light-dark.svg';
 import { Helmet } from 'react-helmet'
 import {
   GlobalDispatchContext,
@@ -45,18 +41,6 @@ const Layout = ({ children, isIndex }) => {
         </svg>
       </span>
 
-
-        {/* <img src={lightDarkIcon} type="button" onClick={() => themeToggleHandler()}/> */}
-        {/* <Switch 
-          onChange={themeToggleHandler}
-          checked={state.theme === 'light' ? false : true}
-          checkedIcon={<img src={moonIcon} alt="moon icon" />}
-          uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-          width={28}
-          height={15}
-          handleDiameter={15}
-          className="themeToggle"
-        /> */}
       </div>
       <div className="container">
         <div className="content">
