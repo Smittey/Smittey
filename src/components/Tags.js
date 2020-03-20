@@ -27,7 +27,7 @@ const Tags = ({
             <span className={(selectedTag && tag !== selectedTag) && "unSelectedTag"}>
                 { (index > 0) && <span className="separator">{separator}</span> }
                 <Link to={`${tagsPath}${tag}/`}>
-                  {tag}
+                  #{tag}
                 </Link>
             </span>
         )   

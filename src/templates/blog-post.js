@@ -9,7 +9,7 @@ import PrevNext from '../components/PrevNext'
 import Disqus from 'disqus-react';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-  
+
   const {
     title,
     heroImage,

@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react"
-import { Link, graphql } from "gatsby"
+import React, { useContext } from 'react';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import ArticlePreviewGrid from '../components/ArticlePreviewGrid';
@@ -9,16 +9,16 @@ import { IconContext } from 'react-icons';
 import {
   GlobalDispatchContext,
   GlobalStateContext,
-} from "../utils/GlobalContextProvider"
+} from "../utils/GlobalContextProvider";
 
 const Tags = ({ pageContext, data }) => {
 
-  const dispatch = useContext(GlobalDispatchContext)
-  const state = useContext(GlobalStateContext)
+  const dispatch = useContext(GlobalDispatchContext);
+  const state = useContext(GlobalStateContext);
 
-  const viewToggleHandler = (viewToSet) => {
-    dispatch({ type: "TOGGLE_VIEW" })
-  }
+  const viewToggleHandler = () => {
+    dispatch({ type: "TOGGLE_VIEW" });
+  };
 
   const { tag } = pageContext;
   const {
@@ -26,8 +26,8 @@ const Tags = ({ pageContext, data }) => {
       totalCount,
   } = data.allContentfulBlogPost;
 
-  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with "${tag}"`
-  const seoTitle = `${tag} (${totalCount})`
+  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged: #${tag}`;
+  const seoTitle = `${tag} (${totalCount})`;
 
   return (
     <Layout isIndex={true}>
@@ -57,10 +57,7 @@ const Tags = ({ pageContext, data }) => {
             ? <ArticlePreviewGrid articles={articles} selectedTag={tag} /> 
             : <ArticlePreviewList articles={articles} selectedTag={tag} />
           }
-
       </div>
-      <Link to="/tags">All tags</Link>
-
     </Layout>
   )
 }
