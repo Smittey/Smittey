@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import { Link } from 'gatsby';
 
 const PrevNext = ({ baseUrl, prevPost, nextPost }) => {
 
@@ -19,21 +20,21 @@ const PrevNext = ({ baseUrl, prevPost, nextPost }) => {
             <IconContext.Provider value={{ className: 'icons' }}>
 
                 {prevPost && (
-                    <a className="leftTitle" href={(process.env.environment === "production") ? `${baseUrl}` : `/${prevSlug}`}>
+                    <Link className="leftTitle" to={prevSlug}>
                         <div className="leftArrow">
                             <FaAngleDoubleLeft /> 
                         </div>
                         {prevTitle}
-                    </a>
+                    </Link>
                 )}
 
                 {nextPost && (
-                    <a className="rightTitle" href={(process.env.environment === "production") ? `${baseUrl}` : `/${nextSlug}`}>
+                    <Link className="rightTitle" to={nextSlug}>
                         {nextTitle}
                         <div className="rightArrow">
                             <FaAngleDoubleRight /> 
                         </div>
-                    </a>
+                    </Link>
                 )}
             </IconContext.Provider>
         </div>   
