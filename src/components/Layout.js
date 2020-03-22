@@ -42,8 +42,8 @@ const Layout = ({ children, isIndex }) => {
       </span>
 
       </div>
-      <div className="container">
-        <div className="content">
+      <div className="container" style={{overflow: isIndex && "hidden"}}>
+        <div className="content" style={{height: isIndex && "100vh"}}>
           <Header isIndex={isIndex}/>
           <main>
             {children}
