@@ -1,6 +1,6 @@
-# andysmith.me
+# smittey.co.uk
 
-The personal website of Andy Smith, senior software engineer based in London, UK.
+Tech and Career blog by Andy Smith, senior software engineer based in London, UK.
 
 ______
 
@@ -38,6 +38,5 @@ CONTENTFUL_ACCESS_TOKEN=<YOUR_TOKEN>
 ### TODO:
 
 - Improve error logging
-- Improve responsiveness
 - Address accessibility
 
