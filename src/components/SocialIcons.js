@@ -19,7 +19,7 @@ const SocialIcons = ({ size }) => {
             }
           }
         }
-        contentfulAsset(contentful_id: {eq: "1WJRLO2hr4gqnJcDW4p7Za"}) {
+        contentfulAsset(contentful_id: {eq: "2KdcKlMFZES1yMGumQCmjH"}) {
           sizes(maxHeight: 200) {
             ...GatsbyContentfulSizes
           }            
