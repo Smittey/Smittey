@@ -101,7 +101,7 @@ module.exports = {
                 Object.assign({},
                   {
                     title: edge.node.title,
-                    date: edge.node.publicationDate,
+                    date: edge.node.publishDate,
                     description: edge.node.previewText.previewText,
                     url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
                     guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
