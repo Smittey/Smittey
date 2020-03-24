@@ -80,7 +80,7 @@ module.exports = {
       resolve: 'gatsby-plugin-feed',
       options: {
         custom_namespaces: {
-          'g': 'http://base.google.com/ns/1.0'
+          'media': 'http://search.yahoo.com/mrss/'
         },
         query: `
           {
@@ -106,8 +106,13 @@ module.exports = {
                     url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
                     guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
                     custom_elements: [
-                      {'g:image_link': `http:${edge.node.heroImage.file.url}`}
-                    ],                    
+                      { "media:content": {
+                        _attr: {
+                          url: `http:${edge.node.heroImage.file.url}`,
+                          medium: 'image',
+                        }
+                      } },
+                    ],                   
                   },
                 )
               ),
