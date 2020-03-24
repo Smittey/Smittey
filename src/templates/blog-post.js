@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   const { 
     title: siteTitle,
-    baseUrl
+    siteUrl
   } =  data.site.siteMetadata;
 
   const {
@@ -61,7 +61,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
           <Author />
 
-          <PrevNext baseUrl={baseUrl} prevPost={prev} nextPost={next} />
+          <PrevNext siteUrl={siteUrl} prevPost={prev} nextPost={next} />
             
           <div className="divider"></div>
           
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title,
-        baseUrl,
+        siteUrl,
       }
     }
     contentfulBlogPost(slug: { eq: $slug }) {

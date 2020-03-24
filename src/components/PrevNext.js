@@ -3,7 +3,7 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { Link } from 'gatsby';
 
-const PrevNext = ({ baseUrl, prevPost, nextPost }) => {
+const PrevNext = ({ siteUrl, prevPost, nextPost }) => {
 
     const {
         title: prevTitle,

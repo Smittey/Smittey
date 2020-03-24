@@ -23,7 +23,7 @@ module.exports = {
     location: 'London, UK',
     description: 'Tech and Career blog by Andy Smith, senior software engineer based in London, UK',
     author: '@smittey',
-    baseUrl: 'https://www.smittey.co.uk/',
+    siteUrl: 'https://www.smittey.co.uk/',
     personalSiteUrl: 'https://www.andysmith.me/',
     tagsPath: '/tags/'
   },
@@ -72,6 +72,61 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-prismjs'
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allContentfulBlogPost } }) =>
+              allContentfulBlogPost.edges.map(edge =>
+                Object.assign({},
+                  {
+                    title: edge.node.title,
+                    date: edge.node.publicationDate,
+                    description: edge.node.previewText.previewText,
+                    url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+                    guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+                  },
+                )
+              ),
+            query: `{
+              site {
+                siteMetadata {
+                  title
+                  siteUrl
+                }
+              }
+              allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
+                edges {
+                  node {
+                    title
+                    publishDate
+                    previewText {
+                      previewText
+                    }
+                    slug
+                  }
+                }
+              }
+            }`,
+            output: '/rss.xml',
+            title: 'Andy.Writing Blog Post Feed'
           },
         ],
       },
