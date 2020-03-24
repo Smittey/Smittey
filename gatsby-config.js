@@ -79,6 +79,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-feed',
       options: {
+        custom_namespaces: {
+          'g': 'http://base.google.com/ns/1.0'
+        },
         query: `
           {
             site {
@@ -102,7 +105,9 @@ module.exports = {
                     description: edge.node.previewText.previewText,
                     url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
                     guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
-                    custom_elements: [{ "heroImage": edge.node.heroImage.file.url }],
+                    custom_elements: [
+                      {'g:image_link': `http:${edge.node.heroImage.file.url}`}
+                    ],                    
                   },
                 )
               ),
@@ -131,7 +136,7 @@ module.exports = {
                 }
               }
             }`,
-            output: '/rss.xml',
+            output: '/feed.xml',
             title: 'Andy.Writing Blog Post Feed'
           },
         ],
