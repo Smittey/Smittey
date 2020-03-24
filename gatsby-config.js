@@ -102,6 +102,7 @@ module.exports = {
                     description: edge.node.previewText.previewText,
                     url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
                     guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+                    custom_elements: [{ "heroImage": edge.node.heroImage.file.url }],
                   },
                 )
               ),
@@ -119,6 +120,11 @@ module.exports = {
                     publishDate
                     previewText {
                       previewText
+                    }
+                    heroImage {
+                      file {
+                        url
+                      }
                     }
                     slug
                   }
