@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import ArticlePreviewGrid from '../components/ArticlePreviewGrid';
 import ArticlePreviewList from '../components/ArticlePreviewList';
-import { FaBars, FaThLarge } from 'react-icons/fa';
+import { FaList, FaThLarge } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import {
   GlobalDispatchContext,
@@ -47,7 +47,7 @@ const Tags = ({ pageContext, data }) => {
 
           <div className="toggleView">
             <IconContext.Provider value={{ className: 'layoutIcons' }}>
-              <a type="button" onClick={() => viewToggleHandler('list')}><FaBars className={(state.view === 'list') && "active"} /></a>  
+              <a type="button" onClick={() => viewToggleHandler('list')}><FaList className={(state.view === 'list') && "active"} /></a>  
               <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
             </IconContext.Provider>
           </div>
