@@ -37,6 +37,13 @@ const Layout = ({ children, isIndex }) => {
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <title>
+            {
+              state.theme === 'light'
+              ? "Toggle to dark mode"
+              : "Toggle to light mode"
+            }
+          </title>
           <path d={lightDarkIcon} style={{ fill: "currentColor" }} />
         </svg>
       </span>

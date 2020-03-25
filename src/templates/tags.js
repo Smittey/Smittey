@@ -47,8 +47,12 @@ const Tags = ({ pageContext, data }) => {
 
           <div className="toggleView">
             <IconContext.Provider value={{ className: 'layoutIcons' }}>
-              <a type="button" onClick={() => viewToggleHandler('list')}><FaList className={(state.view === 'list') && "active"} /></a>  
-              <a type="button" onClick={() => viewToggleHandler('grid')}><FaThLarge className={(state.view === 'grid') && "active"}/></a>
+              <a type="button" onClick={() => viewToggleHandler()}>
+                <FaList className={(state.view === 'list') && "active"} title="Display posts in List View"/>
+              </a>  
+              <a type="button" onClick={() => viewToggleHandler()}>
+                <FaThLarge className={(state.view === 'grid') && "active"} title="Display posts in Grid View"/>
+              </a>
             </IconContext.Provider>
           </div>
 
