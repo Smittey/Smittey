@@ -22,6 +22,7 @@ const IndexPage = ({ data }) => {
   }
 
   const articles = data.allContentfulBlogPost.nodes;
+  const siteDescription = data.site.siteMetadata.description;
 
   return (
     <Layout isIndex={true}>
@@ -35,6 +36,10 @@ const IndexPage = ({ data }) => {
               <span className="theme-primary-colour bold">Writing</span>
             </h1>
           </Link>
+
+          <h3 className="siteSubheading bold">
+            {siteDescription}
+          </h3>
         </div>
 
         <div className="toggleView">
@@ -79,6 +84,11 @@ export const pageQuery = graphql`
                   }
               }
           }
+      }
+      site {
+        siteMetadata {
+          description
+        }
       }
   }
 `;
