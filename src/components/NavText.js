@@ -1,10 +1,26 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const NavText = () => (
-  <p className="menuText bold">
-    Tech and career blog by Andy, a Senior Software Engineer based in London, UK
-  </p>
-);
+const NavText = () => {
+
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            description
+          }
+        }
+      }
+    `,
+  );
+
+  return (
+    <p className="menuText bold">
+      {site.siteMetadata.description}
+    </p>
+  );
+}
+
 
 export default NavText;

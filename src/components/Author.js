@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
 import SocialIcons from './SocialIcons';
 import Img from "gatsby-image"
 

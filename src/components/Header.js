@@ -37,7 +37,7 @@ const Header = ({ isIndex }) => {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  isIndex: PropTypes.bool,
 };
 
 Header.defaultProps = {

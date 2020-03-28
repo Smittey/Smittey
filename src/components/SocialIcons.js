@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
@@ -34,7 +35,7 @@ const SocialIcons = ({ size }) => {
   );
   return (
     <div className="icons">
-      <div class="iconsWrapper">
+      <div className="iconsWrapper">
       {
         allContentfulSocialMediaIcons.nodes.map((item) => (
           <OutboundLink
@@ -78,5 +79,9 @@ const SocialIcons = ({ size }) => {
     </div>
   );
 };
+
+SocialIcons.propTypes = {
+  size: PropTypes.string.isRequired,
+}
 
 export default SocialIcons;

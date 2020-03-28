@@ -23,15 +23,9 @@ const ArticlePreviewList = ({
   );
 };
 
-export default ArticlePreviewList;
-
 ArticlePreviewList.propTypes = {
-  index: PropTypes.number.isRequired,
-  data: PropTypes.shape({
-    title: PropTypes.string,
-    slug: PropTypes.string,
-    description: PropTypes.object,
-    previewText: PropTypes.object.isRequired,
-    heroImage: PropTypes.object.isRequired,
-  }),
+  articles: PropTypes.array.isRequired,
+  selectedTag: PropTypes.string,
 };
+
+export default ArticlePreviewList;

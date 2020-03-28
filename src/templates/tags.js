@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
@@ -66,29 +67,36 @@ const Tags = ({ pageContext, data }) => {
   )
 }
 
-export default Tags;
+Tags.propTypes = {
+  data: PropTypes.shape({
+    allContentfulBlogPost: PropTypes.object.isRequired,
+  }).isRequired,
+  pageContext: PropTypes.object.isRequired,
+};
 
 export const pageQuery = graphql`
-    query ($tag: String) {
-        allContentfulBlogPost(filter: {tags: {in: [$tag]}}) {
-            totalCount
-            nodes {
-              title
-              description {
-                description
-              }
-              previewText {
-                previewText
-              }
-              tags
-              slug
-              publishDate
-              heroImage {
-                sizes(maxHeight: 500, cropFocus: CENTER) {
-                  ...GatsbyContentfulSizes
-                }
-              }
-            }
+  query ($tag: String) {
+    allContentfulBlogPost(filter: {tags: {in: [$tag]}}) {
+      totalCount
+      nodes {
+        title
+        description {
+          description
+        }
+        previewText {
+          previewText
+        }
+        tags
+        slug
+        publishDate
+        heroImage {
+          sizes(maxHeight: 500, cropFocus: CENTER) {
+            ...GatsbyContentfulSizes
           }
-    } 
-    `
+        }
+      }
+    }
+  } 
+`;
+
+export default Tags;

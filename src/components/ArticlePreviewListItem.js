@@ -26,7 +26,7 @@ const ArticlePreviewListItem = ({
       </time>
       <div className="label">
 
-        <Link to={slug} activeClassName="activeMenuLink" className="menuLink">
+        <Link to={`/${slug}`} activeClassName="activeMenuLink" className="menuLink">
           <h2 className="title">{title}</h2>
           <h4 className="description">{description.description}</h4>
         </Link>
@@ -46,11 +46,13 @@ const ArticlePreviewListItem = ({
 export default ArticlePreviewListItem;
 
 ArticlePreviewListItem.propTypes = {
-  index: PropTypes.number.isRequired,
-  data: PropTypes.shape({
-    title: PropTypes.string,
-    slug: PropTypes.string,
-    description: PropTypes.object,
+  selectedTag: PropTypes.string,
+  article: PropTypes.shape({
+    publishDate: PropTypes.string.isRequired,
+    tags: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    description: PropTypes.object.isRequired,
     previewText: PropTypes.object.isRequired,
     heroImage: PropTypes.object.isRequired,
   }),

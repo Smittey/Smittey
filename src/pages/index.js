@@ -96,6 +96,7 @@ export const pageQuery = graphql`
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allContentfulBlogPost: PropTypes.object.isRequired,
+    site: PropTypes.object.isRequired,
   }).isRequired,
 };
 

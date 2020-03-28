@@ -1,11 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
-import Layout from '../components/Layout'
-import Tags from '../components/Tags'
-import Author from '../components/Author'
-import PrevNext from '../components/PrevNext'
+import React from 'react';
+import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
+import Layout from '../components/Layout';
+import Tags from '../components/Tags';
+import Author from '../components/Author';
+import PrevNext from '../components/PrevNext';
 import Disqus from 'disqus-react';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
@@ -22,7 +23,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   const { 
     title: siteTitle,
-    siteUrl
   } =  data.site.siteMetadata;
 
   const {
@@ -61,7 +61,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
           <Author />
 
-          <PrevNext siteUrl={siteUrl} prevPost={prev} nextPost={next} />
+          <PrevNext prevPost={prev} nextPost={next} />
             
           <div className="divider"></div>
           
@@ -73,14 +73,13 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   
 }
 
-export default BlogPostTemplate;
+
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
-        title,
-        siteUrl,
+        title
       }
     }
     contentfulBlogPost(slug: { eq: $slug }) {
@@ -103,4 +102,14 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.shape({
+    contentfulBlogPost: PropTypes.object.isRequired,
+    site: PropTypes.object.isRequired,
+  }).isRequired,
+  pageContext: PropTypes.object.isRequired,
+};
+
+export default BlogPostTemplate;

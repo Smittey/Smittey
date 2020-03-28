@@ -28,7 +28,7 @@ const ArticlePreviewGridItem = ({
       ? (
         <>
           <div className="box">
-            <Link to={slug}>
+            <Link to={`/${slug}`}>
               <h2 className="title">{title}</h2>
               <h4 className="description">{description.description}</h4>
             </Link>
@@ -41,7 +41,7 @@ const ArticlePreviewGridItem = ({
             </div>
           </div>
 
-          <Link to={slug} className="imgBox">
+          <Link to={`/${slug}`} className="imgBox">
             <BackgroundImage
               Tag="section"
               id="media-test"
@@ -54,7 +54,7 @@ const ArticlePreviewGridItem = ({
         </>
       ) : (
         <>
-          <Link to={slug} className="imgBox">
+          <Link to={`/${slug}`} className="imgBox">
             <BackgroundImage
               Tag="section"
               id="media-test"
@@ -66,14 +66,15 @@ const ArticlePreviewGridItem = ({
           </Link>
 
           <div className="box">
-            <Link to={slug}>
+            <Link to={`/${slug}`}>
               <h2 className="title">{title}</h2>
               <h4 className="description">{description.description}</h4>
             </Link>
             <p className="date">{formattedPublishedDate}</p>
             <p className="previewText">{previewText.previewText}</p>
             <div className="tags bold">
-              <Tags tags={tags} 
+              <Tags 
+                tags={tags} 
                 selectedTag={selectedTag}
               />
             </div>
@@ -86,12 +87,15 @@ const ArticlePreviewGridItem = ({
 export default ArticlePreviewGridItem;
 
 ArticlePreviewGridItem.propTypes = {
-  index: PropTypes.number.isRequired,
-  data: PropTypes.shape({
-    title: PropTypes.string,
-    slug: PropTypes.string,
-    description: PropTypes.object,
+  selectedTag: PropTypes.string,
+  article: PropTypes.shape({
+    publishDate: PropTypes.string.isRequired,
+    tags: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    description: PropTypes.object.isRequired,
     previewText: PropTypes.object.isRequired,
     heroImage: PropTypes.object.isRequired,
   }),
+  index: PropTypes.number.isRequired,
 };

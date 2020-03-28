@@ -22,9 +22,10 @@ const Tags = ({
 
     const { tagsPath } = site.siteMetadata;
     const separator = " • ";
+    
     return (
         tags.map((tag, index) => 
-            <span className={(selectedTag && tag !== selectedTag) && "unSelectedTag"}>
+            <span key={tag} className={(selectedTag && tag !== selectedTag) ? "unSelectedTag" : ""}>
                 { (index > 0) && <span className="separator">{separator}</span> }
                 <Link to={`${tagsPath}${tag}/`}>
                   #{tag}
@@ -35,7 +36,8 @@ const Tags = ({
 }
 
 Tags.propTypes = {
-    tags: PropTypes.array.isRequired, 
+  tags: PropTypes.array.isRequired,
+  selectedTag: PropTypes.string,
 }
 
 export default Tags;
