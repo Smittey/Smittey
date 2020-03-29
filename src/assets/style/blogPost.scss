@@ -1,8 +1,8 @@
 .blogWrapper {
+    max-width: 75ch;
 
-    @include desktop { 
-        margin: 0 10% 0 10%;
-    }
+    margin: 0 10% 0 10%;
+    
 
     .infoHeader {
         margin: 50px 0 50px 0;
@@ -176,7 +176,7 @@
           .dark-theme & {
             color: currentColor;
           }
-          
+
           &:hover,&:focus {
               outline:none;
               box-shadow:none !important;
