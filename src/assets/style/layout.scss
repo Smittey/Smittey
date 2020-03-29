@@ -67,7 +67,10 @@ a {
 
 .container {
     display: flex;
-    flex-direction: column;
+
+    // .post {
+    //     flex-direction: column;
+    // }
 }
 
 main {
@@ -99,7 +102,7 @@ main {
     flex-direction: row;
     
     padding-left: 10%;
-    padding-right: 15%;
+    padding-right: 10%;
         scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
 

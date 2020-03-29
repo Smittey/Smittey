@@ -50,7 +50,10 @@ const Layout = ({ children, isIndex }) => {
       </span>
 
       </div>
-      <div className="container" style={{overflow: isIndex && "hidden"}}>
+      <div className="container" style={{
+          overflow: isIndex && "hidden",
+          flexDirection: !isIndex && "column"
+        }}>
         <div className="content" style={{height: isIndex && "100vh"}}>
           <Header isIndex={isIndex}/>
           <main>
