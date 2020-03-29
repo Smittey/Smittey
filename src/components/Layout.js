@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar';
 import '../assets/style/main.scss';
-import Header from '../components/Header'
-import { Helmet } from 'react-helmet'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 import {
   GlobalDispatchContext,
   GlobalStateContext,
-} from "../utils/GlobalContextProvider"
+} from '../utils/GlobalContextProvider';
 
 const Layout = ({ children, isIndex }) => {
 
@@ -56,6 +57,7 @@ const Layout = ({ children, isIndex }) => {
             {children}
           </main>
         </div>
+        {!isIndex && <Footer />}
         {isIndex && <Navbar />}
       </div>
     </>

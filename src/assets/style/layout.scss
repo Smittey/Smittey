@@ -67,6 +67,7 @@ a {
 
 .container {
     display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -95,7 +96,8 @@ main {
     flex-basis: 100%;
     overflow: auto;
     position: relative;
-
+    flex-direction: row;
+    
     padding-left: 10%;
     padding-right: 15%;
         scrollbar-width: none; /* For Firefox */

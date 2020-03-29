@@ -157,6 +157,27 @@
         border-bottom: 1px solid #edf1ee;
         width: 80%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .comments {
+      text-align: center;
+
+        button {
+          font-family: "Avenir Next Bold";
+          cursor: pointer;
+          margin-bottom: 25px;
+          border: none;
+          text-decoration: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-color: inherit;
+
+          &:hover,&:focus {
+              outline:none;
+              box-shadow:none !important;
+          }
+        }
     }
 }

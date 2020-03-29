@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -7,9 +7,15 @@ import Layout from '../components/Layout';
 import Tags from '../components/Tags';
 import Author from '../components/Author';
 import PrevNext from '../components/PrevNext';
-import Disqus from 'disqus-react';
+import Disqus, { CommentCount } from 'disqus-react';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
+
+  const [showComments, setShowComments] = useState(false);
+
+  const handleCommentsToggle = (toggle) => {
+    setShowComments(toggle);
+  }
 
   const {
     title,
@@ -65,7 +71,28 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             
           <div className="divider"></div>
           
-          <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+            <div className="comments">
+            { showComments 
+              ?  
+              (
+                <>
+                  <button onClick={() => handleCommentsToggle(false)}>
+                    Hide Comments
+                  </button>
+                  <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+                </>
+              )
+              : 
+              (
+                <button onClick={() => handleCommentsToggle(true)}>
+                  {'Show '}
+                  <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
+                      Comments
+                  </Disqus.CommentCount>
+                </button>
+              )
+            }
+          </div>
         </div>
       </div>
     </Layout>

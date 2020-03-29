@@ -1,17 +1,68 @@
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-  
-    .footerText {
-      font-size: 10px;
+
+    height: 250px;
+    background-color: $theme-color;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+
+
+    form {
       text-align: center;
-      margin-bottom: 10px;
+
+      @include mobile {
+        width: 80%;
+      }
+
+      @include desktop {
+        width: 40%;
+      }
+
+      input {
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        text-align: center;
+        display: block;
+        width: 100%;
+
+        &:focus {
+          outline: none !important;
+          border: 1px solid $theme-color;
+        }
+
+        &::placeholder {
+          color: #B8B8B8;
+        }
+
+        font-family: "Avenir Next Bold";
+      }
+
+      button {
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        color: $theme-color;
+        font-family: "Avenir Next Bold";
+        opacity: 0.3;
+        background-color: #323232;
+        border-color: #323232;
+      }
+
+      .msg-alert {
+        p {
+          color: currentColor !important;
+        }
+      }
+
     }
   
-    .icon {
-      color: $theme-color;
-    }
 }
   
