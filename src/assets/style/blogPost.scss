@@ -171,9 +171,12 @@
           text-decoration: none;
           -webkit-appearance: none;
           -moz-appearance: none;
-          appearance: none;
           background-color: inherit;
 
+          .dark-theme & {
+            color: currentColor;
+          }
+          
           &:hover,&:focus {
               outline:none;
               box-shadow:none !important;

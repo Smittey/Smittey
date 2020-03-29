@@ -85,7 +85,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               : 
               (
                 <button onClick={() => handleCommentsToggle(true)}>
-                  {'Show '}
                   <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
                       Comments
                   </Disqus.CommentCount>

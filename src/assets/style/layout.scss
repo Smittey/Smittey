@@ -67,10 +67,6 @@ a {
 
 .container {
     display: flex;
-
-    // .post {
-    //     flex-direction: column;
-    // }
 }
 
 main {
@@ -103,13 +99,8 @@ main {
     
     padding-left: 10%;
     padding-right: 10%;
-        scrollbar-width: none; /* For Firefox */
+    scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
-
-    @include mobile {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
 
     h1 {
         @include mobile {
