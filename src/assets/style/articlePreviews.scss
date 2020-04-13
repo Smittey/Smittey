@@ -236,7 +236,8 @@
         /* Right content */
         .blogList > li .label {
             position: relative;
-
+            max-width: 75ch;
+            
             @include mobile {
                 margin: 0 0 50px 0px;
             }
