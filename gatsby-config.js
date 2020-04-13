@@ -21,7 +21,7 @@ module.exports = {
     name: 'Andy Smith',
     title: 'Andy.Writing',
     location: 'London, UK',
-    description: 'Tech and Career blog by Andy Smith, senior software engineer based in London, UK',
+    description: 'Tech and Career blog by Andy Smith, Senior Software Engineer based in London, UK',
     author: '@smittey',
     siteUrl: 'https://www.smittey.co.uk/',
     personalSiteUrl: 'https://www.andysmith.me/',
