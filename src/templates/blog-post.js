@@ -60,6 +60,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             <span className="tags"><Tags tags={tags}/></span>
           </div>
           <div
+            className="blogContent"
             dangerouslySetInnerHTML={{
               __html: body.childMarkdownRemark.html,
             }}
