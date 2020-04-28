@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout isIndex={true}>
-      <SEO title="Blog Home" />
+      <SEO title="Andy.Writing Home" />
 
       <div className="articlePreviews">
         <div className="headerBlock">
