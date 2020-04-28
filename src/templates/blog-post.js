@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Tags from '../components/Tags';
 import Author from '../components/Author';
 import PrevNext from '../components/PrevNext';
 import Disqus, { CommentCount } from 'disqus-react';
+import SEO from '../components/seo';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
 
@@ -24,6 +24,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     publishDate,
     tags,
     slug,
+    previewText,
     description
   } = data.contentfulBlogPost;
 
@@ -43,8 +44,12 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO 
+        title={`${title} | ${siteTitle}`}
+        description={description.description}
+        imageUrl={`http:${heroImage.file.url}`} 
+      />
       <div>
-        <Helmet title={`${title} | ${siteTitle}`} />
         <div>
           <Img 
             alt={title} 
@@ -114,10 +119,16 @@ export const pageQuery = graphql`
       description {
         description
       }
+      previewText {
+        previewText
+      }
       slug
       tags
       publishDate(formatString: "MMM [']YY")
       heroImage {
+        file {
+          url
+        }
         fluid(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulFluid_tracedSVG
         }
