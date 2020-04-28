@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       <SEO 
         title={`${title} | ${siteTitle}`}
         description={description.description}
-        imageUrl={`http:${heroImage.file.url}`} 
+        imageUrl={`http:${heroImage.fixed.src}`} 
       />
       <div>
         <div>
@@ -126,11 +126,11 @@ export const pageQuery = graphql`
       tags
       publishDate(formatString: "MMM [']YY")
       heroImage {
-        file {
-          url
-        }
-        fluid(maxWidth: 1180, background: "rgb:000000") {
+        fluid(maxWidth: 1180, background: "rgb:000000", quality: 100) {
           ...GatsbyContentfulFluid_tracedSVG
+        }
+        fixed(quality: 100, width: 800) {
+          src
         }
       }
       body {
