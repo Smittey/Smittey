@@ -54,7 +54,11 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <Img 
             alt={title} 
             fluid={heroImage.fluid}
-            style={{ maxHeight: '50vh' }}
+            style={{ 
+              maxHeight: '50vh',
+              maxWidth: '1180px',
+              margin: '0 auto',
+            }}
           />
         </div>
         <div className="blogWrapper">
@@ -126,7 +130,7 @@ export const pageQuery = graphql`
       tags
       publishDate(formatString: "MMM [']YY")
       heroImage {
-        fluid(maxWidth: 1180, background: "rgb:000000") {
+        fluid(maxWidth: 1180, background: "rgb:000000", quality: 80) {
           ...GatsbyContentfulFluid_tracedSVG
         }
         fixed(quality: 100, width: 800) {
