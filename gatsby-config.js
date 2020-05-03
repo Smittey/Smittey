@@ -111,7 +111,7 @@ module.exports = {
                     custom_elements: [
                       { "media:content": {
                         _attr: {
-                          url: `http:${edge.node.heroImage.file.url}`,
+                          url: `http:${edge.node.heroImage.fixed.src}`,
                           medium: 'image',
                         }
                       } },
@@ -135,8 +135,8 @@ module.exports = {
                       previewText
                     }
                     heroImage {
-                      file {
-                        url
+                      fixed(quality: 100, width: 800) {
+                        src
                       }
                     }
                     slug
