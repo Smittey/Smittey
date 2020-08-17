@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import Navbar from './Navbar';
 import '../assets/style/main.scss';
 import Header from './Header';
@@ -16,6 +17,11 @@ const Layout = ({ children, isIndex }) => {
 
   const themeToggleHandler = () => {
     dispatch({ type: 'TOGGLE_THEME' });
+    trackCustomEvent({
+      category: 'Toggle Theme',
+      action: 'Change Theme',
+      label: state.theme === 'light' ? 'dark' : 'light',
+    });
   };
 
   const lightDarkIcon = `M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
@@ -28,7 +34,6 @@ const Layout = ({ children, isIndex }) => {
         <body className={state.theme === 'light' ? 'light-theme' : 'dark-theme'} />
       </Helmet>
       <div className="themeToggle">
-
         <span
           className="root"
           role="button"

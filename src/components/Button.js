@@ -44,7 +44,7 @@ const Button = ({
           }}
           style={style}
         >
-          {label}
+          {children}
         </button>
       )
       : (

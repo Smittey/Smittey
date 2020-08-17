@@ -11,6 +11,7 @@ import {
   GlobalDispatchContext,
   GlobalStateContext,
 } from '../utils/GlobalContextProvider';
+import Button from '../components/Button';
 
 const IndexPage = ({ data }) => {
   const dispatch = useContext(GlobalDispatchContext);
@@ -42,20 +43,26 @@ const IndexPage = ({ data }) => {
 
         <div className="toggleView">
           <IconContext.Provider value={{ className: 'layoutIcons' }}>
-            <button
+            <Button
               type="button"
+              category="Toggle View"
+              action="Change Layout"
+              label="List"
               onClick={() => viewToggleHandler()}
               onKeyPress={() => viewToggleHandler()}
             >
               <FaList className={(state.view === 'list') && 'active'} title="Display posts in List View" />
-            </button>
-            <button
+            </Button>
+            <Button
               type="button"
+              category="Toggle View"
+              action="Change Layout"
+              label="Grid"
               onClick={() => viewToggleHandler()}
               onKeyPress={() => viewToggleHandler()}
             >
               <FaThLarge className={(state.view === 'grid') && 'active'} title="Display posts in Grid View" />
-            </button>
+            </Button>
           </IconContext.Provider>
         </div>
 
