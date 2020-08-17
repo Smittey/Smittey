@@ -76,7 +76,7 @@ Tags.propTypes = {
 
 export const pageQuery = graphql`
   query ($tag: String) {
-    allContentfulBlogPost(filter: {tags: {in: [$tag]}}) {
+    allContentfulBlogPost(sort: {fields: publishDate, order: DESC}, filter: {tags: {in: [$tag]}}) {
       totalCount
       nodes {
         title
