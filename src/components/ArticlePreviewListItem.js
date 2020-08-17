@@ -18,11 +18,13 @@ const ArticlePreviewListItem = ({
     tags
   } = article;
 
-  const formattedPublishedDate = moment(publishDate).format('MMM [\']YY');
+  const formattedPublishedDateLong = moment(publishDate).format('MMM Do [\']YY');
+  const formattedPublishedDateShort = moment(publishDate).format('MMM [\']YY');
+
   return (
     <li>
       <time className="time" dateTime="2013-04-10 18:30">
-        <span>{formattedPublishedDate}</span>
+        <span title={formattedPublishedDateLong}>{formattedPublishedDateShort}</span>
       </time>
       <div className="label">
 

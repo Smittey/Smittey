@@ -128,7 +128,7 @@ export const pageQuery = graphql`
       }
       slug
       tags
-      publishDate(formatString: "MMM [']YY")
+      publishDate(formatString: "MMM Do [']YY")
       heroImage {
         fluid(maxWidth: 1180, background: "rgb:000000", quality: 80) {
           ...GatsbyContentfulFluid_tracedSVG

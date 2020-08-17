@@ -21,7 +21,8 @@ const ArticlePreviewGridItem = ({
     tags
   } = article;
 
-  const formattedPublishedDate = moment(publishDate).format('MMM [\']YY');
+  const formattedPublishedDateLong = moment(publishDate).format('MMM Do [\']YY');
+  const formattedPublishedDateShort = moment(publishDate).format('MMM [\']YY');
 
   return (
     (index % 2)
@@ -32,7 +33,7 @@ const ArticlePreviewGridItem = ({
               <h2 className="title">{title}</h2>
               <h4 className="description">{description.description}</h4>
             </Link>
-            <p className="date">{formattedPublishedDate}</p>
+            <p title={formattedPublishedDateLong} className="date">{formattedPublishedDateShort}</p>
             <p className="previewText">{previewText.previewText}</p>
             <div className="tags bold">
               <Tags tags={tags} 
@@ -70,7 +71,7 @@ const ArticlePreviewGridItem = ({
               <h2 className="title">{title}</h2>
               <h4 className="description">{description.description}</h4>
             </Link>
-            <p className="date">{formattedPublishedDate}</p>
+            <p title={formattedPublishedDateLong} className="date">{formattedPublishedDateShort}</p>
             <p className="previewText">{previewText.previewText}</p>
             <div className="tags bold">
               <Tags 
