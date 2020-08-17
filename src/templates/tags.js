@@ -28,7 +28,7 @@ const Tags = ({ pageContext, data }) => {
   } = data.allContentfulBlogPost;
 
   const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged: #${tag}`;
-  const seoTitle = `${tag} (${totalCount})`;
+  const seoTitle = `Andy.Writing | ${tag} (${totalCount})`;
 
   return (
     <Layout isIndex={true}>
