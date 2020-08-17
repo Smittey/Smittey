@@ -1,7 +1,6 @@
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
 const Header = ({ isIndex }) => {
   const { site } = useStaticQuery(
@@ -17,31 +16,28 @@ const Header = ({ isIndex }) => {
   );
 
   const {
-    title
+    title,
   } = site.siteMetadata;
 
-
-  const titleSplit = title.split(".");
+  const titleSplit = title.split('.');
 
   return (
     <header className="header bold">
       <div className="siteTitle">
         { !isIndex && (
           <Link to="/">
-            {titleSplit[0]}.<span className="theme-primary-colour">{titleSplit[1]}</span>
+            {titleSplit[0]}
+            .
+            <span className="theme-primary-colour">{titleSplit[1]}</span>
           </Link>
         )}
-      </div> 
+      </div>
     </header>
   );
-}
+};
 
 Header.propTypes = {
   isIndex: PropTypes.bool,
-};
-
-Header.defaultProps = {
-  siteTitle: '',
 };
 
 export default Header;

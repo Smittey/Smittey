@@ -1,15 +1,15 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import BackgroundImage from 'gatsby-background-image';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Tags from './Tags';
+
 const moment = require('moment');
-import { Link } from 'gatsby';
 
 const ArticlePreviewGridItem = ({
   article,
   index,
-  selectedTag
+  selectedTag,
 }) => {
   const {
     title,
@@ -18,7 +18,7 @@ const ArticlePreviewGridItem = ({
     heroImage,
     slug,
     publishDate,
-    tags
+    tags,
   } = article;
 
   const formattedPublishedDateLong = moment(publishDate).format('MMM Do [\']YY');
@@ -36,7 +36,8 @@ const ArticlePreviewGridItem = ({
             <p title={formattedPublishedDateLong} className="date">{formattedPublishedDateShort}</p>
             <p className="previewText">{previewText.previewText}</p>
             <div className="tags bold">
-              <Tags tags={tags} 
+              <Tags
+                tags={tags}
                 selectedTag={selectedTag}
               />
             </div>
@@ -74,8 +75,8 @@ const ArticlePreviewGridItem = ({
             <p title={formattedPublishedDateLong} className="date">{formattedPublishedDateShort}</p>
             <p className="previewText">{previewText.previewText}</p>
             <div className="tags bold">
-              <Tags 
-                tags={tags} 
+              <Tags
+                tags={tags}
                 selectedTag={selectedTag}
               />
             </div>

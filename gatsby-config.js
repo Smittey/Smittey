@@ -25,7 +25,7 @@ module.exports = {
     author: '@smittey',
     siteUrl: 'https://www.smittey.co.uk/',
     personalSiteUrl: 'https://www.andysmith.me/',
-    tagsPath: '/tags/'
+    tagsPath: '/tags/',
   },
   plugins: [
     {
@@ -73,7 +73,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
             },
           },
         ],
@@ -83,7 +83,7 @@ module.exports = {
       resolve: 'gatsby-plugin-feed',
       options: {
         custom_namespaces: {
-          'media': 'http://search.yahoo.com/mrss/'
+          media: 'http://search.yahoo.com/mrss/',
         },
         query: `
           {
@@ -100,25 +100,21 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
-              allContentfulBlogPost.edges.map(edge =>
-                Object.assign({},
-                  {
-                    title: edge.node.title,
-                    date: edge.node.publishDate,
-                    description: edge.node.previewText.previewText,
-                    url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
-                    guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
-                    custom_elements: [
-                      { "media:content": {
-                        _attr: {
-                          url: `http:${edge.node.heroImage.fixed.src}`,
-                          medium: 'image',
-                        }
-                      } },
-                    ],                   
+              allContentfulBlogPost.edges.map((edge) => ({
+                title: edge.node.title,
+                date: edge.node.publishDate,
+                description: edge.node.previewText.previewText,
+                url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+                guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+                custom_elements: [{
+                  'media:content': {
+                    _attr: {
+                      url: `http:${edge.node.heroImage.fixed.src}`,
+                      medium: 'image',
+                    },
                   },
-                )
-              ),
+                }],
+              })),
             query: `{
               site {
                 siteMetadata {
@@ -145,7 +141,7 @@ module.exports = {
               }
             }`,
             output: '/feed.xml',
-            title: 'Andy.Writing Blog Post Feed'
+            title: 'Andy.Writing Blog Post Feed',
           },
         ],
       },

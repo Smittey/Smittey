@@ -2,7 +2,6 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const NavText = () => {
-
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,7 +19,6 @@ const NavText = () => {
       {site.siteMetadata.description}
     </p>
   );
-}
-
+};
 
 export default NavText;

@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Tags from './Tags';
-const moment = require('moment');
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Tags from './Tags';
+
+const moment = require('moment');
 
 const ArticlePreviewListItem = ({
   article,
-  selectedTag
+  selectedTag,
 }) => {
   const {
     title,
@@ -15,7 +15,7 @@ const ArticlePreviewListItem = ({
     previewText,
     slug,
     publishDate,
-    tags
+    tags,
   } = article;
 
   const formattedPublishedDateLong = moment(publishDate).format('MMM Do [\']YY');
@@ -27,7 +27,6 @@ const ArticlePreviewListItem = ({
         <span title={formattedPublishedDateLong}>{formattedPublishedDateShort}</span>
       </time>
       <div className="label">
-
         <Link to={`/${slug}`} activeClassName="activeMenuLink" className="menuLink">
           <h2 className="title">{title}</h2>
           <h4 className="description">{description.description}</h4>
@@ -35,8 +34,8 @@ const ArticlePreviewListItem = ({
 
         <div>{previewText.previewText}</div>
         <div className="tags bold">
-          <Tags 
-            tags={tags} 
+          <Tags
+            tags={tags}
             selectedTag={selectedTag}
           />
         </div>

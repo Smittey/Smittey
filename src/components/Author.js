@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import SocialIcons from './SocialIcons';
-import Img from "gatsby-image"
 
 const Author = () => {
-
   const [width, setWidth] = useState();
-  
+
+  const setScreenSize = () => {
+    setWidth(window.innerWidth);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setScreenSize();
@@ -16,10 +19,6 @@ const Author = () => {
     window.addEventListener('resize', handleResize);
     return () => { window.removeEventListener('resize', handleResize); };
   }, []);
-
-  const setScreenSize = () => {
-      setWidth(window.innerWidth)
-  }
 
   const { contentfulAsset } = useStaticQuery(
     graphql`
@@ -43,12 +42,14 @@ const Author = () => {
             alt=""
             className="authorImage"
           />
-        </div> 
+        </div>
         <div className="info">
           <div className="infoContainer">
-            {width > 800  && (
+            {width > 800 && (
               <div className="text italic">
-                Andy is a senior software engineer, currently working in London, UK. He has a wealth of experience working in back-end, front-end and devOps technologies and helped clients over multiple industries. 
+                Andy is a senior software engineer, currently working in London, UK.
+                He has a wealth of experience working in back-end, front-end and devOps
+                technologies and helped clients over multiple industries.
               </div>
             )}
             <div className="iconsWrapper">
@@ -59,11 +60,13 @@ const Author = () => {
       </div>
       {width <= 800 && (
         <div className="text italic">
-          Andy is a senior software engineer, currently working in London, UK. He has a wealth of experience working in back-end, front-end and devOps technologies and helped clients over multiple industries. 
+          Andy is a senior software engineer, currently working in London, UK.
+          He has a wealth of experience working in back-end, front-end and devOps
+          technologies and helped clients over multiple industries.
         </div>
       )}
-    </div>   
-  )
-}
+    </div>
+  );
+};
 
 export default Author;

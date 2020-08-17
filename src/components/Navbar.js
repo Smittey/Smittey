@@ -44,7 +44,7 @@ const Navbar = ({ isIndex }) => {
   };
 
   return (
-    <nav className="rightNav" >
+    <nav className="rightNav">
 
       <span role="button" className="menuIcon" onClick={() => navToggle()} tabIndex="0" onKeyDown={navToggle}>
         <IconContext.Provider value={{ className: (menuState === 'closed') ? 'icon' : 'iconClicked' }}>
@@ -54,12 +54,12 @@ const Navbar = ({ isIndex }) => {
 
       <div className="menuWrapper" style={{ display: (menuState === 'closed') ? 'none' : 'block' }}>
         <NavText />
-        <SocialIcons size="40px"/>
-        <div className='imgWrappers nonIndexImgWrapper'>
+        <SocialIcons size="40px" />
+        <div className="imgWrappers nonIndexImgWrapper">
           <BackgroundImage
             Tag="section"
             id="media-test"
-            className='nonIndexImg'
+            className="nonIndexImg"
             style={{
               height: '100%',
               backgroundSize: 'contain',

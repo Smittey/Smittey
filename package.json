@@ -34,6 +34,7 @@
   ],
   "dependencies": {
     "axios": "^0.19.1",
+    "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "disqus-react": "^1.0.7",
     "dotenv": "^8.2.0",
@@ -61,6 +62,7 @@
     "gatsby-transformer-sqip": "^2.1.65",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
+    "moment": "^2.27.0",
     "node-sass": "^4.13.0",
     "npm": "^6.13.4",
     "prismjs": "^1.19.0",

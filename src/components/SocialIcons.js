@@ -36,29 +36,29 @@ const SocialIcons = ({ size }) => {
   return (
     <div className="icons">
       <div className="iconsWrapper">
-      {
-        allContentfulSocialMediaIcons.nodes.map((item) => (
-          <OutboundLink
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="imgBox"
-            key={item.name}
-          >
-            <Img
-              className="social"
-              style={{
-                display: 'inline-block',
-                width: size,
-                height: size,
-              }}
-              sizes={item.image.sizes}
-              alt={item.altText}
-            />
-          </OutboundLink>
-        ))
-      }
-      <OutboundLink
+        {
+          allContentfulSocialMediaIcons.nodes.map((item) => (
+            <OutboundLink
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="imgBox"
+              key={item.name}
+            >
+              <Img
+                className="social"
+                style={{
+                  display: 'inline-block',
+                  width: size,
+                  height: size,
+                }}
+                sizes={item.image.sizes}
+                alt={item.altText}
+              />
+            </OutboundLink>
+          ))
+        }
+        <OutboundLink
           href={site.siteMetadata.personalSiteUrl}
           target="_blank"
           rel="noopener noreferrer"
@@ -82,6 +82,6 @@ const SocialIcons = ({ size }) => {
 
 SocialIcons.propTypes = {
   size: PropTypes.string.isRequired,
-}
+};
 
 export default SocialIcons;

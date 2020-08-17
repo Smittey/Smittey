@@ -5,7 +5,6 @@ import { IconContext } from 'react-icons';
 import { Link } from 'gatsby';
 
 const PrevNext = ({ prevPost, nextPost }) => {
-
   const {
     title: prevTitle,
     slug: prevSlug,
@@ -39,14 +38,12 @@ const PrevNext = ({ prevPost, nextPost }) => {
         )}
       </IconContext.Provider>
     </div>
-  )
-}
+  );
+};
 
 PrevNext.propTypes = {
   prevPost: PropTypes.any,
   nextPost: PropTypes.object,
-}
-
+};
 
 export default PrevNext;
-

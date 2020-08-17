@@ -1,41 +1,37 @@
-const Promise = require('bluebird')
-const path = require('path')
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const Promise = require('bluebird');
+const path = require('path');
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
-    const tagTemplate = path.resolve("src/templates/tags.js")
+    const blogPost = path.resolve('./src/templates/blog-post.js');
+    const tagTemplate = path.resolve('./src/templates/tags.js');
 
     resolve(
       graphql(
-        `
-          {
-            allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
-              edges {
-                node {
-                  title
-                  slug
-                }
-              }
-              group(field: tags) {
-                fieldValue
-                totalCount
+        `{
+          allContentfulBlogPost(sort: {fields: publishDate, order: DESC}) {
+            edges {
+              node {
+                title
+                slug
               }
             }
-            site {
-              siteMetadata {
-                tagsPath
-              }
+            group(field: tags) {
+              fieldValue
+              totalCount
             }
           }
-          `
-      ).then(result => {
+          site {
+            siteMetadata {
+              tagsPath
+            }
+          }
+        }`,
+      ).then((result) => {
         if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
+          reject(result.errors);
         }
 
         const posts = result.data.allContentfulBlogPost.edges;
@@ -51,23 +47,30 @@ exports.createPages = ({ graphql, actions }) => {
               prev,
               next,
             },
-          })
-        })
+          });
+        });
 
-        const tags = result.data.allContentfulBlogPost.group;
-        const tagsPath = result.data.site.siteMetadata.tagsPath;
+        const {
+          allContentfulBlogPost: {
+            group: tags,
+          },
+          site: {
+            siteMetadata: {
+              tagsPath,
+            },
+          },
+        } = result.data;
 
-        tags.forEach(tag => {
+        tags.forEach((tag) => {
           createPage({
             path: `${tagsPath}${tag.fieldValue}/`,
             component: tagTemplate,
             context: {
               tag: tag.fieldValue,
             },
-          })
-        })
-
-      })
-    )
-  })
-}
+          });
+        });
+      }),
+    );
+  });
+};

@@ -1,23 +1,22 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 import Navbar from './Navbar';
 import '../assets/style/main.scss';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
+import Header from './Header';
+import Footer from './Footer';
 import {
   GlobalDispatchContext,
   GlobalStateContext,
 } from '../utils/GlobalContextProvider';
 
 const Layout = ({ children, isIndex }) => {
-
-  const dispatch = useContext(GlobalDispatchContext)
-  const state = useContext(GlobalStateContext)
+  const dispatch = useContext(GlobalDispatchContext);
+  const state = useContext(GlobalStateContext);
 
   const themeToggleHandler = () => {
-    dispatch({ type: "TOGGLE_THEME" })
-  }
+    dispatch({ type: 'TOGGLE_THEME' });
+  };
 
   const lightDarkIcon = `M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
@@ -26,36 +25,44 @@ const Layout = ({ children, isIndex }) => {
   return (
     <>
       <Helmet>
-        <body className={ state.theme === 'light' ? 'light-theme' : 'dark-theme' } />
+        <body className={state.theme === 'light' ? 'light-theme' : 'dark-theme'} />
       </Helmet>
       <div className="themeToggle">
 
-      <span className="root" role="figure" onClick={() => themeToggleHandler()} >
-        <svg
-          version="1.1"
-          width="20px"
-          height="20px"
-          viewBox="0 0 48 48"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="root"
+          role="button"
+          tabIndex="0"
+          onKeyPress={() => themeToggleHandler()}
+          onClick={() => themeToggleHandler()}
         >
-          <title>
-            {
-              state.theme === 'light'
-              ? "Toggle to dark mode"
-              : "Toggle to light mode"
-            }
-          </title>
-          <path d={lightDarkIcon} style={{ fill: "currentColor" }} />
-        </svg>
-      </span>
-
+          <svg
+            version="1.1"
+            width="20px"
+            height="20px"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              {
+                state.theme === 'light'
+                  ? 'Toggle to dark mode'
+                  : 'Toggle to light mode'
+              }
+            </title>
+            <path d={lightDarkIcon} style={{ fill: 'currentColor' }} />
+          </svg>
+        </span>
       </div>
-      <div className="container" style={{
-          overflow: isIndex && "hidden",
-          flexDirection: !isIndex && "column"
-        }}>
-        <div className="content" style={{height: isIndex && "100vh"}}>
-          <Header isIndex={isIndex}/>
+      <div
+        className="container"
+        style={{
+          overflow: isIndex && 'hidden',
+          flexDirection: !isIndex && 'column',
+        }}
+      >
+        <div className="content" style={{ height: isIndex && '100vh' }}>
+          <Header isIndex={isIndex} />
           <main>
             {children}
           </main>
@@ -64,7 +71,7 @@ const Layout = ({ children, isIndex }) => {
         {isIndex && <Navbar />}
       </div>
     </>
-  )
+  );
 };
 
 Layout.propTypes = {

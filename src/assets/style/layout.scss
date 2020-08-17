@@ -9,7 +9,11 @@ body {
         color: var(--dark-color);
     }
 }
-  
+
+*:focus {
+    outline: none;
+}
+
 html {
     margin: 0;
     padding: 0;

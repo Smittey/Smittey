@@ -2,20 +2,19 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import Disqus from 'disqus-react';
 import Layout from '../components/Layout';
 import Tags from '../components/Tags';
 import Author from '../components/Author';
 import PrevNext from '../components/PrevNext';
-import Disqus, { CommentCount } from 'disqus-react';
 import SEO from '../components/seo';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-
   const [showComments, setShowComments] = useState(false);
 
   const handleCommentsToggle = (toggle) => {
     setShowComments(toggle);
-  }
+  };
 
   const {
     title,
@@ -24,37 +23,36 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     publishDate,
     tags,
     slug,
-    previewText,
-    description
+    description,
   } = data.contentfulBlogPost;
 
-  const { 
+  const {
     title: siteTitle,
-  } =  data.site.siteMetadata;
+  } = data.site.siteMetadata;
 
   const {
     prev,
-    next
+    next,
   } = pageContext;
-  
+
   const disqusShortname = 'smittey';
   const disqusConfig = {
-      url: `https://smittey.co.uk/${slug}/`
+    url: `https://smittey.co.uk/${slug}/`,
   };
 
   return (
     <Layout>
-      <SEO 
+      <SEO
         title={`${title} | ${siteTitle}`}
         description={description.description}
-        imageUrl={`http:${heroImage.fixed.src}`} 
+        imageUrl={`http:${heroImage.fixed.src}`}
       />
       <div>
         <div>
-          <Img 
-            alt={title} 
+          <Img
+            alt={title}
             fluid={heroImage.fluid}
-            style={{ 
+            style={{
               maxHeight: '50vh',
               maxWidth: '1180px',
               margin: '0 auto',
@@ -66,7 +64,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             <span className="date">{publishDate}</span>
             <h1 className="title">{title}</h1>
             <h2 className="description">{description.description}</h2>
-            <span className="tags"><Tags tags={tags}/></span>
+            <span className="tags"><Tags tags={tags} /></span>
           </div>
           <div
             className="blogContent"
@@ -78,38 +76,31 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <Author />
 
           <PrevNext prevPost={prev} nextPost={next} />
-            
+
           <div className="divider"></div>
-          
-            <div className="comments">
-            { showComments 
-              ?  
-              (
+          <div className="comments">
+            { showComments
+              ? (
                 <>
-                  <button onClick={() => handleCommentsToggle(false)}>
+                  <button type="button" onClick={() => handleCommentsToggle(false)}>
                     Hide Comments
                   </button>
                   <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 </>
               )
-              : 
-              (
-                <button onClick={() => handleCommentsToggle(true)}>
+              : (
+                <button type="button" onClick={() => handleCommentsToggle(true)}>
                   <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
                       Comments
                   </Disqus.CommentCount>
                 </button>
-              )
-            }
+              )}
           </div>
         </div>
       </div>
     </Layout>
-  )
-  
-}
-
-
+  );
+};
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

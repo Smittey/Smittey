@@ -1,7 +1,12 @@
-const React = require("react")
-const GlobalContextProvider = require("./src/utils/GlobalContextProvider")
-  .default
+import React from 'react';
+import PropTypes from 'prop-types';
 
-exports.wrapRootElement = ({ element }) => {
-  return <GlobalContextProvider>{element}</GlobalContextProvider>
-}
+const GlobalContextProvider = require('./src/utils/GlobalContextProvider').default;
+
+export const wrapRootElement = ({ element }) => (
+  <GlobalContextProvider>{element}</GlobalContextProvider>
+);
+
+wrapRootElement.propTypes = {
+  element: PropTypes.node,
+};

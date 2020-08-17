@@ -1,71 +1,83 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
+import { IconContext } from 'react-icons';
+import { FaList, FaThLarge } from 'react-icons/fa';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import ArticlePreviewGrid from '../components/ArticlePreviewGrid';
 import ArticlePreviewList from '../components/ArticlePreviewList';
-import { FaList, FaThLarge } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
 import {
   GlobalDispatchContext,
   GlobalStateContext,
-} from "../utils/GlobalContextProvider";
+} from '../utils/GlobalContextProvider';
 
 const Tags = ({ pageContext, data }) => {
-
   const dispatch = useContext(GlobalDispatchContext);
   const state = useContext(GlobalStateContext);
 
   const viewToggleHandler = () => {
-    dispatch({ type: "TOGGLE_VIEW" });
+    dispatch({ type: 'TOGGLE_VIEW' });
   };
 
   const { tag } = pageContext;
   const {
-      nodes: articles,
-      totalCount,
+    nodes: articles,
+    totalCount,
   } = data.allContentfulBlogPost;
 
-  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged: #${tag}`;
+  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged: #${tag}`;
   const seoTitle = `Andy.Writing | ${tag} (${totalCount})`;
 
   return (
-    <Layout isIndex={true}>
+    <Layout isIndex="true">
       <SEO title={seoTitle} />
-        <div className="articlePreviews">
-          <div className="headerBlock">
-            <Link to="/">
-              <h1>
-                <span>Andy.</span>
-                <span className="theme-primary-colour bold">Writing</span>
-              </h1>
-            </Link>
-            <h2>
-              <span>{tagHeader}</span>
-            </h2>
-          </div>
+      <div className="articlePreviews">
+        <div className="headerBlock">
+          <Link to="/">
+            <h1>
+              <span>Andy.</span>
+              <span className="theme-primary-colour bold">Writing</span>
+            </h1>
+          </Link>
+          <h2>
+            <span>{tagHeader}</span>
+          </h2>
+        </div>
 
-          <div className="toggleView">
-            <IconContext.Provider value={{ className: 'layoutIcons' }}>
-              <a type="button" onClick={() => viewToggleHandler()}>
-                <FaList className={(state.view === 'list') && "active"} title="Display posts in List View"/>
-              </a>  
-              <a type="button" onClick={() => viewToggleHandler()}>
-                <FaThLarge className={(state.view === 'grid') && "active"} title="Display posts in Grid View"/>
-              </a>
-            </IconContext.Provider>
-          </div>
-
-          {
-            (state.view === 'grid') 
-            ? <ArticlePreviewGrid articles={articles} selectedTag={tag} /> 
+        <div className="toggleView">
+          <IconContext.Provider value={{ className: 'layoutIcons' }}>
+            <button
+              type="button"
+              onKeyPress={() => viewToggleHandler()}
+              onClick={() => viewToggleHandler()}
+            >
+              <FaList
+                className={(state.view === 'list') && 'active'}
+                title="Display posts in List View"
+              />
+            </button>
+            <button
+              type="button"
+              onKeyPress={() => viewToggleHandler()}
+              onClick={() => viewToggleHandler()}
+            >
+              <FaThLarge
+                className={(state.view === 'grid') && 'active'}
+                title="Display posts in Grid View"
+              />
+            </button>
+          </IconContext.Provider>
+        </div>
+        {
+          (state.view === 'grid')
+            ? <ArticlePreviewGrid articles={articles} selectedTag={tag} />
             : <ArticlePreviewList articles={articles} selectedTag={tag} />
-          }
+        }
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 Tags.propTypes = {
   data: PropTypes.shape({
