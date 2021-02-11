@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 require('dotenv').config({
   path: '.env',
 });
@@ -56,6 +58,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-74354041-2',
+        exclude: ['.netlify.app'],
       },
     },
     'gatsby-plugin-sharp',
@@ -99,22 +102,21 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allContentfulBlogPost } }) =>
-              allContentfulBlogPost.edges.map((edge) => ({
-                title: edge.node.title,
-                date: edge.node.publishDate,
-                description: edge.node.previewText.previewText,
-                url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
-                guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
-                custom_elements: [{
-                  'media:content': {
-                    _attr: {
-                      url: `http:${edge.node.heroImage.fixed.src}`,
-                      medium: 'image',
-                    },
+            serialize: ({ query: { site, allContentfulBlogPost } }) => allContentfulBlogPost.edges.map((edge) => ({
+              title: edge.node.title,
+              date: edge.node.publishDate,
+              description: edge.node.previewText.previewText,
+              url: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+              guid: `${site.siteMetadata.siteUrl}/${edge.node.slug}`,
+              custom_elements: [{
+                'media:content': {
+                  _attr: {
+                    url: `http:${edge.node.heroImage.fixed.src}`,
+                    medium: 'image',
                   },
-                }],
-              })),
+                },
+              }],
+            })),
             query: `{
               site {
                 siteMetadata {

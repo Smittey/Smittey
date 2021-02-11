@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import SocialIcons from './SocialIcons';
 
-const Author = () => {
+const Author = ({ author }) => {
   const [width, setWidth] = useState();
-
+  const { shortBio: { shortBio }, image } = author;
   const setScreenSize = () => {
     setWidth(window.innerWidth);
   };
@@ -20,24 +20,12 @@ const Author = () => {
     return () => { window.removeEventListener('resize', handleResize); };
   }, []);
 
-  const { contentfulAsset } = useStaticQuery(
-    graphql`
-      query {
-        contentfulAsset(contentful_id: {eq: "6koZP7rOjKD95OEfMsAgfg"}) {
-          sizes(maxHeight: 200) {
-              ...GatsbyContentfulSizes
-          }
-        }
-      }
-    `,
-  );
-
   return (
     <div className="authorContainer">
       <div className="flexContainer">
         <div className="image">
           <Img
-            fluid={contentfulAsset.sizes}
+            fluid={image.sizes}
             objectFit="cover"
             alt=""
             className="authorImage"
@@ -47,9 +35,7 @@ const Author = () => {
           <div className="infoContainer">
             {width > 800 && (
               <div className="text italic">
-                Andy is a senior software engineer, currently working in London, UK.
-                He has a wealth of experience working in back-end, front-end and devOps
-                technologies and helped clients over multiple industries.
+                {shortBio}
               </div>
             )}
             <div className="iconsWrapper">
@@ -60,13 +46,18 @@ const Author = () => {
       </div>
       {width <= 800 && (
         <div className="text italic">
-          Andy is a senior software engineer, currently working in London, UK.
-          He has a wealth of experience working in back-end, front-end and devOps
-          technologies and helped clients over multiple industries.
+          {shortBio}
         </div>
       )}
     </div>
   );
+};
+
+Author.propTypes = {
+  author: PropTypes.shape({
+    shortBio: PropTypes.object.isRequired,
+    image: PropTypes.object.isRequired,
+  }).isRequired,
 };
 
 export default Author;

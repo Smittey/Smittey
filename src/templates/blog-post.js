@@ -19,6 +19,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const {
     title,
     heroImage,
+    author,
     body,
     publishDate,
     tags,
@@ -73,7 +74,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             }}
           />
 
-          <Author />
+          <Author author={author} />
 
           <PrevNext prevPost={prev} nextPost={next} />
 
@@ -126,6 +127,16 @@ export const pageQuery = graphql`
         }
         fixed(quality: 100, width: 800) {
           src
+        }
+      }
+      author {
+        shortBio {
+          shortBio
+        }
+        image {
+          sizes(maxHeight: 200) {
+            ...GatsbyContentfulSizes
+          }
         }
       }
       body {
