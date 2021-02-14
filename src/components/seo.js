@@ -35,7 +35,7 @@ function SEO({
         },
         {
           property: 'og:url',
-          content: document.URL,
+          content: window.location.href,
         },
         {
           property: 'og:title',
