@@ -30,7 +30,7 @@ const Tags = ({ pageContext, data }) => {
   const seoTitle = `Andy.Writing | ${tag} (${totalCount})`;
 
   return (
-    <Layout isIndex="true">
+    <Layout isIndex>
       <SEO title={seoTitle} />
       <div className="articlePreviews">
         <div className="headerBlock">

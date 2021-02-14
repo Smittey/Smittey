@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
   const siteDescription = data.site.siteMetadata.description;
 
   return (
-    <Layout isIndex="true">
+    <Layout isIndex>
       <SEO title="Andy.Writing Home" />
       <div className="articlePreviews">
         <div className="headerBlock">
