@@ -46,7 +46,8 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       <SEO
         title={`${title} | ${siteTitle}`}
         description={description.description}
-        imageUrl={`http:${heroImage.fixed.src}`}
+        imageUrl={heroImage.fixed.src}
+        slug={slug}
       />
       <div>
         <div>

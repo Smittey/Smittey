@@ -4,9 +4,9 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
-  description, lang, meta, title, imageUrl,
+  description, lang, meta, title, imageUrl, slug,
 }) {
-  const { site } = useStaticQuery(
+  const { site, contentfulAsset } = useStaticQuery(
     graphql`
       query {
         site {
@@ -14,14 +14,28 @@ function SEO({
             title
             description
             author
+            siteUrl
+          }
+        }
+        contentfulAsset(contentful_id: {eq: "6hBPzeeOK4t9N2qd5IbMph"}) {
+          fixed(quality: 100, width: 800) {
+            src
           }
         }
       }
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const {
+    description: metadataDescription,
+    author,
+    siteUrl,
+  } = site.siteMetadata;
 
+  const metaImage = imageUrl || contentfulAsset.fixed.src;
+  const metaImageurl = `https:${metaImage}`;
+  const metaDescription = description || metadataDescription;
+  const url = [siteUrl, slug].join('/');
   return (
     <Helmet
       htmlAttributes={{
@@ -35,7 +49,7 @@ function SEO({
         },
         {
           property: 'og:url',
-          content: window.location.href,
+          content: url,
         },
         {
           property: 'og:title',
@@ -51,11 +65,11 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: imageUrl,
+          content: metaImageurl,
         },
         {
           property: 'og:image:secure_url',
-          content: `https://${imageUrl}`,
+          content: metaImageurl,
         },
         {
           property: 'og:locale',
@@ -67,7 +81,7 @@ function SEO({
         },
         {
           name: 'twitter:creator',
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: 'twitter:title',
@@ -79,11 +93,11 @@ function SEO({
         },
         {
           name: 'twitter:site',
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: 'twitter:image',
-          content: imageUrl,
+          content: metaImageurl,
         },
         {
           name: 'twitter:image:alt',
@@ -106,6 +120,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   imageUrl: PropTypes.string,
+  slug: PropTypes.string,
 };
 
 export default SEO;
