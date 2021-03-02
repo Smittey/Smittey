@@ -11,6 +11,12 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
+    case 'SET_THEME': {
+      return {
+        ...state,
+        theme: action.payload,
+      };
+    }
     case 'TOGGLE_VIEW': {
       return {
         ...state,
