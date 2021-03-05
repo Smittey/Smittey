@@ -31,6 +31,21 @@
             margin: 1rem 0px 0px;
         }
 
+        strong {
+            font-family: $bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: $theme-color;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                text-underline-position: under;
+            }
+        }
+
         li {
             margin-bottom: 0.5em;
         }

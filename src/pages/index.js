@@ -32,11 +32,11 @@ const IndexPage = ({ data }) => {
           <Link to="/">
             <h1>
               <span>Andy.</span>
-              <span className="theme-primary-colour bold">Writing</span>
+              <span className="theme-primary-colour">Writing</span>
             </h1>
           </Link>
 
-          <h3 className="siteSubheading bold">
+          <h3>
             {siteDescription}
           </h3>
         </div>
