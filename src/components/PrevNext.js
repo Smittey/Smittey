@@ -29,7 +29,7 @@ const PrevNext = ({ prevPost, nextPost }) => {
       <IconContext.Provider value={{ className: 'icons' }}>
 
         {Object.keys(prevPost).length > 0 && (
-          <Link onClick={() => prevNextHandler('Previous Post', prevSlug)} className="leftTitle" to={prevSlug}>
+          <Link onClick={() => prevNextHandler('Previous Post', prevSlug)} className="leftTitle" to={`/${prevSlug}`}>
             <div className="leftArrow">
               <FaAngleDoubleLeft />
             </div>
@@ -38,7 +38,7 @@ const PrevNext = ({ prevPost, nextPost }) => {
         )}
 
         {Object.keys(nextPost).length > 0 && (
-          <Link onClick={() => prevNextHandler('Next Post', nextSlug)} className="rightTitle" to={nextSlug}>
+          <Link onClick={() => prevNextHandler('Next Post', nextSlug)} className="rightTitle" to={`/${nextSlug}`}>
             {nextTitle}
             <div className="rightArrow">
               <FaAngleDoubleRight />
