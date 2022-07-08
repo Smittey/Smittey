@@ -61,7 +61,7 @@
     "gatsby-transformer-sharp": "^2.3.16",
     "gatsby-transformer-sqip": "^2.1.65",
     "husky": "^8.0.1",
-    "lint-staged": "^9.5.0",
+    "lint-staged": "^13.0.3",
     "moment": "^2.29.4",
     "node-sass": "^7.0.0",
     "npm": "^6.14.6",
