@@ -55,7 +55,7 @@
     "gatsby-remark-images": "^3.1.44",
     "gatsby-remark-images-contentful": "^2.1.31",
     "gatsby-remark-prismjs": "^3.3.36",
-    "gatsby-source-contentful": "^2.1.73",
+    "gatsby-source-contentful": "^4.5.3",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.59",
     "gatsby-transformer-sharp": "^2.3.16",
