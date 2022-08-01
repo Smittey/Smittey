@@ -39,7 +39,7 @@
     "disqus-react": "^1.0.7",
     "dotenv": "^8.2.0",
     "eslint": "^8.19.0",
-    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-react": "^7.17.0",
     "gatsby": "^2.32.13",
     "gatsby-background-image": "^0.9.12",
