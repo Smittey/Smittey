@@ -130,7 +130,7 @@ module.exports = {
               custom_elements: [{
                 'media:content': {
                   _attr: {
-                    url: `http:${edge.node.heroImage.fixed.src}`,
+                    url: `http:${edge.node.heroImage.localFile.childImageSharp.resize.src}`,
                     medium: 'image',
                   },
                 },
@@ -152,8 +152,12 @@ module.exports = {
                       previewText
                     }
                     heroImage {
-                      fixed(quality: 100, width: 800) {
-                        src
+                      localFile {
+                        childImageSharp {
+                          resize(width: 800, quality: 100) {
+                            src
+                          }
+                        }
                       }
                     }
                     slug
