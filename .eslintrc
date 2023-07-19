@@ -8,6 +8,7 @@
     "react/forbid-prop-types": "off",
     "react/no-danger": "off",
     "react/self-closing-comp": "off",
+    "react/jsx-props-no-spreading": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {"devDependencies": true}

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import BackgroundImage from 'gatsby-background-image';
+import { getImage } from 'gatsby-plugin-image';
+import { convertToBgImage } from 'gbimage-bridge';
 import SocialIcons from './SocialIcons';
 import NavText from './NavText';
 
@@ -31,13 +33,21 @@ const Navbar = ({ isIndex }) => {
     graphql`
       query {
         contentfulAsset(contentful_id: {eq: "3Q1Kn2aUi6rUxunGYPZkAI"}) {
-          sizes(maxHeight: 700) {
-              ...GatsbyContentfulSizes
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 90
+              )
+            }
           }
         }
       }
     `,
   );
+
+  const image = getImage(contentfulAsset.localFile);
+  const bgImage = convertToBgImage(image);
 
   const navToggle = () => {
     setMenuState(menuState === 'closed' ? 'open' : 'closed');
@@ -65,7 +75,7 @@ const Navbar = ({ isIndex }) => {
               backgroundSize: 'contain',
               backgroundPosition: backgroundPositionStyle,
             }}
-            fluid={contentfulAsset.sizes}
+            {...bgImage}
           />
         </div>
       </div>

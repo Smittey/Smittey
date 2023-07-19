@@ -15,7 +15,7 @@ import Button from '../components/Button';
 
 const IndexPage = ({ data }) => {
   const dispatch = useContext(GlobalDispatchContext);
-  const state = useContext(GlobalStateContext);
+  const { view } = useContext(GlobalStateContext);
 
   const viewToggleHandler = () => {
     dispatch({ type: 'TOGGLE_VIEW' });
@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
               onClick={() => viewToggleHandler()}
               onKeyPress={() => viewToggleHandler()}
             >
-              <FaList className={(state.view === 'list') && 'active'} title="Display posts in List View" />
+              <FaList className={(view === 'list') && 'active'} title="Display posts in List View" />
             </Button>
             <Button
               type="button"
@@ -61,13 +61,13 @@ const IndexPage = ({ data }) => {
               onClick={() => viewToggleHandler()}
               onKeyPress={() => viewToggleHandler()}
             >
-              <FaThLarge className={(state.view === 'grid') && 'active'} title="Display posts in Grid View" />
+              <FaThLarge className={(view === 'grid') && 'active'} title="Display posts in Grid View" />
             </Button>
           </IconContext.Provider>
         </div>
 
         {
-          (state.view === 'grid')
+          (view === 'grid')
             ? <ArticlePreviewGrid articles={articles} />
             : <ArticlePreviewList articles={articles} />
         }
@@ -91,9 +91,10 @@ export const pageQuery = graphql`
         slug
         publishDate
         heroImage {
-          sizes(maxHeight: 500, cropFocus: CENTER) {
-              ...GatsbyContentfulSizes
-          }
+          gatsbyImageData(
+            placeholder: BLURRED,
+            width: 600
+          )
         }
       }
     }

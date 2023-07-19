@@ -8,6 +8,7 @@ const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   host: process.env.CONTENTFUL_HOST,
+  downloadLocal: true,
 };
 
 const { spaceId, accessToken } = contentfulConfig;
@@ -34,6 +35,7 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -59,6 +61,23 @@ module.exports = {
       options: {
         trackingId: 'UA-74354041-2',
         exclude: ['.netlify.app'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [
+          'UA-74354041-2', // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: [],
+          delayOnRouteUpdate: 0,
+        },
       },
     },
     'gatsby-plugin-sharp',

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
@@ -14,16 +14,19 @@ const SocialIcons = ({ size }) => {
             link
             altText
             image {
-              sizes(maxHeight: 300) {
-                  ...GatsbyContentfulSizes
-              }
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }
         contentfulAsset(contentful_id: {eq: "2KdcKlMFZES1yMGumQCmjH"}) {
-          sizes(maxHeight: 200) {
-            ...GatsbyContentfulSizes
-          }            
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 90
+              )
+            }
+          }        
         }
         site {
           siteMetadata {
@@ -45,14 +48,16 @@ const SocialIcons = ({ size }) => {
               className="imgBox"
               key={item.name}
             >
-              <Img
+              <GatsbyImage
                 className="social"
                 style={{
                   display: 'inline-block',
                   width: size,
                   height: size,
                 }}
-                sizes={item.image.sizes}
+                image={
+                  getImage(item.image)
+                }
                 alt={item.altText}
               />
             </OutboundLink>
@@ -64,14 +69,16 @@ const SocialIcons = ({ size }) => {
           rel="noopener noreferrer"
           className="imgBox"
         >
-          <Img
+          <GatsbyImage
             className="social"
             style={{
               display: 'inline-block',
               width: size,
               height: size,
             }}
-            sizes={contentfulAsset.sizes}
+            image={
+              getImage(contentfulAsset.localFile)
+            }
             alt="Personal website icon link"
           />
         </OutboundLink>

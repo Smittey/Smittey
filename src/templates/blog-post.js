@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Disqus from 'disqus-react';
 import Layout from '../components/Layout';
 import Tags from '../components/Tags';
@@ -40,20 +40,22 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const disqusConfig = {
     url: `https://smittey.co.uk/${slug}/`,
   };
-
+  console.log(heroImage);
   return (
     <Layout>
       <SEO
         title={`${title} | ${siteTitle}`}
         description={description.description}
-        imageUrl={heroImage.fixed.src}
+        imageUrl={heroImage.localFile.childImageSharp.resize.src}
         slug={slug}
       />
       <div>
         <div>
-          <Img
+          <GatsbyImage
             alt={title}
-            fluid={heroImage.fluid}
+            image={
+              getImage(heroImage.localFile)
+            }
             style={{
               maxHeight: '50vh',
               maxWidth: '1180px',
@@ -123,11 +125,17 @@ export const pageQuery = graphql`
       tags
       publishDate(formatString: "MMM Do [']YY")
       heroImage {
-        fluid(maxWidth: 1180, background: "rgb:000000", quality: 80) {
-          ...GatsbyContentfulFluid_tracedSVG
-        }
-        fixed(quality: 100, width: 800) {
-          src
+        localFile {
+          childImageSharp {
+            gatsbyImageData(
+              width: 1180,
+              placeholder: BLURRED,
+              layout: FULL_WIDTH
+            )
+            resize(width: 800, quality: 100) {
+              src
+            }
+          }
         }
       }
       author {
@@ -135,9 +143,7 @@ export const pageQuery = graphql`
           shortBio
         }
         image {
-          sizes(maxHeight: 200) {
-            ...GatsbyContentfulSizes
-          }
+          gatsbyImageData(height: 200, placeholder: BLURRED)
         }
       }
       body {

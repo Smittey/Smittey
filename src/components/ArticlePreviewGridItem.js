@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import BackgroundImage from 'gatsby-background-image';
+import { getImage } from 'gatsby-plugin-image';
+import { convertToBgImage } from 'gbimage-bridge';
 import Tags from './Tags';
 
 const moment = require('moment');
@@ -23,6 +25,9 @@ const ArticlePreviewGridItem = ({
 
   const formattedPublishedDateLong = moment(publishDate).format('MMM Do [\']YY');
   const formattedPublishedDateShort = moment(publishDate).format('MMM [\']YY');
+
+  const image = getImage(heroImage);
+  const bgImage = convertToBgImage(image);
 
   return (
     (index % 2)
@@ -48,7 +53,7 @@ const ArticlePreviewGridItem = ({
               Tag="section"
               id="media-test"
               className="heroImageGatsby"
-              fluid={heroImage.sizes}
+              {...bgImage}
             >
               <div className="box" />
             </BackgroundImage>
@@ -61,7 +66,7 @@ const ArticlePreviewGridItem = ({
               Tag="section"
               id="media-test"
               className="heroImageGatsby"
-              fluid={heroImage.sizes}
+              {...bgImage}
             >
               <div className="box" />
             </BackgroundImage>

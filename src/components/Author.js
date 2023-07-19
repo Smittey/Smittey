@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SocialIcons from './SocialIcons';
 
 const Author = ({ author }) => {
@@ -24,8 +24,10 @@ const Author = ({ author }) => {
     <div className="authorContainer">
       <div className="flexContainer">
         <div className="image">
-          <Img
-            fluid={image.sizes}
+          <GatsbyImage
+            image={
+              getImage(image)
+            }
             objectFit="cover"
             alt=""
             className="authorImage"

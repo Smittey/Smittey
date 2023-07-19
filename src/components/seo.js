@@ -18,8 +18,12 @@ function SEO({
           }
         }
         contentfulAsset(contentful_id: {eq: "6hBPzeeOK4t9N2qd5IbMph"}) {
-          fixed(quality: 100, width: 800) {
-            src
+          localFile {
+            childImageSharp {
+              resize(width: 800, quality: 100) {
+                src
+              }
+            }
           }
         }
       }
@@ -32,7 +36,7 @@ function SEO({
     siteUrl,
   } = site.siteMetadata;
 
-  const metaImage = imageUrl || contentfulAsset.fixed.src;
+  const metaImage = imageUrl || contentfulAsset.localFile.childImageSharp.resize.src;
   const metaImageurl = `https:${metaImage}`;
   const metaDescription = description || metadataDescription;
   const url = [siteUrl, slug].join('/');
